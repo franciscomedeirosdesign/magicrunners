@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Runners · Personal trainer de corrida e força no Porto (Foz)</title>
+<meta name="description" content="Treino de corrida e força com a Mariana Alcoforado, no Porto: grupos na Foz, no Fluvial e no Parque da Cidade, treino personalizado e preparação de provas. Todas as idades. Avaliação inicial com marcação.">
+<meta name="theme-color" content="#231F20">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="Magic Runners · O Porto é o nosso ginásio.">
+<meta property="og:description" content="Corrida e força no Porto, à beira-mar e junto ao Douro. Treinos de grupo, treino personalizado e Sunday Running Club.">
+<meta property="og:url" content="https://www.magicrunnersteam.com/">
+<meta property="og:site_name" content="Magic Runners">
+<meta property="og:image" content="https://www.magicrunnersteam.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Magic Runners · O Porto é o nosso ginásio.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Magic Runners · O Porto é o nosso ginásio.">
+<meta name="twitter:description" content="Corrida e força no Porto, à beira-mar e junto ao Douro. Treinos de grupo, treino personalizado e Sunday Running Club.">
+<meta name="twitter:image" content="https://www.magicrunnersteam.com/assets/og.jpg">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="canonical" href="https://www.magicrunnersteam.com/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"SportsActivityLocation","name":"Magic Runners","alternateName":"Magic Runners by Mariana Alcoforado","description":"Treino de corrida e força: grupos ao ar livre na Foz, no Fluvial e no Parque da Cidade, treino personalizado e preparação de provas.","slogan":"O Porto é o nosso ginásio.","founder":{"@type":"Person","name":"Mariana Alcoforado"},"address":{"@type":"PostalAddress","addressLocality":"Porto","addressCountry":"PT"},"areaServed":["Grande Porto"],"sport":["Running","Strength training"],"image":"https://www.magicrunnersteam.com/assets/og.jpg","url":"https://www.magicrunnersteam.com/","email":"magicrunnersporto@gmail.com","telephone":"+351911019015","foundingDate":"2019","sameAs":["https://www.instagram.com/magicrunners_team/"],"employee":[{"@type":"Person","name":"Mariana Alcoforado","jobTitle":"Coach e fundadora"},{"@type":"Person","name":"Mariana Rocha Ferreira","jobTitle":"Subcoach"}],"knowsLanguage":["pt-PT","en"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Preciso de já correr para começar?","acceptedAnswer":{"@type":"Answer","text":"Não. A avaliação define o ponto de partida e o plano começa no ponto em que cada pessoa está. Ninguém fica para trás."}},{"@type":"Question","name":"Há limite de idade?","acceptedAnswer":{"@type":"Answer","text":"Não. A Mariana treina pessoas jovens e com mais idade; a avaliação inicial adapta o plano a cada um."}},{"@type":"Question","name":"E se chover?","acceptedAnswer":{"@type":"Answer","text":"Os treinos de grupo mantêm-se com chuva leve. Com mau tempo, avisamos no grupo e há alternativa coberta ou treino em casa."}},{"@type":"Question","name":"Tenho uma lesão. Posso treinar?","acceptedAnswer":{"@type":"Answer","text":"Convém falar connosco antes. A avaliação serve precisamente para planear um regresso seguro."}},{"@type":"Question","name":"Que zonas servem no treino personalizado?","acceptedAnswer":{"@type":"Answer","text":"Todo o Grande Porto. E também acompanhamos online, em qualquer lugar."}}]}]}
+</script>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" href="assets/parkinsans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/alpinecia.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Layout: secções em faixas alternadas tinta / branco / amarelo, ligadas por uma linha de percurso que desce pela página */
+@font-face{font-family:"Parkinsans";src:url(assets/parkinsans.woff2) format("woff2");font-weight:300 800;font-display:swap}
+@font-face{font-family:"Alpinecia";src:url(assets/alpinecia.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Alpinecia";font-style:italic;src:url(assets/alpinecia-italic.woff2) format("woff2");font-display:swap}
+:root{
+  --ink:#231F20; --paper:#F3EEE4; --volt:#F2B12F; --stone:#E9E2D4; --mute:#5C5758; --line:#D9D6D2;
+  --sans:"Parkinsans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --serif:"Alpinecia","Didot","Bodoni 72",Georgia,serif;
+  --w:1200px; color-scheme:light;
+}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--volt);outline-offset:3px}
+.wrap{max-width:var(--w);margin:0 auto;padding-inline:20px}
+h1,h2,h3{text-wrap:balance;margin:0}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-volt{background:var(--volt);color:var(--ink)}
+.btn-ghost{border-color:currentColor;background:transparent;color:inherit}
+.btn-ink{background:var(--ink);color:var(--paper)}
+
+/* header */
+header{background:var(--ink);color:var(--paper);position:sticky;top:env(safe-area-inset-top,0px);z-index:10}
+.nav{display:flex;align-items:center;gap:24px;padding-block:14px;flex-wrap:wrap}
+.nav .logo{width:170px;color:var(--paper);display:block}
+.nav .logo svg{width:100%;height:auto;display:block}
+.nav nav{margin-left:auto;display:flex;gap:22px;flex-wrap:wrap;font-size:15px}
+.nav nav a{text-decoration:none;opacity:.85}.nav nav a:hover{opacity:1;color:var(--volt)}
+.lang{font-size:13px;font-weight:600;letter-spacing:.1em;border:1px solid #555;border-radius:999px;padding:6px 10px;background:none;color:var(--paper);cursor:pointer}
+.nav nav a{padding-block:12px}
+.lang{min-height:40px;min-width:44px}
+.menubtn{display:none;width:44px;height:44px;border:1px solid #555;border-radius:999px;background:none;color:var(--paper);cursor:pointer;align-items:center;justify-content:center;padding:0}
+.menubtn span,.menubtn span:before,.menubtn span:after{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;position:relative;transition:transform .2s,background .2s}
+.menubtn span:before,.menubtn span:after{content:"";position:absolute;left:0}
+.menubtn span:before{top:-6px}.menubtn span:after{top:6px}
+header.open .menubtn span{background:transparent}
+header.open .menubtn span:before{transform:translateY(6px) rotate(45deg)}
+header.open .menubtn span:after{transform:translateY(-6px) rotate(-45deg)}
+.lang-m{display:none}
+@media (max-width:1080px){
+.nav{gap:12px}
+.nav nav{display:none;order:10;width:100%;margin-left:0;flex-direction:column;gap:0;font-size:18px;padding-bottom:6px}
+header.open .nav nav{display:flex}
+.nav nav a{padding:14px 0;border-top:1px solid #3B3637;opacity:1}
+#lang{margin-left:auto}
+.menubtn{display:inline-flex}}
+@media (max-width:560px){
+.nav{gap:8px}
+.nav .logo{width:104px}
+#lang{display:none}
+.nav .hcta{margin-left:auto;min-height:44px;padding:0 12px;font-size:13px}
+.lang-m{display:inline-block;align-self:flex-start;margin:14px 0 6px}}
+@media (max-width:370px){.nav .logo{width:90px}}
+@media (max-width:340px){.nav.wrap{padding-inline:12px}.nav .logo{width:78px}.nav .hcta{padding:0 10px;font-size:12px}}
+.skip{position:absolute;left:12px;top:-80px;z-index:100;background:var(--volt);color:var(--ink);padding:12px 18px;border-radius:999px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+main:focus{outline:none}
+html{scroll-padding-top:84px}
+
+/* hero */
+.hero{background:var(--ink) url(assets/hero-poster.jpg) 60% 50%/cover no-repeat;color:var(--paper);position:relative;overflow:hidden}
+.herovid{opacity:0;transition:opacity .4s}.herovid.on{opacity:1}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,780px);gap:40px;align-items:end;padding-block:72px 170px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(64px,10vw,150px);line-height:.92;margin-top:18px}
+.hero h1 i{color:var(--volt)}
+.hero p{font-size:20px;color:#DCD9D6;max-width:520px;margin:28px 0 0}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.hero .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:42px;font-size:14px;color:#BDB8B4}
+.hero .stats b{display:block;font-size:30px;color:var(--paper);font-variant-numeric:tabular-nums}
+.herovid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;z-index:0}
+.heroshade{position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(35,31,32,.92) 0%,rgba(35,31,32,.7) 42%,rgba(35,31,32,.15) 75%,rgba(35,31,32,.05) 100%)}
+@media (prefers-reduced-motion:reduce){.herovid{display:none}.hero{background:var(--ink) url(assets/hero-poster.jpg) center/cover}}
+.hero{min-height:min(88vh,820px);display:flex;align-items:flex-end}.hero>.wrap{width:100%}
+.route{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.route path{fill:none;stroke:var(--volt);stroke-width:46;stroke-linecap:round;stroke-dasharray:4000;stroke-dashoffset:4000;animation:draw 2.4s .2s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.heroshade{background:linear-gradient(0deg,rgba(35,31,32,.92) 0%,rgba(35,31,32,.75) 55%,rgba(35,31,32,.25) 100%)}}
+
+/* sections */
+section.band{padding-block:96px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.head h2{font-size:clamp(34px,4.4vw,52px);font-weight:600;line-height:1.05;max-width:16ch}
+.head p{max-width:440px;color:var(--mute);margin:0}
+
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;counter-reset:s}
+.steps li{border-top:6px solid var(--volt);padding-top:20px;counter-increment:s;min-width:0}
+.steps li:before{content:"0" counter(s);display:block;font-size:44px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
+.steps h3{font-size:21px;margin-top:12px}
+.steps p{color:var(--mute);font-size:16px;margin:8px 0 0}
+@media (max-width:820px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:460px){.steps{grid-template-columns:1fr}}
+
+.services{background:var(--stone)}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.card{background:var(--paper);padding:30px 26px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card .tag{align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:5px 10px;border-radius:999px}
+.card.lead .tag{background:var(--volt);color:var(--ink)}
+.card h3{font-size:23px;line-height:1.2}
+.card p{margin:0;color:var(--mute);font-size:16px;flex:1}
+.card .price{font-weight:700;font-size:20px;border-bottom:4px solid var(--volt);align-self:flex-start;font-variant-numeric:tabular-nums}
+@media (max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+
+.about .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:64px;align-items:center}
+.about .pic{aspect-ratio:4/5;max-width:100%;background:var(--stone);display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:15px;text-align:center;padding:0;overflow:hidden;border-radius:24px}
+.about h2{font-size:clamp(46px,6vw,78px);line-height:1;margin-top:14px}
+.about p{color:#3B3637;max-width:58ch}
+.about .pic img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;border-radius:inherit}
+.about .creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.about .creds span{border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px}
+@media (max-width:820px){.about .wrap{grid-template-columns:1fr}}
+
+.group{background:var(--volt);color:var(--ink);position:relative;overflow:hidden}
+.group h2{font-family:var(--serif);font-weight:400;font-size:clamp(46px,7vw,96px);line-height:.98}
+.lema{margin:40px 0 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px;background:var(--ink);color:var(--paper);border-radius:20px;padding:30px 36px}
+.lema .serif{font-size:clamp(36px,5vw,64px);line-height:1}
+.lema .serif i{color:var(--volt)}
+.lema small{font-size:17px;line-height:1.5;color:#D9D5D2;max-width:34ch}
+.sched{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:44px}
+.slot{border-top:2px solid var(--ink);padding-top:16px;min-width:0}
+.slot b{font-size:22px;display:block;font-variant-numeric:tabular-nums}
+.slot span{display:block;margin-top:4px}
+.slot small{display:block;margin-top:10px;font-size:14px;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+.map{margin-top:36px;background:var(--ink);color:var(--paper);border-radius:20px;padding:28px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.map{min-height:260px}.map svg{position:absolute;left:0;right:0;top:64px;bottom:64px;width:100%;height:calc(100% - 128px)}
+@media (max-width:600px){.map{min-height:320px}.map svg{top:84px;bottom:100px;height:calc(100% - 184px)}}
+.map .lbl{position:relative;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#CFCAC6}
+.map .pins{position:relative;display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+.map .pins span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--volt);margin-right:8px}
+@media (max-width:820px){.sched{grid-template-columns:1fr}}
+
+.faq details{border-top:1px solid var(--line);padding:10px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:600;font-size:19px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:44px;padding-block:6px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";font-size:26px;line-height:1;color:var(--ink)}
+.faq details[open] summary:after{content:"–"}
+.faq p{color:var(--mute);margin:10px 0 0;max-width:62ch}
+
+.contact{background:var(--ink);color:var(--paper)}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:56px}
+.contact h2{font-size:clamp(36px,4.6vw,56px);font-weight:600;line-height:1.05}
+.contact .side p{color:#CFCAC6}
+.contact .direct{margin-top:26px;display:grid;gap:10px;font-size:16px}
+.contact .direct code{font-family:var(--sans);background:#332E2F;padding:6px 10px;border-radius:8px;user-select:all}
+form{display:grid;gap:16px}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+label{display:grid;gap:7px;font-size:14px;font-weight:600}
+input,select,textarea{font:400 16px var(--sans);padding:14px;border-radius:12px;border:1px solid #8F8A87;background:#2C2728;color:var(--paper);min-width:0}
+select{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:100%;padding-right:48px;cursor:pointer;line-height:1.3;min-height:52px;background-color:#2C2728;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23F2B12F' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 18px center;background-size:14px 9px}
+select::-ms-expand{display:none}
+select option{background:#FFFFFF;color:#231F20}
+select:focus,input:focus,textarea:focus{outline:none;border-color:var(--volt);box-shadow:0 0 0 3px rgba(242,177,47,.25)}
+label>select,label>input,label>textarea{width:100%;box-sizing:border-box}
+textarea{min-height:96px;resize:vertical}
+.check{display:flex;gap:12px;align-items:flex-start;font-weight:400;font-size:14px;color:#CFCAC6}
+.check input{width:20px;height:20px;margin-top:2px;flex:none}
+.err{color:#FF9C8A;font-size:14px;font-weight:500;min-height:1em}
+.ok{background:var(--volt);color:var(--ink);border-radius:16px;padding:22px;font-weight:500}
+@media (max-width:820px){.contact .wrap{grid-template-columns:1fr}}
+@media (max-width:460px){.row2{grid-template-columns:1fr}}
+
+.camp{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.campline{position:absolute;inset:0;width:100%;height:100%}
+.campline path{fill:none;stroke:var(--volt);stroke-width:56;stroke-linecap:round}.campline .mob{display:none}
+@media (max-width:760px){.campline path{display:none}.campline .mob{display:inline;stroke-width:40}}
+.campin{position:relative;padding-block:110px 170px;display:grid;gap:22px;justify-items:start}
+.camp h2{font-size:clamp(56px,9vw,128px);line-height:.92}
+.camp h2 i{color:var(--volt)}
+.camp p{color:#DCD9D6;font-size:19px;max-width:44ch;margin:0}
+.reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.reels video{width:100%;max-width:100%;height:auto;display:block;border-radius:18px;background:var(--stone)}
+.ig .handle{margin:20px 0 0;font-weight:600}
+@media (max-width:640px){.reels{grid-template-columns:repeat(2,minmax(0,1fr))}.reels video:last-child{display:none}}
+.sunday{background:var(--stone)}
+.sun{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:64px;align-items:center}
+.mpic-btn img{object-position:50% 28%}
+.mpic-btn{all:unset;position:absolute;inset:0;cursor:zoom-in;display:block}
+.mpic-btn:focus-visible{outline:3px solid var(--volt);outline-offset:-3px;border-radius:24px}
+.mpic-n{position:absolute;top:14px;right:14px;display:inline-flex;align-items:center;gap:6px;background:rgba(35,31,32,.72);color:var(--paper);font-size:13px;font-weight:600;padding:6px 11px;border-radius:999px;pointer-events:none}
+.gal{border:0;padding:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;background:rgba(20,18,19,.96);color:var(--paper)}
+.gal::backdrop{background:rgba(20,18,19,.96)}
+.gal[open]{display:grid;grid-template-rows:auto minmax(0,1fr) auto auto}
+.gal-top{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;font-size:14px;font-weight:600}
+.gal-top form{margin:0}
+.gal-x{all:unset;cursor:pointer;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;font-size:28px;line-height:1}
+.gal-x:hover,.gal-x:focus-visible{background:rgba(243,238,228,.12)}
+.gal-stage{position:relative;display:grid;place-items:center;min-height:0;padding:0 72px}
+.gal-stage [hidden]{display:none!important}
+.gal-stage img,.gal-stage video{max-width:100%;max-height:calc(100dvh - 240px);object-fit:contain;border-radius:24px;display:block;user-select:none;-webkit-user-drag:none}
+.gal-cap{position:absolute!important;width:1px;height:1px;padding:0!important;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.gal-strip{padding-top:14px!important}
+.gm-cap{display:none}
+.gal-strip{display:flex;gap:8px;overflow-x:auto;padding:0 18px 18px;justify-content:safe center;scrollbar-width:thin}
+.gal-th{all:unset;box-sizing:border-box;position:relative;flex:0 0 auto;width:64px;height:64px;border-radius:12px;overflow:hidden;cursor:pointer;opacity:.5;border:2px solid transparent;transition:opacity .2s}
+.gal-th img{width:100%;height:100%;object-fit:cover;display:block}
+.gal-th:hover,.gal-th:focus-visible{opacity:.85}
+.gal-th:focus-visible{outline:2px solid var(--paper);outline-offset:2px}
+.gal-th[aria-current="true"]{opacity:1;border-color:var(--volt)}
+.gal-th-v{position:absolute;right:4px;bottom:4px;width:18px;height:18px;border-radius:50%;background:var(--volt);color:var(--ink);font-size:9px;display:grid;place-items:center;line-height:1}
+@media (max-width:640px){.gal-th{width:52px;height:52px;border-radius:10px}}
+.gal-nav{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--volt);color:var(--ink)}
+.gal-nav:focus-visible{outline:3px solid var(--paper);outline-offset:3px}
+.gal-prev{left:12px}.gal-next{right:12px}
+.gal-cap{text-align:center;padding:14px 18px 22px;margin:0;font-size:15px;color:#DCD9D6}
+@media (max-width:640px){.gal-stage{padding:0 8px 64px}.gal-stage img,.gal-stage video{max-height:calc(100dvh - 290px)}.gal-nav{top:auto;bottom:6px;transform:none;width:44px;height:44px}.gal-prev{left:calc(50% - 56px)}.gal-next{right:calc(50% - 56px)}}
+.sunpic img{transform:translate3d(0,var(--py,0px),0) scale(1.12);will-change:transform}
+@media (prefers-reduced-motion:reduce){.mpic img,.sunpic img{transform:none;will-change:auto}}
+.sun p a.pf{color:inherit;font-weight:600;text-decoration:underline;text-decoration-color:var(--volt);text-decoration-thickness:2px;text-underline-offset:3px}.sun p a.pf:hover{text-decoration-color:currentColor}.sunnote{font-size:13px;opacity:.75;margin-top:14px}
+.sunpic{aspect-ratio:4/5;max-width:100%;position:relative;overflow:hidden;border-radius:24px}
+.sunpic img{width:100%;height:100%;object-fit:cover;display:block}
+.sun h2{font-size:clamp(52px,7vw,96px);line-height:.95;margin:14px 0 18px}
+.sun p{color:#3B3637;max-width:52ch}
+.sunlist{list-style:none;padding:0;margin:22px 0 28px;display:flex;flex-wrap:wrap;gap:10px}
+.sunlist li{background:var(--paper);border-radius:999px;padding:8px 16px;font-size:15px;font-weight:600}
+@media (max-width:820px){.sun{grid-template-columns:1fr}.sunpic{max-width:380px}}
+.gmedia{margin-top:44px}
+.gm-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.gm-head h3{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4vw,48px);line-height:1;margin:0}
+.gm-head span{font-size:14px;font-weight:600;letter-spacing:.06em}
+.gm-vids{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(170px,21vw,250px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
+.gm-vids:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.gm-v,.gm-p{all:unset;box-sizing:border-box;position:relative;cursor:zoom-in;border-radius:24px;overflow:hidden;background:var(--ink);display:block}
+.gm-v{aspect-ratio:9/16;scroll-snap-align:start}
+.gm-v video,.gm-p img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.gm-v:focus-visible,.gm-p:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.gm-play{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;background:var(--volt);color:var(--ink);display:grid;place-items:center}
+.gm-cap{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(35,31,32,.78);color:var(--paper);font-size:13px;font-weight:600;line-height:1.25;padding:8px 12px;border-radius:14px}
+.gm-vids{scrollbar-width:none}.gm-vids::-webkit-scrollbar{display:none}
+.vidtoggle{all:unset;box-sizing:border-box;cursor:pointer;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:none}
+.vidtoggle:focus-visible{outline:3px solid var(--volt);outline-offset:3px}
+.vidtoggle .i-pl{display:none}.vidtoggle[aria-pressed="true"] .i-pa{display:none}.vidtoggle[aria-pressed="true"] .i-pl{display:block}
+.vt-hero{position:absolute;right:20px;bottom:20px;z-index:3;background:rgba(35,31,32,.6);color:var(--paper);border:1px solid rgba(243,238,228,.5)}
+.vt-gm{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.vt-gm:focus-visible{outline-color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.vt-hero{display:none}}
+.gm-right{display:flex;align-items:center;gap:16px}
+.gm-arrows{display:flex;gap:8px}
+.gm-arr{all:unset;cursor:pointer;width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--volt);display:grid;place-items:center;transition:opacity .2s}
+.gm-arr:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.gm-arr[disabled]{opacity:.3;cursor:default}
+.gm-bar{position:relative;height:4px;border-radius:4px;background:rgba(35,31,32,.35);margin-top:12px;overflow:hidden}
+.gm-bar span{position:absolute;top:0;left:0;height:100%;width:30%;border-radius:4px;background:var(--ink);transition:left .12s linear}
+@media (max-width:640px){.gm-vids{grid-auto-columns:70%;gap:10px}.gm-arrows{display:none}}
+.gm-pics{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:14px}
+.gm-p{aspect-ratio:1/1}
+@media (max-width:640px){.gm-pics{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.gm-p,.gm-v{border-radius:18px}}
+.mbr{display:none}
+@media (max-width:640px){.mbr{display:inline}}
+input[aria-invalid="true"]{border-color:var(--volt);box-shadow:0 0 0 1px var(--volt)}
+.how{margin:6px 0 36px}
+.how .eyebrow{margin-bottom:14px}
+.steps-s{gap:20px}
+.steps-s li{border-top-width:3px;padding-top:12px;display:grid;grid-template-columns:auto 1fr;column-gap:10px;align-items:baseline;align-content:start}
+.steps-s li:before{font-size:18px;grid-row:1}
+.steps-s h3{margin:0;font-size:17px;grid-row:1}
+.steps-s p{grid-column:1/-1;font-size:14.5px;margin-top:6px}
+.stories h2,.insta h2{font-family:var(--serif);font-weight:400;font-size:clamp(46px,6vw,78px);line-height:1;letter-spacing:-.01em}
+.stories h2 .serif,.insta h2 .serif{font-size:1em}
+.stories h2 i,.insta h2 i{background:none!important;color:inherit!important}
+.wa-group{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;margin-top:36px;padding-top:24px;border-top:2px solid var(--ink)}
+.wa-group p{margin:0;max-width:52ch;font-size:18px}
+footer{background:var(--ink);color:#BDB8B4;border-top:1px solid #3A3536}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-end;padding-block:40px;font-size:14px}
+footer .sign{flex:1 1 100%;margin:0 0 18px;font-size:clamp(48px,8vw,112px);line-height:.95;color:var(--paper)}
+footer .sign i{color:var(--volt)}
+footer .sig{display:grid;gap:10px}
+footer .sig .logo{width:200px;color:var(--paper)}
+footer .sig .logo svg{width:100%;height:auto;display:block}
+footer .by{letter-spacing:.16em;font-size:13px;color:var(--paper)}
+
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:opacity .25s,transform .25s,visibility .25s}
+.wa.off{opacity:0;transform:translateY(16px);visibility:hidden;pointer-events:none}
+.testbar{background:var(--volt);color:var(--ink);font-size:13px;font-weight:600;text-align:center;padding:8px 16px}
+
+.card-cta{margin-top:6px;align-self:flex-start;display:inline-flex;gap:6px;align-items:center;font-weight:700;font-size:16px;white-space:nowrap;color:var(--ink);text-decoration:none;border-bottom:3px solid var(--volt);padding:4px 0;min-height:44px}
+.card-cta:hover{border-bottom-color:var(--ink)}
+.rts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;width:100%;margin:14px 0 8px}
+.rt{border:1px solid #4A4445;border-radius:20px;padding:22px;background:#2A2526;display:grid;gap:10px}
+.rt svg{width:100%;height:auto;display:block}
+.rt .rbase{fill:none;stroke:#4A4445;stroke-width:10;stroke-linecap:round}
+.rt .rline{fill:none;stroke:var(--volt);stroke-width:10;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s cubic-bezier(.3,.7,.2,1)}
+.rt.drawn .rline{stroke-dashoffset:0}
+.rt .rstart{fill:var(--paper)}
+.rt h4{font-size:24px;margin:0}
+.rt p{font-size:16px;color:#DCD9D6;margin:0}
+.rt dl{display:flex;gap:24px;margin:4px 0 0;font-size:14px}
+.rt dt{color:#CFCAC6;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.rt dd{margin:2px 0 0;font-weight:700}
+@media (max-width:860px){.rts{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.rt .rline{transition:none;stroke-dashoffset:0}}
+.legal-note{font-size:14px;color:#CFCAC6;margin:0}
+.linkbtn{background:none;border:0;padding:5px 0;font:inherit;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.linkbtn:hover{color:var(--volt)}
+footer .legal{margin-top:10px}
+footer .powered{margin:14px 0 0;font-size:12px;letter-spacing:.08em;color:#8F8A87}
+footer .powered a{color:var(--paper);font-weight:600}
+.ok h3{font-size:24px;margin:0 0 6px}
+.ok p{margin:0 0 8px}
+.ok .ok-small{font-size:14px;opacity:.85}
+.ok .ok-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+.ok:focus{outline:3px solid var(--paper);outline-offset:3px}
+.dlg{max-width:640px;width:calc(100% - 32px);max-height:calc(100dvh - 48px);border:0;border-radius:22px;padding:32px 28px;background:var(--paper);color:var(--ink);font-family:var(--sans)}
+.dlg::backdrop{background:rgba(35,31,32,.7)}
+.dlg h2{font-size:30px;margin:0 0 8px}
+.dlg h3{font-size:17px;margin:18px 0 4px}
+.dlg p{margin:0 0 8px;line-height:1.55;color:#3B3637}
+.dlg .dlg-lead{font-size:16px}
+.dlg .dlg-small{font-size:13px;color:#5C5758}
+.dlg-x{position:absolute;right:14px;top:10px;margin:0}
+.dlg-x button{width:44px;height:44px;border-radius:50%;border:0;background:var(--stone);font-size:26px;line-height:1;cursor:pointer;color:var(--ink)}
+.dlg .q{border:0;border-top:1px solid var(--line);margin:0;padding:12px 0;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+.dlg .q legend{float:left;width:100%;font-weight:600;font-size:15px;padding:0;margin-bottom:6px}
+.dlg .q label{display:inline-flex;gap:8px;align-items:center;font-weight:500;font-size:15px;min-height:44px}
+.dlg .q input{width:20px;height:20px;accent-color:var(--ink);padding:0}
+#parq .btn{margin-top:14px}
+.parq-r{margin-top:14px;border-radius:14px;padding:16px;font-weight:600;line-height:1.5}
+.parq-r.go{background:var(--volt)}
+.parq-r.warn{background:#FFE7A8}
+#f[hidden],.ok[hidden],.parq-r[hidden]{display:none}
+.dlg{margin:auto;inset:0;max-height:calc(100dvh - 32px);overflow-y:auto;box-sizing:border-box}
+.dlg .q input{padding:0;margin:0;min-height:0;border:0;box-shadow:none}
+.dlg .q{padding:10px 0;gap:4px 22px}
+.dlg .q legend{margin-bottom:2px}
+/* partilha · moldura do treino */
+.share{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.share .head p{color:#CFCAC6}
+.share h2 .serif{font-weight:400;font-size:1.15em}.share h2 i{color:var(--volt)}
+.mrf{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:48px;align-items:start}
+.mrf-stage{display:grid;justify-items:center;gap:12px}
+.mrf canvas{width:100%;max-width:440px;height:auto;display:block;border-radius:18px;background:#2C2728;touch-action:none;cursor:grab;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.mrf canvas:active{cursor:grabbing}
+.mrf-tip{margin:0;font-size:14px;color:#BDB8B4}
+.mrf-panel{display:grid;gap:22px}
+.mrf-set{border:0;padding:0;margin:0;min-width:0}
+.mrf-set legend,.mrf-km>span:first-child,.mrf-z span{font-size:14px;font-weight:600;padding:0;margin-bottom:10px;display:block}
+.mrf-tpls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.mrf-tpls button{display:grid;gap:10px;justify-items:start;padding:14px;border-radius:16px;border:2px solid #4A4445;background:#2C2728;color:var(--paper);cursor:pointer;text-align:left;font:600 13px var(--sans);min-height:110px;min-width:0}
+.mrf-tpls button b{font:800 22px/1 var(--sans);letter-spacing:-.02em;white-space:nowrap}
+.mrf-tpls button b i{font:italic 400 24px var(--serif);color:var(--volt);margin-left:3px}
+.mrf-tpls button b.f i{display:block;margin:2px 0 0}
+.mrf-tpls button b.v{background:var(--volt);color:var(--ink);padding:6px 10px;border-radius:10px 22px 10px 10px}.mrf-tpls button b.v i{color:var(--ink)}
+.mrf-tpls button span{color:#CFCAC6;margin-top:auto}
+.mrf-tpls button[aria-pressed=true]{border-color:var(--volt)}
+.mrf-up{position:relative;justify-self:stretch;color:var(--paper)}
+.mrf-up input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.mrf-km[hidden]{display:none}
+.mrf-kmrow{display:flex;align-items:baseline;gap:10px}
+.mrf-kmrow input{font:800 42px/1 var(--sans);padding:10px 16px;width:100%;max-width:220px;font-variant-numeric:tabular-nums}
+.mrf-kmrow i{font-size:40px;color:var(--volt)}
+.mrf-row{display:flex;gap:18px;flex-wrap:wrap;align-items:end}
+.mrf-fmt{display:flex;gap:6px}
+.mrf-fmt button{min-height:44px;padding:0 16px;border-radius:999px;border:2px solid #4A4445;background:none;color:var(--paper);font:600 14px var(--sans);cursor:pointer}
+.mrf-fmt button[aria-pressed=true]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.mrf-z{flex:1;min-width:140px;gap:0}.mrf-z input{padding:0;border:0;background:none;accent-color:var(--volt);width:100%}
+.mrf-go{justify-self:stretch;font-size:17px;min-height:56px}
+.mrf-msg{margin:-8px 0 0;min-height:1.4em;font-weight:600;color:var(--volt)}
+.mrf-note{margin:-10px 0 0;font-size:14px;color:#BDB8B4}
+@media (max-width:860px){.mrf{grid-template-columns:1fr;gap:28px}.mrf canvas{max-width:380px}}
+@media (max-width:420px){.mrf-tpls button{padding:10px;min-height:96px}.mrf-tpls button b{font-size:18px}}
+
+/* ---- proposta risografia: textura só na cor; logótipo e tipografia sempre limpos ---- */
+body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
+.services,.sunday{background:var(--stone) url(assets/papel.jpg) center/1400px;background-blend-mode:multiply}
+.card,.sunlist li{background:var(--paper) url(assets/papel.jpg) center/1400px}
+.group,.testbar,.map{position:relative}
+.group::before,.testbar::before{content:"";position:absolute;inset:0;background:url(assets/terra.webp) 0 0/800px;mix-blend-mode:soft-light;opacity:.75;pointer-events:none;z-index:0}
+.group>*,.testbar>*{position:relative;z-index:1}
+.route path,.campline path,.maproute path,.rt .rline{filter:url(#terra)}
+.route,.campline{transform:translate(3px,-2px)}
+.hero h1 .l{white-space:nowrap}.hero h1{font-size:clamp(46px,8vw,124px)}.hero .wrap{grid-template-columns:minmax(0,940px)}
+
+/* as marianas */
+.marianas{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.mh{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:end;margin-bottom:48px}
+.marianas h2{font-size:clamp(36px,6.2vw,86px);line-height:.94;margin-top:14px}
+.marianas h2 .nw{white-space:nowrap}
+@media (max-width:860px){.marianas h2{font-size:clamp(34px,10.5vw,64px)}}
+.marianas h2 i{color:var(--volt)}
+.mh p{color:#DCD9D6;font-size:19px;max-width:52ch;margin:24px 0 0}
+.mh p{text-wrap:pretty}
+.mstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mstats div{border-top:6px solid var(--volt);padding-top:14px;min-width:0}
+.mstats b{display:block;font-size:clamp(34px,4vw,50px);line-height:1;font-variant-numeric:tabular-nums}
+.mstats span{display:block;margin-top:8px;font-size:14px;color:#CFCAC6}
+.mgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(0,1fr);gap:20px;align-items:stretch}
+.mgrid{grid-template-rows:auto auto auto 1fr}.mgrid>.mcard{grid-row:span 4;display:grid;grid-template-rows:subgrid;row-gap:14px}.mgrid>.mcol{grid-row:span 4}.mcard .mtop{display:flex;flex-direction:column;gap:14px;min-width:0}.mcard .mtop>p{margin:0;color:#DCD9D6;font-size:16px}.mgrid>.mcard .badges{margin-top:0;align-self:end}
+.mquotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:20px}.mq-t{grid-column:1/-1;font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--volt);margin:28px 0 0}.mq{margin:0;background:#2A2526;border:1px solid #4A4445;border-radius:24px;padding:34px 32px 28px;display:flex;flex-direction:column;gap:20px;min-width:0}.mq blockquote{margin:0;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(24px,2.2vw,31px);line-height:1.22;color:var(--paper);text-wrap:pretty}.mq blockquote::before{content:"\201C";display:block;font-style:normal;font-size:2.6em;line-height:.55;color:var(--volt);margin-bottom:10px}.mq figcaption{margin-top:auto;font-size:14px;color:#CFCAC6;border-top:1px solid #4A4445;padding-top:14px}.mq figcaption b{color:var(--volt);font-weight:600}@media (max-width:760px){.mquotes{grid-template-columns:1fr}}
+.mcol{display:flex;flex-direction:column;gap:20px;min-width:0}
+.mpic{margin:0;position:relative;overflow:hidden;background:#2A2526;border-radius:24px}
+.mpic-a{aspect-ratio:1000/1137;flex:none}
+.mpic-b{flex:1 1 auto;min-height:320px}
+.mpic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;display:block}
+.mpic figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:var(--volt);color:var(--ink);font-size:14px;font-weight:600;border-radius:999px;padding:8px 14px;text-align:center}
+.mcard{background:#2A2526;border:1px solid #4A4445;border-radius:24px;padding:30px 28px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.mcard .role{align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:var(--volt);color:var(--ink);padding:5px 12px;border-radius:999px}
+.mcard .role.sub{background:var(--paper)}
+.mcard h3{font-family:var(--serif);font-weight:400;font-size:clamp(34px,3.4vw,44px);line-height:1}
+.mcard h3 i{color:var(--volt)}
+.mcard>p{margin:0;color:#DCD9D6;font-size:16px}
+.mcard .creds{display:flex;flex-wrap:wrap;gap:8px}
+.mcard .creds span{border:1px solid #4A4445;border-radius:999px;padding:7px 14px;font-size:13px;line-height:1.3;color:#DCD9D6;display:inline-flex;align-items:center;justify-content:flex-start;text-align:left;max-width:100%}
+.rpanel{margin-top:36px;background:var(--ink);color:var(--paper);border-radius:20px;padding:32px 28px;display:grid;gap:10px}
+.rpanel .rhead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px}
+.rpanel h3{font-size:clamp(40px,5vw,64px);line-height:1}
+.rpanel h3 i{color:var(--volt)}
+.rpanel .rhead p{margin:0;color:#DCD9D6;max-width:44ch}
+.rpanel .rnote{margin:4px 0 0;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#CFCAC6}
+.prs{margin:4px 0 0;display:grid;gap:0}
+.prs div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid #4A4445;padding:11px 0}
+.prs dt{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#CFCAC6}
+.prs dd{margin:0;font-weight:700;font-size:20px;font-variant-numeric:tabular-nums}
+.prs dt small{display:block;text-transform:none;letter-spacing:0;font-size:13px;color:#A8A29E;margin-top:3px}
+.contact .direct a,footer a{color:inherit;text-underline-offset:3px}
+.prs-t{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--volt);margin:6px 0 0}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+.badges span{border:1px solid #5A5455;border-radius:999px;padding:7px 16px;font-size:14px;line-height:1.3;display:inline-flex;align-items:center;justify-content:flex-start;text-align:left;max-width:100%}
+.mtrail{margin-top:56px}
+.mtrail h3{font-size:clamp(26px,3vw,34px);font-weight:600}
+.mtrail>p{color:#CFCAC6;margin:8px 0 0;max-width:60ch}
+.trail{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;position:relative}
+.trail li{scroll-snap-align:start;position:relative;padding-top:34px;min-width:0}
+.trail li:before{content:"";position:absolute;left:0;right:-18px;top:9px;height:6px;background:var(--volt);border-radius:6px}
+.trail li:last-child:before{right:0}
+.trail li:after{content:"";position:absolute;left:0;top:3px;width:18px;height:18px;border-radius:50%;background:var(--paper);border:4px solid var(--ink)}
+.trail .yr{font-size:13px;font-weight:600;letter-spacing:.16em;color:#CFCAC6}
+.trail b{display:block;font-size:20px;line-height:1.2;margin-top:6px}
+.trail span{display:block;font-size:15px;color:#DCD9D6;margin-top:4px}
+.trail em{display:inline-block;margin-top:10px;font-style:normal;font-weight:700;font-variant-numeric:tabular-nums;border-bottom:3px solid var(--volt)}
+.mnote{font-size:13px;color:#8F8A86;margin:14px 0 0}
+@media (max-width:980px){.mh{grid-template-columns:1fr}.mgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.mcol{grid-column:1/-1;order:-1;flex-direction:row}.mgrid>.mcol{grid-row:auto}.mcol .mpic{flex:1 1 0;aspect-ratio:4/5;min-height:0}}
+@media (max-width:640px){.mgrid{grid-template-columns:1fr}.mstats{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mcol{flex-direction:column}.mpic-a{aspect-ratio:1000/1137}.mcol .mpic{flex:none}}
+/* instagram */
+.insta{background:var(--paper)}
+.insta h2 .serif{font-weight:400;font-size:1.15em}
+.insta h2 i{color:var(--ink);background:linear-gradient(transparent 62%,var(--volt) 62%)}
+.iggrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.iggrid a{position:relative;display:block;aspect-ratio:1;overflow:hidden;border-radius:14px;background:var(--stone)}
+.iggrid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.iggrid a:after{content:"";position:absolute;inset:0;background:rgba(35,31,32,.0);transition:background .25s}
+.iggrid a:hover img{transform:scale(1.05)}.iggrid a:hover:after{background:rgba(35,31,32,.25)}
+.iggrid svg{position:absolute;right:10px;top:10px;width:22px;height:22px;z-index:1;color:var(--paper);filter:drop-shadow(0 1px 3px rgba(0,0,0,.5))}.iggrid a.igmore{background:var(--volt);color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-decoration:none;text-align:center;padding:12px}.iggrid .igmore .igmore-pe{width:40%;height:auto;color:var(--ink);position:static;filter:none}.igmore-h{font-weight:700;font-size:clamp(10px,1.05vw,15px);overflow-wrap:anywhere;line-height:1.15}.igmore-t{font-size:clamp(12px,1.2vw,16px);font-weight:600;line-height:1.2}.iggrid a.igmore:after{display:none}
+.igfoot{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;margin-top:26px}
+.igfoot p{margin:0;color:var(--mute)}
+@media (max-width:820px){.iggrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* histórias */
+.stories{background:var(--stone)}
+.stories h2 .serif{font-weight:400;font-size:1.15em}
+.stories h2 i{color:var(--ink);background:linear-gradient(transparent 62%,var(--volt) 62%)}
+.stgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.story{background:var(--paper);border-radius:24px;padding:28px 26px;display:flex;flex-direction:column;gap:16px;min-width:0;position:relative;overflow:hidden}
+.story .tag{align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:5px 12px;border-radius:999px}
+.st-metric{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px;font-weight:800;font-size:clamp(34px,3.6vw,46px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.st-metric .to{width:46px;height:14px;flex:none;align-self:center;background:var(--volt);border-radius:8px;position:relative}
+.st-metric .to:after{content:"";position:absolute;right:-4px;top:50%;width:14px;height:14px;margin-top:-7px;border-right:5px solid var(--ink);border-top:5px solid var(--ink);transform:rotate(45deg);box-sizing:border-box}
+.st-metric small{display:block;width:100%;font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-top:10px;line-height:1.3;text-wrap:pretty}
+.story>p,.story blockquote,.st-steps span,.st-who span{text-wrap:pretty}
+.story>p{hyphens:auto;-webkit-hyphens:auto}
+.story blockquote{margin:0;font-family:var(--serif);font-size:24px;line-height:1.2}
+.story blockquote i{text-decoration:underline;text-decoration-color:var(--volt);text-decoration-thickness:4px;text-underline-offset:5px;text-decoration-skip-ink:none}
+.story>p{margin:0;color:var(--mute);font-size:16px}
+.st-steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;border-top:1px solid var(--line);padding-top:16px}
+.st-steps li{display:grid;grid-template-columns:100px 1fr;gap:10px;font-size:15px}
+.st-steps b{font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.st-who{margin-top:auto;display:flex;align-items:center;gap:12px;font-size:15px}
+.st-who .av{width:44px;height:44px;border-radius:50%;background:var(--volt);display:grid;place-items:center;font-weight:800;flex:none}
+.st-share{margin-top:28px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;background:var(--ink);color:var(--paper);border-radius:20px;padding:28px 32px}
+.st-share .serif{font-size:clamp(30px,3.4vw,44px);line-height:1}
+.st-share .serif i{color:var(--volt)}
+.st-share p{margin:6px 0 0;color:#CFCAC6;max-width:52ch}
+.st-note{font-size:13px;color:var(--mute);margin:14px 0 0}
+@media (max-width:980px){.stgrid{grid-template-columns:minmax(0,1fr)}.story{max-width:640px}}
+
+/* três frases */
+@media (max-width:860px){</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="riso" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="1" seed="4" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -3.2 2.3" result="holes"/><feComposite in="SourceGraphic" in2="holes" operator="in" result="g"/><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7" result="w"/><feDisplacementMap in="g" in2="w" scale="5" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="terra" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" seed="3" result="t"/><feDiffuseLighting in="t" surfaceScale="2.4" lighting-color="#ffffff" result="l"><feDistantLight azimuth="225" elevation="50"/></feDiffuseLighting><feComposite in="l" in2="SourceGraphic" operator="in" result="lc"/><feBlend in="lc" in2="SourceGraphic" mode="soft-light" result="b"/><feComposite in="b" in2="SourceGraphic" operator="in"/></filter></svg>
+<a class="skip" href="#topo" data-pt="Saltar para o conteúdo" data-en="Skip to content">Saltar para o conteúdo</a>
+
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#topo" aria-label="Magic Runners · início"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="216 210 760 184"><path d="M322.76,254.65c-6.35,3.02-12.47,5.78-18.69,9.72-18.77,11.91-28.14,21.09-30.2,47.07-1.17,14.83-4.93,34.01-10.1,40.8l-.63.94c-3.03,5.01-7.07,8.56-12.73,10.35-3.07.97-6.03,2.32-8.96,3.68-1.64.76-3.16,1.87-2.87,4.06.28,2.08,1.96,2.59,3.65,3.02.82.21,1.67.49,2.5.48,7.38-.09,14.81.75,22.14-.49,7.69-1.3,14.78-3.93,19.94-10.26,2.54-3.12,4.17-6.82,6.59-9.99,3.43-4.85,8.08-8.72,13.48-11.2l6.12-2.82c3.22-1.09,6.52-1.99,9.53-3.59,3.02-1.61,4.42-4.18,4.72-7.63.47-5.3-7.2-14.36-10.14-18.28-.5-.67-.84-1.35-1-1.98-.65.29-1.29.57-1.93.87l-7.05,2.78c-.79.31-1.7.03-2.18-.67l-.04-.06c-.33-.48-.6-1-.76-1.56-.43-1.54.06-2.56,2.12-3.56,4.5-2.2,9.06-4.29,13.6-6.4,5.69-2.63,10.23-6.38,12.13-12.62.25-.81,1.06-1.91.19-2.58-.62-.48-1.6.2-2.36.55-3.23,1.51-6.43,3.09-9.68,4.55-4.41,1.99-8.84,3.92-13.29,5.83-1.38.59-2.86.77-4.07-.37-1.04-1-.97-2.32-.52-3.57.41-1.14,1.52-1.55,2.52-2.01,9.73-4.47,19.48-8.89,29.18-13.42,7.24-3.38,12.75-8.38,14.61-16.55,0,0,0,0-.01-.01,0,0-.01-.01-.01-.01-5.19,1.69-9.94,4.37-14.9,6.58-6.13,2.73-12.18,5.65-18.3,8.4-1.87.84-3.79.82-4.71-1.45-.88-2.15.52-3.36,2.25-4.19,4.06-1.95,8.15-3.84,12.23-5.75,9.16-4.28,18.4-8.39,27.47-12.87,5.78-2.86,9.36-7.61,10.42-14.57-2.22.99-4.08,1.77-5.9,2.63-11.46,5.38-22.93,10.74-34.36,16.19Z" fill="currentColor"/><path d="M376.78,231.28c-.23-6.25-4.67-10.79-10.58-10.79-1.82,0-3.62.44-5.38,1.31-7.4,3.68-15.08,7.21-22.5,10.63-3.71,1.71-7.55,3.48-11.32,5.25-2.46,1.16-4.93,2.35-7.33,3.5-3.75,1.81-7.63,3.68-11.45,5.4-28.08,12.6-44.07,30.59-47.53,53.49-.23,1.5-.34,3.89-.53,8.34l-.03.6c-.47,10.65-2.22,21.23-5.21,31.45l-.06.21-.05.21c-.42,1.85-3.76,6.29-7.05,8.82-.75.58-1.12.73-1.12.73h0c-.48.18-.96.35-1.45.53-3.66,1.34-7.43,2.72-11.14,4.85-8.44,4.86-9.61,11.63-9.11,16.45.03.29.07.58.11.87,1.18,7.47,7.36,13.09,15.03,13.67l11.83.9c2.13.16,4.11.24,6.07.24h0c5.92,0,11.38-.7,18.85-2.42,2.78-.64,3.54-.95,3.9-1.1,8.49-3.48,15.39-9.36,20.5-17.45.32-.5.63-1,.94-1.5.61-.98,1.22-1.95,1.85-2.92,1.47-2.28,3.53-4.23,5.95-5.64l6.46-3.78c3.55-1.04,7.56-2.31,11.48-4.16,5.67-2.68,9.88-7.47,11.84-13.49,1.71-5.23,1.65-11.07-.17-16.43-.95-2.81-3.25-6.22-7.04-11,8.06-5.82,12.67-13.72,13.46-23.07,9.17-6.11,14.67-14.39,16.35-24.66,9.87-7.13,14.85-17.15,14.42-29.03ZM357.58,254.89c-1.24.86-1.97,1.78-2.15,3.21-1.28,9.72-6.55,16.74-14.76,21.76-1.1.67-1.7,1.47-1.73,2.85-.21,9.33-4.86,16.04-12.58,20.84-1.53.95-3.12,1.77-4.74,2.53.16.15.32.31.46.48,2.38,2.95,9.49,11.21,10.7,14.79,2.55,7.55.47,17.15-7.93,21.12-3.61,1.7-7.43,2.9-11.27,4.01l-7.22,4.22c-3.36,1.97-6.24,4.67-8.35,7.94-.96,1.48-1.89,2.99-2.83,4.49-4.2,6.65-9.79,11.62-17.15,14.64-.36.15-1.37.42-2.79.75-8.19,1.89-14.38,2.66-22.76,2.02l-11.83-.9c-4.23-.32-7.81-3.44-8.47-7.62-.03-.16-.05-.33-.06-.49-.47-4.51,1.93-7.39,5.55-9.47,3.62-2.09,7.59-3.43,11.49-4.87.97-.36,2-1.01,3.01-1.78,3.58-2.75,8.67-8.52,9.67-12.92,3.15-10.79,4.99-21.92,5.49-33.15.17-3.75.3-6.93.49-8.19,3.52-23.29,21.67-38.27,43.36-48,6.35-2.85,12.58-5.99,18.89-8.95,11.32-5.31,22.76-10.38,33.97-15.94,2.94-1.46,5.45.03,5.57,3.3.36,10.03-3.89,17.72-12.02,23.35Z" fill="currentColor"/><polygon points="423.4 311.62 404.56 267.57 390.87 267.57 390.87 326.94 402.86 326.94 402.86 288.51 418.77 326.94 427.87 326.94 443.69 288.56 443.69 326.94 455.68 326.94 455.68 267.57 442.07 267.57 423.4 311.62" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M498.42,290.11c-1.25-3.4-3.26-6.07-6.04-8-2.78-1.93-6.04-2.89-9.78-2.89-4.14,0-7.8,1.04-10.97,3.1-3.18,2.07-5.67,4.92-7.49,8.55-1.82,3.63-2.72,7.8-2.72,12.5s.91,8.8,2.72,12.46c1.81,3.66,4.31,6.52,7.49,8.59,3.18,2.07,6.83,3.1,10.97,3.1,3.74,0,7-.96,9.78-2.89,2.78-1.93,4.79-4.62,6.04-8.08v4c0,1.93.57,3.47,1.7,4.64,1.13,1.16,2.67,1.74,4.59,1.74h5.78v-47.12h-12.08v10.29ZM496.67,310.78c-1.16,2.04-2.68,3.6-4.55,4.68-1.87,1.08-3.91,1.62-6.12,1.62s-4.1-.54-6-1.62c-1.9-1.08-3.43-2.64-4.59-4.68-1.16-2.04-1.74-4.51-1.74-7.4s.58-5.44,1.74-7.49c1.16-2.04,2.69-3.59,4.59-4.64,1.9-1.05,3.9-1.57,6-1.57,2.21,0,4.25.53,6.12,1.57,1.87,1.05,3.39,2.59,4.55,4.64,1.16,2.04,1.74,4.54,1.74,7.49s-.58,5.36-1.74,7.4Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M552.62,290.11c-1.19-3.4-3.18-6.07-5.95-8-2.78-1.93-6.04-2.89-9.78-2.89-4.14,0-7.81,1.04-11.02,3.1-3.2,2.07-5.71,4.92-7.53,8.55-1.82,3.63-2.72,7.8-2.72,12.5s.91,8.8,2.72,12.46c1.81,3.66,4.32,6.52,7.53,8.59,3.2,2.07,6.88,3.1,11.02,3.1,3.74,0,7-.96,9.78-2.89,2.78-1.93,4.76-4.62,5.95-8.08v10.21c0,2.72-.5,5.06-1.49,7.02-.99,1.96-2.4,3.44-4.21,4.47-1.82,1.02-4,1.53-6.55,1.53-3.01,0-5.7-.84-8.08-2.51-2.38-1.67-4.14-3.93-5.27-6.76l-10.72,4c1.08,3.35,2.81,6.18,5.19,8.51,2.38,2.32,5.22,4.07,8.51,5.23,3.29,1.16,6.83,1.74,10.63,1.74,4.03,0,7.54-.61,10.55-1.83,3-1.22,5.5-2.89,7.48-5.02,1.98-2.13,3.49-4.59,4.51-7.4,1.02-2.81,1.53-5.86,1.53-9.14v-46.78h-12.08v10.29ZM550.87,310.82c-1.16,2.07-2.68,3.63-4.55,4.68-1.87,1.05-3.88,1.57-6.04,1.57s-4.18-.52-6.08-1.57c-1.9-1.05-3.43-2.61-4.59-4.68-1.16-2.07-1.74-4.55-1.74-7.44s.58-5.44,1.74-7.49c1.16-2.04,2.69-3.59,4.59-4.64,1.9-1.05,3.93-1.57,6.08-1.57s4.17.53,6.04,1.57c1.87,1.05,3.39,2.59,4.55,4.64,1.16,2.04,1.74,4.54,1.74,7.49s-.58,5.37-1.74,7.44Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M578.49,258.89c-2.38,0-4.37.74-5.95,2.21-1.59,1.48-2.38,3.29-2.38,5.44s.79,3.95,2.38,5.4c1.59,1.45,3.57,2.17,5.95,2.17s4.37-.72,5.95-2.17c1.59-1.45,2.38-3.25,2.38-5.4s-.79-3.97-2.38-5.44c-1.59-1.47-3.57-2.21-5.95-2.21Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><rect x="572.37" y="279.82" width="12.08" height="47.12" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M619.38,314.9c-1.73,1.67-4.04,2.51-6.93,2.51-2.21,0-4.14-.55-5.78-1.66-1.65-1.11-2.92-2.71-3.83-4.81-.91-2.1-1.36-4.65-1.36-7.66s.45-5.54,1.36-7.61c.91-2.07,2.18-3.64,3.83-4.72,1.64-1.08,3.57-1.62,5.78-1.62,2.49,0,4.58.68,6.25,2.04,1.67,1.36,2.93,3.35,3.79,5.95l11.57-3.66c-.91-2.72-2.07-5-3.49-6.85-1.42-1.84-3.03-3.32-4.85-4.42-1.81-1.11-3.84-1.91-6.08-2.42-2.24-.51-4.61-.77-7.1-.77-4.59,0-8.65.99-12.16,2.98-3.52,1.99-6.25,4.78-8.21,8.38-1.96,3.6-2.93,7.84-2.93,12.72s.99,9.14,2.98,12.8c1.98,3.66,4.73,6.48,8.25,8.46,3.52,1.99,7.54,2.98,12.08,2.98,4.25,0,7.85-.75,10.8-2.25,2.95-1.5,5.37-3.5,7.27-6,1.9-2.49,3.22-5.19,3.96-8.08l-11.65-2.72c-.62,2.61-1.8,4.75-3.53,6.42Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M678.58,305.76c-2.35-2.44-5.01-4.17-7.95-5.19,3.86-.91,6.96-2.71,9.31-5.4,2.35-2.69,3.53-5.94,3.53-9.74,0-3.46-.81-6.54-2.42-9.23-1.62-2.69-4.01-4.81-7.19-6.34-3.18-1.53-7.09-2.3-11.74-2.3h-22.37v59.37h11.99v-22.54c2.89,0,5.49.34,7.78,1.02,2.3.68,4.3,1.62,6,2.81,2.83,1.93,4.96,4.52,6.38,7.78,1.42,3.26,2.3,6.9,2.64,10.93h12.93c-.51-4.54-1.53-8.59-3.06-12.16-1.53-3.57-3.47-6.58-5.83-9.02ZM661.61,294.7h-9.87v-17.44h9.87c3.06,0,5.43.79,7.1,2.38,1.67,1.59,2.51,3.66,2.51,6.21s-.82,4.59-2.47,6.29c-1.65,1.7-4.03,2.55-7.15,2.55Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M724.7,304.48c0,2.44-.43,4.62-1.28,6.55-.85,1.93-2.07,3.45-3.66,4.55-1.59,1.11-3.46,1.66-5.61,1.66-3.12,0-5.64-1.03-7.57-3.1-1.93-2.07-2.89-5-2.89-8.8v-25.52h-11.91v27.56c0,4.25.74,7.88,2.21,10.89,1.47,3.01,3.59,5.3,6.34,6.89,2.75,1.59,6,2.38,9.74,2.38,2.89,0,5.54-.72,7.95-2.17,2.41-1.45,4.39-3.7,5.95-6.76.26-.52.5-1.07.72-1.63v3.59c0,1.93.58,3.47,1.74,4.64,1.16,1.16,2.71,1.74,4.64,1.74h5.7v-47.12h-12.08v24.67Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M780.97,281.6c-2.69-1.59-5.83-2.38-9.4-2.38-2.16,0-4.25.44-6.29,1.32-2.04.88-3.83,2.11-5.36,3.7-1.53,1.59-2.67,3.43-3.4,5.53v-9.95h-11.99v47.12h11.99v-24.67c0-2.49.44-4.71,1.32-6.63.88-1.93,2.11-3.45,3.7-4.55,1.59-1.11,3.43-1.66,5.53-1.66,3.12,0,5.64,1.06,7.57,3.19,1.93,2.13,2.89,5.06,2.89,8.8v25.52h11.91v-27.73c0-4.2-.74-7.78-2.21-10.76-1.48-2.98-3.56-5.26-6.25-6.85Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M833.31,281.6c-2.69-1.59-5.83-2.38-9.4-2.38-2.16,0-4.25.44-6.29,1.32-2.04.88-3.83,2.11-5.36,3.7-1.53,1.59-2.67,3.43-3.4,5.53v-9.95h-11.99v47.12h11.99v-24.67c0-2.49.44-4.71,1.32-6.63.88-1.93,2.11-3.45,3.7-4.55,1.59-1.11,3.43-1.66,5.53-1.66,3.12,0,5.64,1.06,7.57,3.19,1.93,2.13,2.89,5.06,2.89,8.8v25.52h11.91v-27.73c0-4.2-.74-7.78-2.21-10.76-1.48-2.98-3.56-5.26-6.25-6.85Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M882.18,314.48c-1.5,1.11-3.13,1.97-4.89,2.59-1.76.62-3.57.94-5.44.94-2.16,0-4.17-.35-6.04-1.06-1.87-.71-3.45-1.71-4.72-3.02-1.28-1.3-2.08-2.72-2.42-4.25.17,0,.52.01,1.06.04.54.03,1.15.04,1.83.04s1.28.03,1.79.08c3.23.11,6.52-.04,9.87-.47,3.34-.43,6.42-1.22,9.23-2.38,2.81-1.16,5.06-2.74,6.76-4.72,1.7-1.98,2.55-4.45,2.55-7.4,0-2.27-.52-4.37-1.57-6.29-1.05-1.93-2.52-3.59-4.42-4.98-1.9-1.39-4.1-2.47-6.59-3.23-2.5-.77-5.16-1.15-8-1.15-3.35,0-6.52.58-9.53,1.74-3.01,1.16-5.67,2.82-8,4.98-2.33,2.16-4.14,4.74-5.44,7.74-1.3,3.01-1.96,6.35-1.96,10.04s.64,6.82,1.91,9.74c1.28,2.92,3.06,5.43,5.36,7.53,2.3,2.1,4.99,3.71,8.08,4.85,3.09,1.13,6.45,1.7,10.08,1.7,2.95,0,5.78-.37,8.51-1.11,2.72-.74,5.27-1.88,7.66-3.45,2.38-1.56,4.48-3.53,6.3-5.91l-8.25-6.21c-.96,1.3-2.2,2.51-3.7,3.62ZM859.85,295.09c1.13-1.9,2.71-3.44,4.72-4.64,2.01-1.19,4.32-1.79,6.93-1.79,1.64,0,3.11.27,4.38.81,1.28.54,2.3,1.25,3.06,2.13.77.88,1.15,1.89,1.15,3.02,0,1.36-.5,2.48-1.49,3.36-.99.88-2.3,1.56-3.91,2.04-1.62.48-3.37.81-5.27.98-1.9.17-3.79.26-5.66.26-1.14,0-2.21-.03-3.23-.08-1.02-.06-1.87-.11-2.55-.17.11-2.04.74-4.01,1.87-5.91Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M909.83,290.62v-10.8h-11.99v47.12h11.99v-22.03c0-2.95.51-5.41,1.53-7.4,1.02-1.98,2.42-3.49,4.21-4.51,1.79-1.02,3.79-1.53,6-1.53.51,0,1.01.01,1.49.04.48.03.98.13,1.49.3v-12.59c-3.57,0-6.65,1.02-9.23,3.06-2.58,2.04-4.41,4.82-5.49,8.34Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M962.97,306.61c-1.27-1.76-2.92-3.15-4.93-4.17-2.01-1.02-4.16-1.83-6.42-2.42-2.27-.6-4.41-1.16-6.42-1.7-2.01-.54-3.66-1.19-4.93-1.96s-1.91-1.86-1.91-3.27.57-2.45,1.7-3.27c1.13-.82,2.78-1.23,4.93-1.23,2.27,0,4.04.53,5.32,1.57,1.28,1.05,2.17,2.57,2.68,4.55l10.89-2.89c-.63-2.55-1.76-4.78-3.4-6.68-1.65-1.9-3.74-3.36-6.29-4.38-2.55-1.02-5.5-1.53-8.85-1.53-3.86,0-7.17.62-9.95,1.87-2.78,1.25-4.92,2.95-6.42,5.1-1.5,2.16-2.25,4.51-2.25,7.06,0,2.89.64,5.2,1.91,6.93,1.28,1.73,2.94,3.09,4.98,4.08,2.04.99,4.2,1.79,6.46,2.38s4.41,1.14,6.42,1.62c2.01.48,3.66,1.11,4.93,1.87,1.28.77,1.91,1.86,1.91,3.27s-.61,2.5-1.83,3.4c-1.22.91-3.02,1.36-5.4,1.36-2.04,0-3.83-.55-5.36-1.66s-2.55-2.59-3.06-4.47l-11.23,2.55c.74,2.44,2.01,4.65,3.83,6.63,1.81,1.99,4.08,3.53,6.8,4.64s5.78,1.66,9.19,1.66c3.8,0,7.09-.62,9.87-1.87,2.78-1.25,4.93-2.93,6.46-5.06,1.53-2.13,2.3-4.47,2.3-7.02,0-2.89-.64-5.22-1.91-6.97Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/></svg></a>
+    <nav id="menu" aria-label="Principal">
+      <a href="#grupo" data-pt="Treinos de grupo" data-en="Group runs">Treinos de grupo</a>
+      <a href="#sunday">Sunday Running Club</a>
+      <a href="#marianas" data-pt="As Marianas" data-en="The Marianas">As Marianas</a>
+      <a href="#contacto" data-pt="Contactos" data-en="Contact">Contactos</a>
+      <button class="lang lang-m" type="button" aria-label="Mudar língua">EN</button>
+    </nav>
+    <button class="lang" id="lang" type="button" aria-label="Mudar língua">EN</button>
+    <a class="btn btn-volt hcta" href="#contacto" data-pt="Entrar em contacto" data-en="Get in touch">Entrar em contacto</a>
+    <button class="menubtn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span></button>
+  </div>
+</header>
+
+<main id="topo" tabindex="-1">
+  <section class="hero">
+    <script>/* Safari/iPhone: o alojamento de teste não responde a pedidos parciais (Range), que o Safari exige para vídeo. Descarrega-se o vídeo inteiro e toca-se a partir de um blob. */
+window.mrSet=function(v,u,play){var ua=navigator.userAgent,wk=/iP(hone|ad|od)/.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1)||/^((?!chrome|android|crios|fxios|edg).)*safari/i.test(ua);
+if(v.dataset.cur===u)return;v.dataset.cur=u;function go(){if(play&&!window.mrPaused){var q=v.play();if(q&&q.catch)q.catch(function(){})}}
+if(!wk||!window.fetch||!window.URL){v.src=u;go();return}
+fetch(u).then(function(r){if(!r.ok)throw 0;return r.blob()}).then(function(b){if(v.dataset.cur!==u)return;if(v._ou)URL.revokeObjectURL(v._ou);v._ou=URL.createObjectURL(b.type?b:new Blob([b],{type:'video/mp4'}));v.src=v._ou;v.load();go()}).catch(function(){if(v.dataset.cur===u){v.src=u;go()}})};</script>
+<video class="herovid" autoplay muted loop playsinline preload="auto" data-sm="assets/hero-720.mp4" data-lg="assets/hero.mp4" poster="assets/hero-poster.jpg" aria-hidden="true"></video><script>(function(){var v=document.querySelector('.herovid');v.muted=true;v.addEventListener('playing',function(){v.classList.add('on')});mrSet(v,matchMedia('(max-width: 760px)').matches?v.dataset.sm:v.dataset.lg,!matchMedia('(prefers-reduced-motion: reduce)').matches)})()</script>
+    <div class="heroshade" aria-hidden="true"></div>
+    <button type="button" class="vidtoggle vt-hero" aria-pressed="false" aria-label="Pausar vídeos" data-pt-aria="Pausar vídeos" data-en-aria="Pause videos"><svg class="i-pa" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-pl" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+    <svg class="route" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path d="M-60 700 C 240 760, 420 640, 640 680 S 900 780, 1080 640 S 1240 380, 1500 420"/>
+    </svg>
+    <div class="wrap">
+      <div>
+        <div class="eyebrow" data-pt="Porto · corrida e força · ao ar livre ou em casa" data-en="Porto · running and strength · outdoors or at home">Porto · corrida e força · ao ar livre ou em casa</div>
+        <h1 data-pt-html="<span class=l>O Porto é</span><br><span class=l>o nosso <i>ginásio.</i></span>" data-en-html="<span class=l>Porto is</span><br><span class=l>our <i>gym.</i></span>"><span class="l">O Porto é</span><br><span class="l">o nosso <i>ginásio.</i></span></h1>
+        <p data-pt="Treino de performance com avaliação inicial, plano por objetivo e acompanhamento da Mariana Alcoforado. À beira-mar, com vista para o Douro ou em casa." data-en="Performance training with an initial assessment, a goal-based plan and coaching by Mariana Alcoforado. By the sea, overlooking the Douro or in your living room.">Treino de performance com avaliação inicial, plano por objetivo e acompanhamento da Mariana Alcoforado. À beira-mar, com vista para o Douro ou em casa.</p>
+        <div class="ctas">
+          <a class="btn btn-volt" href="#contacto" data-pt="Marcar avaliação" data-en="Book assessment">Marcar avaliação</a>
+          <a class="btn btn-ghost" href="#grupo" data-pt="Ver treinos de grupo" data-en="See group runs">Ver treinos de grupo</a>
+        </div>
+        <div class="stats">
+          <div><b><span class="cnt" data-to="170" data-dec="0">170</span></b><span data-pt="membros no grupo" data-en="group members">membros no grupo</span></div>
+          <div><b><span class="cnt" data-to="3" data-dec="0">3</span> × <span class="cnt" data-to="5" data-dec="0">5</span> km</b><span data-pt="por atleta, por semana" data-en="per athlete, per week">por atleta, por semana</span></div>
+          <div><b><span class="cnt" data-to="2550" data-dec="0" data-delay="600">2&nbsp;550</span> km</b><span data-pt="pelo grupo, por semana" data-en="as a group, per week">pelo grupo, por semana</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="band services" id="servicos">
+    <div class="wrap">
+      <div class="head">
+        <h2 data-pt="Quatro formas de treinar" data-en="Four ways to train">Quatro formas de treinar</h2>
+      </div>
+      <div class="how"><div class="eyebrow" data-pt="Como funciona" data-en="How it works">Como funciona</div>
+      <ol class="steps steps-s" aria-label="Como funciona">
+        <li><h3 data-pt="Avaliação" data-en="Assessment">Avaliação</h3><p data-pt="Definição de objetivos realistas com base na experiência, no historial e risco de lesões e na condição física atual de cada atleta." data-en="Setting realistic goals based on experience, injury history and risk, and each athlete’s current fitness.">Definição de objetivos realistas com base na experiência, no historial e risco de lesões e na condição física atual de cada atleta.</p></li>
+        <li><h3 data-pt="Plano" data-en="Plan">Plano</h3><p data-pt="Planos de treino de corrida, força e mobilidade, organizados semanalmente." data-en="Running, strength and mobility training plans, organised week by week.">Planos de treino de corrida, força e mobilidade, organizados semanalmente.</p></li>
+        <li><h3 data-pt="Treino" data-en="Training">Treino</h3><p data-pt="Em grupos, mini grupos ou individual, no parque, junto ao mar, ao rio ou em local a combinar." data-en="In groups, small groups or one-to-one: in the park, by the sea, by the river or at an agreed location.">Em grupos, mini grupos ou individual, no parque, junto ao mar, ao rio ou em local a combinar.</p></li>
+        <li><h3 data-pt="Progresso" data-en="Progress">Progresso</h3><p data-pt="Testes e tempos medidos. O plano ajusta-se consoante o desempenho e as provas marcadas." data-en="Tests and times measured. The plan adapts to performance and upcoming races.">Testes e tempos medidos. O plano ajusta-se consoante o desempenho e as provas marcadas.</p></li>
+      </ol>
+      </div>
+      <div class="cards">
+        <article class="card lead"><span class="tag" data-pt="Ponto de partida" data-en="Starting point">Ponto de partida</span><h3 data-pt="Avaliação e prevenção" data-en="Assessment and prevention">Avaliação e prevenção</h3><p data-pt="Ponto de partida de todos os planos. Também para regressar depois de uma lesão." data-en="The starting point for every plan. Also for coming back after an injury.">Ponto de partida de todos os planos. Também para regressar depois de uma lesão.</p><a class="card-cta" href="#contacto" data-svc="aval"><span data-pt="Marcar avaliação" data-en="Book assessment">Marcar avaliação</span> <span aria-hidden="true">→</span></a></article>
+        <article class="card"><span class="tag" data-pt="Grupo" data-en="Group">Grupo</span><h3 data-pt="Grupo outdoor" data-en="Outdoor group">Grupo outdoor</h3><p data-pt="Treinos em pontos fixos: Foz, marginal e margem do Douro." data-en="Sessions at fixed spots: Foz, the seafront and the Douro bank.">Treinos em pontos fixos: Foz, marginal e margem do Douro.</p><a class="card-cta" href="#contacto" data-svc="grupo"><span data-pt="Treinar em grupo" data-en="Join the group">Treinar em grupo</span> <span aria-hidden="true">→</span></a></article>
+        <article class="card"><span class="tag" data-pt="1:1 · Mini grupo" data-en="1:1 · Small group">1:1 · Mini grupo</span><h3 data-pt="Treino personalizado" data-en="Personal training">Treino personalizado</h3><p data-pt="Sessões individuais ou em mini grupo, em local e horário a combinar." data-en="One-to-one or small-group sessions, at a place and time to be agreed.">Sessões individuais ou em mini grupo, em local e horário a combinar.</p><a class="card-cta" href="#contacto" data-svc="casa"><span data-pt="Pedir treino personalizado" data-en="Request personal training">Pedir treino personalizado</span> <span aria-hidden="true">→</span></a></article>
+        <article class="card"><span class="tag" data-pt="Provas" data-en="Races">Provas</span><h3 data-pt="Preparação de provas" data-en="Race preparation">Preparação de provas</h3><p data-pt="5, 10, 21 ou 42 km. Da velocidade à resistência, da estrada ao trail, plano de treino e acompanhamento presencial semanal." data-en="5, 10, 21 or 42 km. From speed to endurance, from road to trail: a training plan and weekly in-person coaching.">5, 10, 21 ou 42 km. Da velocidade à resistência, da estrada ao trail, plano de treino e acompanhamento presencial semanal.</p><a class="card-cta" href="#contacto" data-svc="prova"><span data-pt="Preparar uma prova" data-en="Prepare a race">Preparar uma prova</span> <span aria-hidden="true">→</span></a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band marianas" id="marianas">
+    <div class="wrap">
+      <div class="mh">
+        <div>
+          <div class="eyebrow" data-pt="As Marianas" data-en="The Marianas">As Marianas</div>
+          <h2 class="serif" data-pt-html="<span class='nw'>Treinamos o que</span><br><i>ensinamos.</i>" data-en-html="<span class='nw'>We walk</span><br><i>the talk.</i>"><span class="nw">Treinamos o que</span><br><i>ensinamos.</i></h2>
+          <p data-pt="Somos atletas amadoras, antes de sermos treinadoras. Viajamos pelo mundo para competir: das SuperHalfs às Majors, do 70.3 ao Ironman, da piscina às águas abertas, da estrada ao trail; trazemos para cada prova o que resulta do treino de todos os dias. Consistência, disciplina e muuuita alegria! É este o nosso mote!" data-en="We are amateur athletes before we are coaches. We travel the world to race: from the SuperHalfs to the Majors, from 70.3 to full Ironman, from the pool to open water, from road to trail; we bring to every race what comes out of everyday training. Consistency, discipline and loooots of joy! That’s our motto!">Somos atletas amadoras, antes de sermos treinadoras. Viajamos pelo mundo para competir: das SuperHalfs às Majors, do 70.3 ao Ironman, da piscina às águas abertas, da estrada ao trail; trazemos para cada prova o que resulta do treino de todos os dias. Consistência, disciplina e muuuita alegria! É este o nosso mote!</p>
+        </div>
+        <div class="mstats">
+          <div><b>20+</b><span data-pt="provas" data-en="races">provas</span></div>
+          <div><b>8</b><span data-pt="países" data-en="countries">países</span></div>
+          <div><b>3</b><span data-pt="Ironman 70.3, com Mundial" data-en="Ironman 70.3, incl. Worlds">Ironman 70.3, com Mundial</span></div>
+        </div>
+      </div>
+      <div class="mgrid">
+        <article class="mcard"><div class="mtop"><span class="role" data-pt="Coach" data-en="Coach">Coach</span><h3>Mariana<br><i>Alcoforado</i></h3><p data-pt="Fundadora dos Magic Runners. Planeia cada bloco de treino como planeia as suas provas: com método e sem atalhos." data-en="Founder of Magic Runners. She plans every training block the way she plans her own races: with method and no shortcuts.">Fundadora dos Magic Runners. Planeia cada bloco de treino como planeia as suas provas: com método e sem atalhos.</p><p class="mcred" data-pt="Fisiologista do Exercício, com formação em Pilates Mat. Junta treino de corrida e de força com critério clínico, para correr mais longe sem lesões." data-en="Exercise physiologist, trained in Mat Pilates. Combines running and strength training with clinical judgement, so you run further without getting injured.">Fisiologista do Exercício, com formação em Pilates Mat. Junta treino de corrida e de força com critério clínico, para correr mais longe sem lesões.</p><div class="creds"><span data-pt="Licenciatura em Ciências do Desporto · FMH Lisboa" data-en="BSc Sport Sciences · FMH Lisbon">Licenciatura em Ciências do Desporto · FMH Lisboa</span><span data-pt="Pilates Mat" data-en="Mat Pilates">Pilates Mat</span><span data-pt="Porto · desde 2019" data-en="Porto · since 2019">Porto · desde 2019</span></div></div>
+<p class="prs-t" data-pt="Recordes pessoais" data-en="Personal records">Recordes pessoais</p>
+<dl class="prs"><div><dt><span data-pt="Maratona" data-en="Marathon">Maratona</span><small data-pt="Porto 2026" data-en="Porto 2026">Porto 2026</small></dt><dd>3h10m</dd></div><div><dt><span data-pt="Meia maratona" data-en="Half marathon">Meia maratona</span><small data-pt="Viana do Castelo 2026" data-en="Viana do Castelo 2026">Viana do Castelo 2026</small></dt><dd>1h28m</dd></div><div><dt><span data-pt="Ironman 70.3" data-en="Ironman 70.3">Ironman 70.3</span><small data-pt="Cascais 2025" data-en="Cascais 2025">Cascais 2025</small></dt><dd>5h18m</dd></div></dl>
+<div class="badges"><span data-pt="Ex-jogadora da Seleção Nacional de Polo Aquático" data-en="Former Portugal national water polo player">Ex-jogadora da Seleção Nacional de Polo Aquático</span><span data-pt="Corre desde 2010" data-en="Running since 2010">Corre desde 2010</span><span data-pt="Triatleta desde 2024" data-en="Triathlete since 2024">Triatleta desde 2024</span></div></article>
+        <div class="mcol">
+        <figure class="mpic mpic-a"><button type="button" class="mpic-btn" data-gal="0" aria-label="Abrir a galeria de fotografias das Marianas (12 fotos)" data-pt-aria="Abrir a galeria de fotografias das Marianas (12 fotos)" data-en-aria="Open the Marianas photo gallery (12 photos)"><img src="assets/marianas-copenhaga.jpg" width="1000" height="1137" loading="lazy" decoding="async" alt="Mariana Alcoforado e Mariana Rocha Ferreira à chegada da SuperHalf de Copenhaga, com as camisolas Magic Runners, a ver o tempo no telemóvel"></button><figcaption data-pt="SuperHalf de Copenhaga · 2025" data-en="Copenhagen SuperHalf · 2025">SuperHalf de Copenhaga · 2025</figcaption></figure>
+        <figure class="mpic mpic-b"><button type="button" class="mpic-btn" data-gal="1" aria-label="Abrir a galeria de fotografias das Marianas (12 fotos)" data-pt-aria="Abrir a galeria de fotografias das Marianas (12 fotos)" data-en-aria="Open the Marianas photo gallery (12 photos)"><img src="assets/gal/m6.jpg" width="1600" height="1067" loading="lazy" decoding="async" style="object-position:18% 50%" alt="Mariana Alcoforado e Mariana Rocha Ferreira a chegar à meta da Maratona de Barcelona, junto ao Arco do Triunfo"><span class="mpic-n" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="3"/><path d="M7 21h11a3 3 0 0 0 3-3V7"/></svg>12</span></button><figcaption data-pt="Maratona de Barcelona · 2025" data-en="Barcelona Marathon · 2025">Maratona de Barcelona · 2025</figcaption></figure>
+        </div>
+        <article class="mcard"><div class="mtop"><span class="role sub" data-pt="Subcoach" data-en="Assistant coach">Subcoach</span><h3>Mariana<br><i>Rocha Ferreira</i></h3><p data-pt="Acompanha os grupos na Foz, no Fluvial e no Parque da Cidade. Do triatlo à estrada, sabe o que é treinar com trabalho, família e provas no calendário." data-en="Leads the groups in Foz, Fluvial and Parque da Cidade. From triathlon to road racing, she knows what it is to train around work, family and a race calendar.">Acompanha os grupos na Foz, no Fluvial e no Parque da Cidade. Do triatlo à estrada, sabe o que é treinar com trabalho, família e provas no calendário.</p><div class="creds"><span data-pt="Licenciatura em Gestão de Empresas" data-en="BSc Business Management">Licenciatura em Gestão de Empresas</span><span data-pt="Formação em Running, Trail Running e Nutrition for Runners" data-en="Courses in Running, Trail Running and Nutrition for Runners">Formação em Running, Trail Running e Nutrition for Runners</span></div></div>
+<p class="prs-t" data-pt="Recordes pessoais" data-en="Personal records">Recordes pessoais</p>
+<dl class="prs"><div><dt><span data-pt="Maratona" data-en="Marathon">Maratona</span><small data-pt="Porto 2026" data-en="Porto 2026">Porto 2026</small></dt><dd>3h10m</dd></div><div><dt><span data-pt="Meia maratona" data-en="Half marathon">Meia maratona</span><small data-pt="Valência 2026" data-en="Valencia 2026">Valência 2026</small></dt><dd>1h23m</dd></div><div><dt><span data-pt="Ironman 70.3" data-en="Ironman 70.3">Ironman 70.3</span><small data-pt="Cascais 2025" data-en="Cascais 2025">Cascais 2025</small></dt><dd>5h12m</dd></div></dl>
+<div class="badges"><span data-pt="Velejadora de alta competição" data-en="Former elite sailor">Velejadora de alta competição</span><span data-pt="Corre desde 2006" data-en="Running since 2006">Corre desde 2006</span><span data-pt="Mundial Ironman 70.3 · Marbella 2026" data-en="Ironman 70.3 World Championship · Marbella 2026">Mundial Ironman 70.3 · Marbella 2026</span></div></article>
+      </div>
+      <div class="mquotes">
+        <p class="mq-t" data-pt="Uma pela outra" data-en="In each other's words">Uma pela outra</p>
+        <figure class="mq"><blockquote data-pt="Apaixonada e dedicada, és uma alma contagiante, que incentiva, motiva e inspira todos os que te rodeiam. Tens uma capacidade única de fazer os outros acreditarem em si mesmos!" data-en="Passionate and dedicated, you are a contagious soul who encourages, motivates and inspires everyone around you. You have a unique ability to make others believe in themselves!">Apaixonada e dedicada, és uma alma contagiante, que incentiva, motiva e inspira todos os que te rodeiam. Tens uma capacidade única de fazer os outros acreditarem em si mesmos!</blockquote><figcaption><b>Mariana Rocha Ferreira</b> <span data-pt="sobre a Mariana Alcoforado" data-en="on Mariana Alcoforado">sobre a Mariana Alcoforado</span></figcaption></figure>
+        <figure class="mq"><blockquote data-pt="Ambiciosa, exigente, rigorosa e de uma entrega que não há igual. És uma força da natureza — e contigo vou mais longe e mais rápido." data-en="Ambitious, demanding, rigorous and with a commitment like no other. You are a force of nature — and with you I go further and faster.">Ambiciosa, exigente, rigorosa e de uma entrega que não há igual. És uma força da natureza — e contigo vou mais longe e mais rápido.</blockquote><figcaption><b>Mariana Alcoforado</b> <span data-pt="sobre a Mariana Rocha Ferreira" data-en="on Mariana Rocha Ferreira">sobre a Mariana Rocha Ferreira</span></figcaption></figure>
+      </div>
+      <div class="mtrail">
+        <h3 data-pt="Pelo mundo" data-en="Around the world">Pelo mundo</h3>
+        <p data-pt="Cada prova é um capítulo: o que correu bem, o que mudou no treino, o que passa para o grupo." data-en="Every race is a chapter: what went well, what changed in training, what gets passed on to the group.">Cada prova é um capítulo: o que correu bem, o que mudou no treino, o que passa para o grupo.</p>
+        <ol class="trail" tabindex="0" aria-label="Provas pelo mundo · deslizar para ver mais"><li><span class="yr">2024</span><b data-pt="Ironman 70.3 Cascais" data-en="Ironman 70.3 Cascais">Ironman 70.3 Cascais</b><span data-pt="Cascais · Portugal" data-en="Cascais · Portugal">Cascais · Portugal</span><em>5h12m</em></li><li><span class="yr">2025</span><b data-pt="Maratona de Barcelona" data-en="Barcelona Marathon">Maratona de Barcelona</b><span data-pt="Barcelona · Espanha" data-en="Barcelona · Spain">Barcelona · Espanha</span><em>3h13m</em></li><li><span class="yr">2025</span><b data-pt="SuperHalf de Copenhaga" data-en="Copenhagen SuperHalf">SuperHalf de Copenhaga</b><span data-pt="Copenhaga · Dinamarca" data-en="Copenhagen · Denmark">Copenhaga · Dinamarca</span><em>1h29m</em></li><li><span class="yr">2026</span><b data-pt="Maratona de Boston" data-en="Boston Marathon">Maratona de Boston</b><span data-pt="Boston · EUA" data-en="Boston · USA">Boston · EUA</span><em>3h11m</em></li><li><span class="yr">2027</span><b data-pt="Maratona de Chicago" data-en="Chicago Marathon">Maratona de Chicago</b><span data-pt="Chicago · EUA" data-en="Chicago · USA">Chicago · EUA</span><em data-pt="Próxima prova" data-en="Next race">Próxima prova</em></li></ol>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="band group" id="grupo">
+    <div class="wrap">
+      <div class="eyebrow" data-pt="Treinos de grupo" data-en="Group runs">Treinos de grupo</div>
+      <h2 data-pt-html="Todos os dias,<br>um <i>grupo.</i>" data-en-html="Every day,<br>one <i>group.</i>">Todos os dias,<br>um <i>grupo.</i></h2>
+      <p class="lema"><span class="serif" data-pt-html="Ninguém fica <i>para trás.</i>" data-en-html="Nobody gets <i>left behind.</i>">Ninguém fica <i>para trás.</i></span><small data-pt="O lema dos Magics em todos os treinos: cada um ao seu ritmo, com distâncias e desafios adaptados." data-en="The Magics’ motto in every session: everyone at their own pace, with distances and challenges adapted to them.">O lema dos Magics em todos os treinos: cada um ao seu ritmo, com distâncias e desafios adaptados.</small></p>
+      <div class="sched">
+        <div class="slot"><b data-pt="Seg · Qua · Sex · 6:40 e 12:45" data-en="Mon · Wed · Fri · 6:40 and 12:45">Seg · Qua · Sex · 6:40 e 12:45</b><span data-pt-html="Força à segunda e à quarta,<br class='mbr'> corrida à sexta" data-en-html="Strength on Mon and Wed,<br class='mbr'> running on Fri">Força à segunda e à quarta,<br class="mbr"> corrida à sexta</span><small>Foz · Fluvial · Parque da Cidade</small></div><div class="slot"><b data-pt="Segunda a sexta · 9:00" data-en="Monday to Friday · 9:00">Segunda a sexta · 9:00</b><span data-pt="Corrida e força, alternadas" data-en="Running and strength, alternating">Corrida e força, alternadas</span><small>Foz · Fluvial · Parque da Cidade</small></div><div class="slot"><b data-pt="Segunda a quinta · 18:30 e 19:50" data-en="Monday to Thursday · 18:30 and 19:50">Segunda a quinta · 18:30 e 19:50</b><span data-pt-html="Força à segunda, quarta e quinta,<br class='mbr'> corrida à terça" data-en-html="Strength on Mon, Wed and Thu,<br class='mbr'> running on Tue">Força à segunda, quarta e quinta,<br class="mbr"> corrida à terça</span><small>Foz · Fluvial · Parque da Cidade</small></div>
+      </div>
+      <div class="gmedia">
+        <div class="gm-head"><h3 class="serif" data-pt-html="Os nossos <i>treinos.</i>" data-en-html="Our <i>sessions.</i>">Os nossos <i>treinos.</i></h3><div class="gm-right"><span data-pt="8 vídeos · 6 fotos" data-en="8 videos · 6 photos">8 vídeos · 6 fotos</span><button type="button" class="vidtoggle vt-gm" aria-pressed="false" aria-label="Pausar vídeos" data-pt-aria="Pausar vídeos" data-en-aria="Pause videos"><svg class="i-pa" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-pl" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button><div class="gm-arrows"><button type="button" class="gm-arr" data-dir="-1" aria-label="Vídeos anteriores" data-pt-aria="Vídeos anteriores" data-en-aria="Previous videos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" class="gm-arr" data-dir="1" aria-label="Vídeos seguintes" data-pt-aria="Vídeos seguintes" data-en-aria="Next videos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div></div></div>
+        <div class="gm-vids" role="region" tabindex="0" aria-label="Vídeos dos treinos · deslizar para ver mais" data-pt-aria="Vídeos dos treinos · deslizar para ver mais" data-en-aria="Session videos · swipe for more"><button type="button" class="gm-v" data-gal="0" data-gal-set="grupo" aria-label="Ver vídeo: Força à beira-mar" data-pt-aria="Ver vídeo: Força à beira-mar" data-en-aria="Watch video: Strength by the sea"><video class="lazyvid" data-src="assets/grupo/v1.mp4" poster="assets/grupo/v1.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="gm-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="gm-cap" data-pt="Força à beira-mar" data-en="Strength by the sea">Força à beira-mar</span></button><button type="button" class="gm-v" data-gal="1" data-gal-set="grupo" aria-label="Ver vídeo: Corrida entre as árvores" data-pt-aria="Ver vídeo: Corrida entre as árvores" data-en-aria="Watch video: Running among the trees"><video class="lazyvid" data-src="assets/grupo/v2.mp4" poster="assets/grupo/v2.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="gm-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="gm-cap" data-pt="Corrida entre as árvores" data-en="Running among the trees">Corrida entre as árvores</span></button><button type="button" class="gm-v" data-gal="2" data-gal-set="grupo" aria-label="Ver vídeo: Treino junto ao Douro" data-pt-aria="Ver vídeo: Treino junto ao Douro" data-en-aria="Watch video: Training by the Douro"><video class="lazyvid" data-src="assets/grupo/v3.mp4" poster="assets/grupo/v3.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="gm-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="gm-cap" data-pt="Treino junto ao Douro" data-en="Training by the Douro">Treino junto ao Douro</span></button><button type="button" class="gm-v" data-gal="3" data-gal-set="grupo" aria-label="Ver vídeo: Elásticos junto ao rio" data-pt-aria="Ver vídeo: Elásticos junto ao rio" data-en-aria="Watch video: Bands by the river"><video class="lazyvid" data-src="assets/grupo/v4.mp4" poster="assets/grupo/v4.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="gm-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="gm-cap" data-pt="Elásticos junto ao rio" data-en="Bands by the river">Elásticos junto ao rio</span></button><button type="button" class="gm-v" data-gal="4" data-gal-set="grupo" aria-label="Ver vídeo: Força no parque" data-pt-aria="Ver vídeo: Força no parque" data-en-aria="Watch video: Strength in the park"><video class="lazyvid" data-src="assets/grupo/v5.mp4" poster="assets/grupo/v5.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="gm-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="gm-cap" data-pt="Força no parque" data-en="Strength in the park">Força no parque</span></button><button type="button" class="gm-v" data-gal="5" data-gal-set="grupo" aria-label="Ver vídeo: Corrida na marginal" data-pt-aria="Ver vídeo: Corrida na marginal" data-en-aria="Watch video: Running on the seafront"><video class="lazyvid" data-src="assets/grupo/v6.mp4" poster="assets/grupo/v6.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="gm-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="gm-cap" data-pt="Corrida na marginal" data-en="Running on the seafront">Corrida na marginal</span></button><button type="button" class="gm-v" data-gal="6" data-gal-set="grupo" aria-label="Ver vídeo: Exercícios à beira-mar" data-pt-aria="Ver vídeo: Exercícios à beira-mar" data-en-aria="Watch video: Exercises by the sea"><video class="lazyvid" data-src="assets/grupo/v7.mp4" poster="assets/grupo/v7.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="gm-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="gm-cap" data-pt="Exercícios à beira-mar" data-en="Exercises by the sea">Exercícios à beira-mar</span></button><button type="button" class="gm-v" data-gal="7" data-gal-set="grupo" aria-label="Ver vídeo: Abdominais a meio da corrida" data-pt-aria="Ver vídeo: Abdominais a meio da corrida" data-en-aria="Watch video: Core work mid-run"><video class="lazyvid" data-src="assets/grupo/v8.mp4" poster="assets/grupo/v8.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="gm-play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="gm-cap" data-pt="Abdominais a meio da corrida" data-en="Core work mid-run">Abdominais a meio da corrida</span></button></div>
+        <div class="gm-bar" aria-hidden="true"><span></span></div>
+        <div class="gm-pics"><button type="button" class="gm-p" data-gal="8" data-gal-set="grupo" aria-label="Ver foto: Força ao pôr do sol, com a Arrábida ao fundo" data-pt-aria="Ver foto: Força ao pôr do sol, com a Arrábida ao fundo" data-en-aria="See photo: Strength at sunset, with the Arrábida bridge behind"><img src="assets/grupo/g7_t.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></button><button type="button" class="gm-p" data-gal="9" data-gal-set="grupo" aria-label="Ver foto: O grupo debaixo das árvores" data-pt-aria="Ver foto: O grupo debaixo das árvores" data-en-aria="See photo: The group under the trees"><img src="assets/grupo/g2_t.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></button><button type="button" class="gm-p" data-gal="10" data-gal-set="grupo" aria-label="Ver foto: Halteres ao pôr do sol, junto ao rio" data-pt-aria="Ver foto: Halteres ao pôr do sol, junto ao rio" data-en-aria="See photo: Dumbbells at sunset by the river"><img src="assets/grupo/g3_t.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></button><button type="button" class="gm-p" data-gal="11" data-gal-set="grupo" aria-label="Ver foto: O grupo ao sol" data-pt-aria="Ver foto: O grupo ao sol" data-en-aria="See photo: The group in the sun"><img src="assets/grupo/g4_t.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></button><button type="button" class="gm-p" data-gal="12" data-gal-set="grupo" aria-label="Ver foto: Abdominais no lago" data-pt-aria="Ver foto: Abdominais no lago" data-en-aria="See photo: Core work by the pond"><img src="assets/grupo/g5_t.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></button><button type="button" class="gm-p" data-gal="13" data-gal-set="grupo" aria-label="Ver foto: Treino de força no parque" data-pt-aria="Ver foto: Treino de força no parque" data-en-aria="See photo: Strength session in the park"><img src="assets/grupo/g6_t.jpg" width="480" height="480" loading="lazy" decoding="async" alt=""></button></div>
+      </div>
+      <div class="wa-group">
+        <p data-pt="Os nossos treinos são combinados todos os dias no grupo de WhatsApp: local, hora e o que levar." data-en="Our sessions are arranged every day in the WhatsApp group: place, time and what to bring.">Os nossos treinos são combinados todos os dias no grupo de WhatsApp: local, hora e o que levar.</p>
+        <a class="btn btn-ink" href="#contacto" data-pt="Pedir para entrar no grupo" data-en="Ask to join the group">Pedir para entrar no grupo</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="band sunday" id="sunday">
+    <div class="wrap sun">
+      <div class="sunpic"><button type="button" class="mpic-btn" data-gal="0" data-gal-set="sunday" aria-label="Abrir as fotografias do Sunday Running Club (4 fotos e 2 vídeos)" data-pt-aria="Abrir as fotografias do Sunday Running Club (4 fotos e 2 vídeos)" data-en-aria="Open the Sunday Running Club photos (4 photos and 2 videos)"><img src="assets/sunday_marianas.jpg" loading="lazy" decoding="async" alt="Mariana Alcoforado e Mariana Rocha Ferreira com as camisolas Sunday Running Club, numa esplanada"><span class="mpic-n" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="3"/><path d="M7 21h11a3 3 0 0 0 3-3V7"/></svg>6</span></button></div>
+      <div>
+        <div class="eyebrow" data-pt="Último domingo do mês · Foz" data-en="Last Sunday of the month · Foz">Último domingo do mês · Foz</div>
+        <h2 class="serif">Sunday<br><i>Running Club</i></h2>
+        <p data-pt-html="No último domingo de cada mês*, juntem-se a nós para uma corrida diferente à beira-mar. São 4 a 7 km adaptados aos vários ritmos do grupo, com uma paragem intermédia para exercícios com o peso corporal e um super brunch da <a class='pf' href='https://www.padariaformosa.com/' target='_blank' rel='noopener'>@padariaformosa</a> no final. Uma manhã de domingo em família, com exercício físico, comida saudável e pessoas diferentes. Crianças são bem-vindas!" data-en-html="On the last Sunday of each month*, join us for a different kind of run by the sea. 4 to 7 km adapted to the group’s different paces, with a stop halfway for bodyweight exercises and a super brunch from <a class='pf' href='https://www.padariaformosa.com/' target='_blank' rel='noopener'>@padariaformosa</a> at the end. A family Sunday morning, with exercise, healthy food and new people. Children are welcome!">No último domingo de cada mês*, juntem-se a nós para uma corrida diferente à beira-mar. São 4 a 7 km adaptados aos vários ritmos do grupo, com uma paragem intermédia para exercícios com o peso corporal e um super brunch da <a class="pf" href="https://www.padariaformosa.com/" target="_blank" rel="noopener">@padariaformosa</a> no final. Uma manhã de domingo em família, com exercício físico, comida saudável e pessoas diferentes. Crianças são bem-vindas!</p>
+        <ul class="sunlist"><li data-pt="Todas as idades e níveis" data-en="All ages and levels">Todas as idades e níveis</li><li><span data-pt="Próximo domingo" data-en="Next Sunday">Próximo domingo</span>: <b id="nextSun">—</b> · 10:15</li><li data-pt="Encontro na Padaria Formosa" data-en="Meet at Padaria Formosa">Encontro na Padaria Formosa</li><li data-pt="Preço: 10 €" data-en="Price: €10">Preço: 10 €</li></ul>
+        <p class="sunnote" data-pt="* A data pode variar. O próximo domingo está sempre indicado aqui." data-en="* The date may vary. The next Sunday is always shown here.">* A data pode variar. O próximo domingo está sempre indicado aqui.</p>
+        <a class="btn btn-ink" id="sunWa" href="#contacto" data-wa="sunday"><span data-pt="Fazer inscrição no WhatsApp" data-en="Sign up on WhatsApp">Fazer inscrição no WhatsApp</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band stories" id="historias">
+    <div class="wrap">
+      <div class="head">
+        <h2><span data-pt="As nossas" data-en="Our">As nossas</span> <span class="serif" data-pt-html="<i>histórias.</i>" data-en-html="<i>stories.</i>"><i>histórias.</i></span></h2>
+      </div>
+      <div class="stgrid">
+        <article class="story"><span class="tag" data-pt="Voltar depois de uma lesão" data-en="Back from injury">Voltar depois de uma lesão</span>
+<div class="st-metric"><span data-pt="Cirurgia" data-en="Surgery">Cirurgia</span><span class="to" aria-hidden="true"></span><span>5 km</span><small data-pt="a correr outra vez, 4 meses depois" data-en="running again, 4 months later">a correr outra vez, 4 meses depois</small></div>
+<blockquote data-pt-html="“O desporto de manhã é <i>a minha terapia.</i>”" data-en-html="“Morning exercise is <i>my therapy.</i>”">“O desporto de manhã é <i>a minha terapia.</i>”</blockquote>
+<p data-pt="Tive uma lesão trimaleolar no tornozelo e fui operada, com placa e parafusos. Antes já tinha feito uma meia maratona e corria pelo menos duas vezes por semana. Retomei o treino 15 dias depois da cirurgia, com fisio&shy;terapia diária e treino individual três vezes por semana. Ainda sinto alguma rigidez, mas continuo a recuperar e a aumentar a intensidade." data-en="I had a trimalleolar ankle injury and needed surgery, with a plate and screws. Before that I had run a half marathon and ran at least twice a week. I went back to training 15 days after surgery, with daily physio and one-to-one training three times a week. I still feel some stiffness, but I keep recovering and stepping up the intensity.">Tive uma lesão trimaleolar no tornozelo e fui operada, com placa e parafusos. Antes já tinha feito uma meia maratona e corria pelo menos duas vezes por semana. Retomei o treino 15 dias depois da cirurgia, com fisio&shy;terapia diária e treino individual três vezes por semana. Ainda sinto alguma rigidez, mas continuo a recuperar e a aumentar a intensidade.</p>
+<ol class="st-steps"><li><b data-pt="15 dias" data-en="15 days">15 dias</b><span data-pt="De volta ao treino, individual e com fisioterapia" data-en="Back to training, one-to-one and with physio">De volta ao treino, individual e com fisioterapia</span></li><li><b data-pt="2 meses" data-en="2 months">2 meses</b><span data-pt="De volta aos treinos de grupo" data-en="Back to group sessions">De volta aos treinos de grupo</span></li><li><b data-pt="4 meses" data-en="4 months">4 meses</b><span data-pt="Já corri 5 km e continuo a subir" data-en="I’ve run 5 km and I’m still building">Já corri 5 km e continuo a subir</span></li></ol>
+<div class="st-who"><span class="av" aria-hidden="true">MR</span><span data-pt="Maria do Rosário Guerra, 59 anos · Foz, Boavista e Douro" data-en="Maria do Rosário Guerra, 59 · Foz, Boavista and Douro">Maria do Rosário Guerra, 59 anos · Foz, Boavista e Douro</span></div></article>
+        <article class="story"><span class="tag" data-pt="Peso e saúde" data-en="Weight and health">Peso e saúde</span>
+<div class="st-metric"><span>128 kg</span><span class="to" aria-hidden="true"></span><span>100 kg</span><small data-pt="em 2023, com treino e reeducação alimentar" data-en="in 2023, with training and a new way of eating">em 2023, com treino e reeducação alimentar</small></div>
+<blockquote data-pt-html="“A Mariana <i>nunca desistiu de mim.</i>”" data-en-html="“Mariana <i>never gave up on me.</i>”">“A Mariana <i>nunca desistiu de mim.</i>”</blockquote>
+<p data-pt="Cheguei por recomendação, com receio pela minha saúde. Com acompa&shy;nhamento diário, força, corrida e reedu&shy;cação alimentar, voltei ao desporto. As dores nos gémeos e na lombar desapa&shy;receram e o sono voltou a ser reparador. Mesmo quando parei de treinar durante muito tempo, a Mariana nunca parou de me motivar." data-en="I came on a recommendation, worried about my health. With daily coaching, strength, running and a new way of eating, I got back into sport. The pain in my calves and lower back is gone and my sleep is restful again. Even when I stopped training for a long time, Mariana never stopped motivating me.">Cheguei por recomendação, com receio pela minha saúde. Com acompa&shy;nhamento diário, força, corrida e reedu&shy;cação alimentar, voltei ao desporto. As dores nos gémeos e na lombar desapa&shy;receram e o sono voltou a ser reparador. Mesmo quando parei de treinar durante muito tempo, a Mariana nunca parou de me motivar.</p>
+<ol class="st-steps"><li><b data-pt="Prova" data-en="Race">Prova</b><span data-pt="São Silvestre do Porto" data-en="São Silvestre do Porto">São Silvestre do Porto</span></li><li><b data-pt="Prova" data-en="Race">Prova</b><span data-pt="Primeira meia maratona, no Douro" data-en="First half marathon, by the Douro">Primeira meia maratona, no Douro</span></li><li><b data-pt="2023" data-en="2023">2023</b><span data-pt="100 kg e muito mais energia" data-en="100 kg and far more energy">100 kg e muito mais energia</span></li></ol>
+<div class="st-who"><span class="av" aria-hidden="true">FM</span><span data-pt="Francisco Medeiros, 41 anos · Foz e Parque da Cidade" data-en="Francisco Medeiros, 41 · Foz and Parque da Cidade">Francisco Medeiros, 41 anos · Foz e Parque da Cidade</span></div></article>
+        <article class="story"><span class="tag" data-pt="Dos 5 km à meia maratona" data-en="From 5K to half marathon">Dos 5 km à meia maratona</span>
+<div class="st-metric"><span>5 km</span><span class="to" aria-hidden="true"></span><span>21,1 km</span><small data-pt="em 5 a 6 meses" data-en="in 5 to 6 months">em 5 a 6 meses</small></div>
+<blockquote data-pt-html="“Quando passei a treinar com regularidade, as provas seguintes correram melhor e consegui <i>aproveitar muito mais!</i>”" data-en-html="“Once I started training regularly, the next races went better and I could <i>enjoy them so much more!</i>”">“Quando passei a treinar com regularidade, as provas seguintes correram melhor e consegui <i>aproveitar muito mais!</i>”</blockquote>
+<p data-pt="Inscrevi-me na primeira meia maratona porque uma amiga me desafiou e, desde aí, a corrida tornou-se quase um vício. A primeira prova custou bastante, por ter treinado pouco." data-en="I signed up for my first half marathon because a friend dared me, and since then running has become almost an addiction. The first race was hard, as I had trained very little.">Inscrevi-me na primeira meia maratona porque uma amiga me desafiou e, desde aí, a corrida tornou-se quase um vício. A primeira prova custou bastante, por ter treinado pouco.</p>
+<ol class="st-steps"><li><b data-pt="Início" data-en="Start">Início</b><span data-pt="5 km" data-en="5K">5 km</span></li><li><b data-pt="1.ª meia" data-en="1st half">1.ª meia</b><span data-pt="O desafio de uma amiga" data-en="A friend’s dare">O desafio de uma amiga</span></li><li><b data-pt="5–6 meses" data-en="5–6 months">5–6 meses</b><span data-pt="21,1 km, a aproveitar a prova" data-en="21.1K, enjoying the race">21,1 km, a aproveitar a prova</span></li></ol>
+<div class="st-who"><span class="av" aria-hidden="true">FB</span><span data-pt="Francisca Barros, 36 anos · Marginal" data-en="Francisca Barros, 36 · Seafront">Francisca Barros, 36 anos · Marginal</span></div></article>
+        <article class="story"><span class="tag" data-pt="Da lesão à meia maratona" data-en="From injury to half marathon">Da lesão à meia maratona</span>
+<div class="st-metric"><span data-pt="Fisioterapia" data-en="Physio">Fisioterapia</span><span class="to" aria-hidden="true"></span><span>21 km</span><small data-pt="a meia maratona, em dezembro" data-en="the half marathon, in December">a meia maratona, em dezembro</small></div>
+<blockquote data-pt-html="“Sinto-me na <i>melhor forma física de sempre.</i>”" data-en-html="“I feel I’m in <i>the best shape of my life.</i>”">“Sinto-me na <i>melhor forma física de sempre.</i>”</blockquote>
+<p data-pt="Uma lesão no joelho obrigou-me a parar de correr, mas com o acompa&shy;nhamento da Mariana fui recuperando a força, a confiança e a vontade de ir mais longe. Com treinos adaptados a cada fase da recuperação, voltei gradual&shy;mente à corrida. Hoje corro 19 km sem dor e, em dezembro, tenho um novo desafio à minha espera: a meia maratona. Mais do que voltar a correr, voltei a acreditar que não há limites para aquilo que posso conquistar. Com a Mariana, encontrei muito mais do que alguém que orienta os meus treinos: encontrei alguém que conhece o meu percurso, acredita nas minhas capaci&shy;dades e me ajuda a superar-me, sempre ao meu ritmo." data-en="A knee injury forced me to stop running, but with Mariana’s coaching I gradually got back my strength, my confidence and the drive to go further. With training adapted to each stage of recovery, I eased back into running. Today I run 19 km pain-free and, in December, a new challenge awaits me: the half marathon. More than running again, I believe again that there are no limits to what I can achieve. With Mariana I found much more than someone who guides my training: I found someone who knows my journey, believes in what I can do and helps me push myself, always at my own pace.">Uma lesão no joelho obrigou-me a parar de correr, mas com o acompa&shy;nhamento da Mariana fui recuperando a força, a confiança e a vontade de ir mais longe. Com treinos adaptados a cada fase da recuperação, voltei gradual&shy;mente à corrida. Hoje corro 19 km sem dor e, em dezembro, tenho um novo desafio à minha espera: a meia maratona. Mais do que voltar a correr, voltei a acreditar que não há limites para aquilo que posso conquistar. Com a Mariana, encontrei muito mais do que alguém que orienta os meus treinos: encontrei alguém que conhece o meu percurso, acredita nas minhas capaci&shy;dades e me ajuda a superar-me, sempre ao meu ritmo.</p>
+<ol class="st-steps"><li><b data-pt="Lesão" data-en="Injury">Lesão</b><span data-pt="Treinos adaptados a cada fase da recuperação" data-en="Training adapted to each stage of recovery">Treinos adaptados a cada fase da recuperação</span></li><li><b data-pt="Hoje" data-en="Today">Hoje</b><span data-pt="19 km sem dor" data-en="19 km pain-free">19 km sem dor</span></li><li><b data-pt="Dezembro" data-en="December">Dezembro</b><span data-pt="A meia maratona" data-en="The half marathon">A meia maratona</span></li></ol>
+<div class="st-who"><span class="av" aria-hidden="true">C</span><span data-pt="Carlota, 39 anos · treino ao ar livre" data-en="Carlota, 39 · outdoor training">Carlota, 39 anos · treino ao ar livre</span></div></article>
+      </div>
+      <div class="st-share">
+        <div><div class="serif" data-pt-html="Uma história para <i>partilhar?</i>" data-en-html="Got a story? <i>Tell us.</i>">Uma história para <i>partilhar?</i></div>
+        <p data-pt="Uma lesão que ficou para trás, a primeira prova, um hábito novo. As histórias dos Magic inspiram quem está a começar." data-en="An injury left behind, a first race, a new habit. Magic stories inspire those who are just starting.">Uma lesão que ficou para trás, a primeira prova, um hábito novo. As histórias dos Magic inspiram quem está a começar.</p></div>
+        <a class="btn btn-volt" href="#contacto" data-wa="historia"><span data-pt="Partilhar a minha história" data-en="Share my story">Partilhar a minha história</span></a>
+      </div>
+      <p class="st-note" data-pt="Histórias, nomes e resultados a confirmar com cada atleta, com autorização escrita para publicar. Resultados individuais: cada plano é feito à medida." data-en="Stories, names and results to be confirmed with each athlete, with written consent to publish. Individual results: every plan is tailored.">Histórias, nomes e resultados a confirmar com cada atleta, com autorização escrita para publicar. Resultados individuais: cada plano é feito à medida.</p>
+    </div>
+  </section>
+  <section class="band faq" id="faq">
+    <div class="wrap">
+      <div class="head"><h2 data-pt="Perguntas frequentes" data-en="Questions">Perguntas frequentes</h2></div>
+      <details open><summary data-pt="Preciso de já correr para começar?" data-en="Do I need to run already?">Preciso de já correr para começar?</summary><p data-pt="Não. A avaliação define o ponto de partida e o plano começa no ponto em que cada pessoa está. Ninguém fica para trás." data-en="No. The assessment sets your starting point and the plan begins where you are. Nobody gets left behind.">Não. A avaliação define o ponto de partida e o plano começa no ponto em que cada pessoa está. Ninguém fica para trás.</p></details>
+      <details><summary data-pt="Há limite de idade?" data-en="Is there an age limit?">Há limite de idade?</summary><p data-pt="Não. A Mariana treina pessoas jovens e com mais idade; a avaliação inicial adapta o plano a cada um." data-en="No. Mariana trains young and older people; the initial assessment adapts the plan to each person.">Não. A Mariana treina pessoas jovens e com mais idade; a avaliação inicial adapta o plano a cada um.</p></details>
+      <details><summary data-pt="E se chover?" data-en="What if it rains?">E se chover?</summary><p data-pt="Os treinos de grupo mantêm-se com chuva leve. Com mau tempo, avisamos no grupo e há alternativa coberta ou treino em casa." data-en="Group sessions go ahead in light rain. In bad weather we post in the group and offer a covered or at-home alternative.">Os treinos de grupo mantêm-se com chuva leve. Com mau tempo, avisamos no grupo e há alternativa coberta ou treino em casa.</p></details>
+      <details><summary data-pt="Tenho uma lesão. Posso treinar?" data-en="I have an injury. Can I train?">Tenho uma lesão. Posso treinar?</summary><p data-pt="Convém falar connosco antes. A avaliação serve precisamente para planear um regresso seguro." data-en="Talk to us first. The assessment is there to plan a safe return.">Convém falar connosco antes. A avaliação serve precisamente para planear um regresso seguro.</p></details>
+      <details><summary data-pt="Que zonas servem no treino personalizado?" data-en="Which areas do you cover for personal training?">Que zonas servem no treino personalizado?</summary><p data-pt="Todo o Grande Porto. E também acompanhamos online, em qualquer lugar." data-en="The whole Greater Porto area. We also coach online, wherever you are.">Todo o Grande Porto. E também acompanhamos online, em qualquer lugar.</p></details>
+    </div>
+  </section>
+
+  <section class="band contact" id="contacto">
+    <div class="wrap">
+      <div class="side">
+        <h2 data-pt="Marcar avaliação" data-en="Book your assessment">Marcar avaliação</h2>
+        <p data-pt="Respondemos em 24 horas. Os dados de saúde só servem para preparar o plano de treino." data-en="We reply within 24 hours. Health details are only used to prepare your plan.">Respondemos em 24 horas. Os dados de saúde só servem para preparar o plano de treino.</p>
+        <div class="direct">
+          <span>WhatsApp <a href="https://wa.me/351911019015"><code>+351 911 019 015</code></a> · <a href="tel:+351911019015" data-pt="Ligar" data-en="Call">Ligar</a></span>
+          <span>Email <a href="mailto:magicrunnersporto@gmail.com"><code>magicrunnersporto@gmail.com</code></a></span>
+          <span>Instagram <a href="https://www.instagram.com/magicrunners_team/" target="_blank" rel="noopener"><code>@magicrunners_team</code></a></span>
+        </div>
+      </div>
+      <div>
+        <form id="f" novalidate>
+          <div class="row2">
+            <label for="nome"><span data-pt="Nome" data-en="Name">Nome</span><input id="nome" name="nome" autocomplete="name" required aria-describedby="err"></label>
+            <label for="tel"><span data-pt="Telemóvel" data-en="Phone">Telemóvel</span><input id="tel" name="tel" type="tel" autocomplete="tel" required aria-describedby="err"></label>
+          </div>
+          <label for="svc"><span data-pt="Serviço" data-en="Service">Serviço</span>
+            <select id="svc" name="svc">
+              <option value="aval" data-pt="Avaliação e prevenção" data-en="Assessment and prevention">Avaliação e prevenção</option>
+              <option value="grupo" data-pt="Grupo outdoor" data-en="Outdoor group">Grupo outdoor</option>
+              <option value="casa" data-pt="Treino personalizado" data-en="Personal training">Treino personalizado</option>
+              <option value="prova" data-pt="Preparação de provas" data-en="Race preparation">Preparação de provas</option>
+              <option value="sunday" data-pt="Sunday Running Club" data-en="Sunday Running Club">Sunday Running Club</option>
+            </select></label>
+          <label for="obj"><span data-pt="Objetivo" data-en="Goal">Objetivo</span>
+            <select id="obj" name="obj">
+              <option data-pt="Começar a correr" data-en="Start running">Começar a correr</option>
+              <option data-pt="Preparar uma prova" data-en="Prepare for a race">Preparar uma prova</option>
+              <option data-pt="Voltar depois de uma lesão" data-en="Return after an injury">Voltar depois de uma lesão</option>
+              <option data-pt="Ganhar força" data-en="Get stronger">Ganhar força</option>
+            </select></label>
+          <label for="modo"><span data-pt="Onde prefere treinar" data-en="Where do you prefer to train">Onde prefere treinar</span>
+            <select id="modo" name="modo">
+              <option data-pt="Em grupo (Foz, Fluvial, Parque da Cidade)" data-en="In a group (Foz, Fluvial, Parque da Cidade)">Em grupo (Foz, Fluvial, Parque da Cidade)</option>
+              <option data-pt="Em casa (1:1)" data-en="At home (1:1)">Em casa (1:1)</option>
+              <option data-pt="Online" data-en="Online">Online</option>
+              <option data-pt="Ainda não sei" data-en="Not sure yet">Ainda não sei</option>
+            </select></label>
+          <label for="notas"><span data-pt="Lesões ou notas (opcional)" data-en="Injuries or notes (optional)">Lesões ou notas (opcional)</span><textarea id="notas" name="notas"></textarea></label>
+          <label class="check" for="rgpd"><input id="rgpd" type="checkbox" aria-describedby="err"><span data-pt="Aceito o tratamento dos meus dados, incluindo dados de saúde, para preparar o plano de treino." data-en="I agree to the processing of my data, including health data, to prepare my training plan.">Aceito o tratamento dos meus dados, incluindo dados de saúde, para preparar o plano de treino.</span></label>
+          <p class="legal-note"><span data-pt="Consultar a" data-en="Read the">Consultar a</span> <button type="button" class="linkbtn" data-open="dlg-priv" data-pt="política de privacidade" data-en="privacy policy">política de privacidade</button>. <span data-pt="Antes do primeiro treino, há um" data-en="Before your first session, answer the">Antes do primeiro treino, há um</span> <button type="button" class="linkbtn" data-open="dlg-parq" data-pt="questionário de saúde (2 min)" data-en="health questionnaire (2 min)">questionário de saúde (2 min)</button>.</p>
+          <div class="err" id="err" role="alert"></div>
+          <button class="btn btn-volt" type="submit" data-pt="Enviar pedido" data-en="Send request">Enviar pedido</button>
+        </form>
+        <div class="ok" id="ok" tabindex="-1" hidden></div>
+      </div>
+    </div>
+  </section>
+  <section class="band share" id="partilha">
+    <div class="wrap">
+      <div class="head">
+        <h2><span data-pt="Partilhar o" data-en="Share your">Partilhar o</span> <span class="serif" data-pt-html="<i>treino.</i>" data-en-html="<i>run.</i>"><i>treino.</i></span></h2>
+        <p data-pt="Basta uma foto e os quilómetros. A moldura dos Magic Runners fica pronta para o Instagram em segundos." data-en="Pick a photo, type your kilometres and post. The Magic Runners frame, ready for Instagram in seconds.">Basta uma foto e os quilómetros. A moldura dos Magic Runners fica pronta para o Instagram em segundos.</p>
+      </div>
+      <div class="mrf">
+        <div class="mrf-stage"><canvas width="1080" height="1350" role="img" aria-label="Pré-visualização da moldura"></canvas><p class="mrf-tip" data-pt="Arrastar a foto para a enquadrar." data-en="Drag the photo to frame it.">Arrastar a foto para a enquadrar.</p></div>
+        <div class="mrf-panel">
+          <fieldset class="mrf-set"><legend data-pt="1 · Moldura" data-en="1 · Frame">1 · Moldura</legend>
+            <div class="mrf-tpls">
+              <button type="button" data-tpl="km" aria-pressed="true"><b>12,4<i>km</i></b><span data-pt="Quilómetros" data-en="Kilometres">Quilómetros</span></button>
+              <button type="button" data-tpl="feito" aria-pressed="false"><b class="f">Treino<i>feito.</i></b><span data-pt="Treino feito" data-en="Run done">Treino feito</span></button>
+              <button type="button" data-tpl="verde" aria-pressed="false"><b class="v">8<i>km</i></b><span data-pt="Linha amarela" data-en="Yellow line">Linha amarela</span></button>
+            </div></fieldset>
+          <label class="mrf-up btn btn-ghost"><input class="mrf-file" type="file" accept="image/*"><span data-pt="2 · Escolher foto" data-en="2 · Choose photo">2 · Escolher foto</span></label>
+          <label class="mrf-km"><span data-pt="3 · Distância" data-en="3 · Distance">3 · Distância</span><span class="mrf-kmrow"><input class="mrf-kmin" inputmode="decimal" value="10,5" maxlength="5" autocomplete="off" aria-label="Quilómetros"><i class="serif">km</i></span></label>
+          <div class="mrf-row"><div class="mrf-fmt" role="group" aria-label="Formato"><button type="button" data-fmt="feed" aria-pressed="true">Feed 4:5</button><button type="button" data-fmt="story" aria-pressed="false">Story 9:16</button></div>
+            <label class="mrf-z"><span>Zoom</span><input class="mrf-zoom" type="range" min="1" max="2.5" step="0.01" value="1"></label></div>
+          <button type="button" class="btn btn-volt mrf-go" data-pt="Descarregar imagem" data-en="Download image">Descarregar imagem</button>
+          <p class="mrf-msg" role="status" aria-live="polite" data-ok="Pronta a publicar, com a marcação @magicrunners_team." data-nofoto="Primeiro, escolher uma foto." data-wait="Aguardar um momento e tentar outra vez."></p>
+          <p class="mrf-note" data-pt="Publicar com a marcação @magicrunners_team. A foto não sai do telemóvel: a imagem é criada no próprio browser." data-en="Post and tag @magicrunners_team. Your photo never leaves your phone: the image is made in your browser.">Publicar com a marcação @magicrunners_team. A foto não sai do telemóvel: a imagem é criada no próprio browser.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band insta" id="instagram">
+    <div class="wrap">
+      <div class="head">
+        <h2><span data-pt="Siga-nos no" data-en="Follow us on">Siga-nos no</span> <span class="serif"><i>Instagram.</i></span></h2>
+        <p data-pt="As fotos mais recentes dos nossos treinos, das provas e do Sunday Running Club." data-en="The latest photos from our runs, races and the Sunday Running Club.">As fotos mais recentes dos nossos treinos, das provas e do Sunday Running Club.</p>
+      </div>
+      <!-- Grelha do Instagram, atualizada à mão: para trocar um post, substituir assets/ig-N.jpg (600x600) e o link /p/CODIGO/ do mesmo quadrado. O 6.º quadrado leva ao perfil. -->
+      <div class="iggrid"><a href="https://www.instagram.com/p/DWRRGkFDNTj/" target="_blank" rel="noopener"><img src="assets/ig-1.jpg" width="600" height="600" loading="lazy" decoding="async" alt="O grupo Magic Runners antes da Meia Maratona de Madrid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.instagram.com/p/DWR8xosDhk7/" target="_blank" rel="noopener"><img src="assets/ig-2.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Sunday Running Club: o grupo a aquecer junto ao mar, na Foz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.instagram.com/p/DQq5e0gjDBs/" target="_blank" rel="noopener"><img src="assets/ig-3.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Mariana Alcoforado a acompanhar um atleta na Maratona do Porto 2025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.instagram.com/p/DXbhfjIgiPT/" target="_blank" rel="noopener"><img src="assets/ig-4.jpg" width="600" height="600" loading="lazy" decoding="async" alt="As Marianas antes da Maratona de Boston (vídeo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.instagram.com/p/DFFQkKxspQV/" target="_blank" rel="noopener"><img src="assets/ig-5.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Atletas Magic Runners à chuva na Meia Maratona Manuela Machado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a class="igmore" href="https://www.instagram.com/magicrunners_team/" target="_blank" rel="noopener"><svg class="igmore-pe" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="224 214 158 172"><path d="M322.76,254.65c-6.35,3.02-12.47,5.78-18.69,9.72-18.77,11.91-28.14,21.09-30.2,47.07-1.17,14.83-4.93,34.01-10.1,40.8l-.63.94c-3.03,5.01-7.07,8.56-12.73,10.35-3.07.97-6.03,2.32-8.96,3.68-1.64.76-3.16,1.87-2.87,4.06.28,2.08,1.96,2.59,3.65,3.02.82.21,1.67.49,2.5.48,7.38-.09,14.81.75,22.14-.49,7.69-1.3,14.78-3.93,19.94-10.26,2.54-3.12,4.17-6.82,6.59-9.99,3.43-4.85,8.08-8.72,13.48-11.2l6.12-2.82c3.22-1.09,6.52-1.99,9.53-3.59,3.02-1.61,4.42-4.18,4.72-7.63.47-5.3-7.2-14.36-10.14-18.28-.5-.67-.84-1.35-1-1.98-.65.29-1.29.57-1.93.87l-7.05,2.78c-.79.31-1.7.03-2.18-.67l-.04-.06c-.33-.48-.6-1-.76-1.56-.43-1.54.06-2.56,2.12-3.56,4.5-2.2,9.06-4.29,13.6-6.4,5.69-2.63,10.23-6.38,12.13-12.62.25-.81,1.06-1.91.19-2.58-.62-.48-1.6.2-2.36.55-3.23,1.51-6.43,3.09-9.68,4.55-4.41,1.99-8.84,3.92-13.29,5.83-1.38.59-2.86.77-4.07-.37-1.04-1-.97-2.32-.52-3.57.41-1.14,1.52-1.55,2.52-2.01,9.73-4.47,19.48-8.89,29.18-13.42,7.24-3.38,12.75-8.38,14.61-16.55,0,0,0,0-.01-.01,0,0-.01-.01-.01-.01-5.19,1.69-9.94,4.37-14.9,6.58-6.13,2.73-12.18,5.65-18.3,8.4-1.87.84-3.79.82-4.71-1.45-.88-2.15.52-3.36,2.25-4.19,4.06-1.95,8.15-3.84,12.23-5.75,9.16-4.28,18.4-8.39,27.47-12.87,5.78-2.86,9.36-7.61,10.42-14.57-2.22.99-4.08,1.77-5.9,2.63-11.46,5.38-22.93,10.74-34.36,16.19Z" fill="currentColor"/><path d="M376.78,231.28c-.23-6.25-4.67-10.79-10.58-10.79-1.82,0-3.62.44-5.38,1.31-7.4,3.68-15.08,7.21-22.5,10.63-3.71,1.71-7.55,3.48-11.32,5.25-2.46,1.16-4.93,2.35-7.33,3.5-3.75,1.81-7.63,3.68-11.45,5.4-28.08,12.6-44.07,30.59-47.53,53.49-.23,1.5-.34,3.89-.53,8.34l-.03.6c-.47,10.65-2.22,21.23-5.21,31.45l-.06.21-.05.21c-.42,1.85-3.76,6.29-7.05,8.82-.75.58-1.12.73-1.12.73h0c-.48.18-.96.35-1.45.53-3.66,1.34-7.43,2.72-11.14,4.85-8.44,4.86-9.61,11.63-9.11,16.45.03.29.07.58.11.87,1.18,7.47,7.36,13.09,15.03,13.67l11.83.9c2.13.16,4.11.24,6.07.24h0c5.92,0,11.38-.7,18.85-2.42,2.78-.64,3.54-.95,3.9-1.1,8.49-3.48,15.39-9.36,20.5-17.45.32-.5.63-1,.94-1.5.61-.98,1.22-1.95,1.85-2.92,1.47-2.28,3.53-4.23,5.95-5.64l6.46-3.78c3.55-1.04,7.56-2.31,11.48-4.16,5.67-2.68,9.88-7.47,11.84-13.49,1.71-5.23,1.65-11.07-.17-16.43-.95-2.81-3.25-6.22-7.04-11,8.06-5.82,12.67-13.72,13.46-23.07,9.17-6.11,14.67-14.39,16.35-24.66,9.87-7.13,14.85-17.15,14.42-29.03ZM357.58,254.89c-1.24.86-1.97,1.78-2.15,3.21-1.28,9.72-6.55,16.74-14.76,21.76-1.1.67-1.7,1.47-1.73,2.85-.21,9.33-4.86,16.04-12.58,20.84-1.53.95-3.12,1.77-4.74,2.53.16.15.32.31.46.48,2.38,2.95,9.49,11.21,10.7,14.79,2.55,7.55.47,17.15-7.93,21.12-3.61,1.7-7.43,2.9-11.27,4.01l-7.22,4.22c-3.36,1.97-6.24,4.67-8.35,7.94-.96,1.48-1.89,2.99-2.83,4.49-4.2,6.65-9.79,11.62-17.15,14.64-.36.15-1.37.42-2.79.75-8.19,1.89-14.38,2.66-22.76,2.02l-11.83-.9c-4.23-.32-7.81-3.44-8.47-7.62-.03-.16-.05-.33-.06-.49-.47-4.51,1.93-7.39,5.55-9.47,3.62-2.09,7.59-3.43,11.49-4.87.97-.36,2-1.01,3.01-1.78,3.58-2.75,8.67-8.52,9.67-12.92,3.15-10.79,4.99-21.92,5.49-33.15.17-3.75.3-6.93.49-8.19,3.52-23.29,21.67-38.27,43.36-48,6.35-2.85,12.58-5.99,18.89-8.95,11.32-5.31,22.76-10.38,33.97-15.94,2.94-1.46,5.45.03,5.57,3.3.36,10.03-3.89,17.72-12.02,23.35Z" fill="currentColor"/></svg><span class="igmore-t" data-pt="Ver mais no Instagram" data-en="See more on Instagram">Ver mais no Instagram</span></a></div>
+      <div class="igfoot"><p data-pt="Com a marcação @magicrunners_team, as melhores fotos dos nossos treinos aparecem aqui." data-en="Tag @magicrunners_team in our runs: the best photos show up here.">Com a marcação @magicrunners_team, as melhores fotos dos nossos treinos aparecem aqui.</p><a class="btn btn-ink" href="https://www.instagram.com/magicrunners_team/" target="_blank" rel="noopener"><span data-pt="Seguir @magicrunners_team" data-en="Follow @magicrunners_team">Seguir @magicrunners_team</span></a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="sig"><span class="logo"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="216 210 760 184"><path d="M322.76,254.65c-6.35,3.02-12.47,5.78-18.69,9.72-18.77,11.91-28.14,21.09-30.2,47.07-1.17,14.83-4.93,34.01-10.1,40.8l-.63.94c-3.03,5.01-7.07,8.56-12.73,10.35-3.07.97-6.03,2.32-8.96,3.68-1.64.76-3.16,1.87-2.87,4.06.28,2.08,1.96,2.59,3.65,3.02.82.21,1.67.49,2.5.48,7.38-.09,14.81.75,22.14-.49,7.69-1.3,14.78-3.93,19.94-10.26,2.54-3.12,4.17-6.82,6.59-9.99,3.43-4.85,8.08-8.72,13.48-11.2l6.12-2.82c3.22-1.09,6.52-1.99,9.53-3.59,3.02-1.61,4.42-4.18,4.72-7.63.47-5.3-7.2-14.36-10.14-18.28-.5-.67-.84-1.35-1-1.98-.65.29-1.29.57-1.93.87l-7.05,2.78c-.79.31-1.7.03-2.18-.67l-.04-.06c-.33-.48-.6-1-.76-1.56-.43-1.54.06-2.56,2.12-3.56,4.5-2.2,9.06-4.29,13.6-6.4,5.69-2.63,10.23-6.38,12.13-12.62.25-.81,1.06-1.91.19-2.58-.62-.48-1.6.2-2.36.55-3.23,1.51-6.43,3.09-9.68,4.55-4.41,1.99-8.84,3.92-13.29,5.83-1.38.59-2.86.77-4.07-.37-1.04-1-.97-2.32-.52-3.57.41-1.14,1.52-1.55,2.52-2.01,9.73-4.47,19.48-8.89,29.18-13.42,7.24-3.38,12.75-8.38,14.61-16.55,0,0,0,0-.01-.01,0,0-.01-.01-.01-.01-5.19,1.69-9.94,4.37-14.9,6.58-6.13,2.73-12.18,5.65-18.3,8.4-1.87.84-3.79.82-4.71-1.45-.88-2.15.52-3.36,2.25-4.19,4.06-1.95,8.15-3.84,12.23-5.75,9.16-4.28,18.4-8.39,27.47-12.87,5.78-2.86,9.36-7.61,10.42-14.57-2.22.99-4.08,1.77-5.9,2.63-11.46,5.38-22.93,10.74-34.36,16.19Z" fill="currentColor"/><path d="M376.78,231.28c-.23-6.25-4.67-10.79-10.58-10.79-1.82,0-3.62.44-5.38,1.31-7.4,3.68-15.08,7.21-22.5,10.63-3.71,1.71-7.55,3.48-11.32,5.25-2.46,1.16-4.93,2.35-7.33,3.5-3.75,1.81-7.63,3.68-11.45,5.4-28.08,12.6-44.07,30.59-47.53,53.49-.23,1.5-.34,3.89-.53,8.34l-.03.6c-.47,10.65-2.22,21.23-5.21,31.45l-.06.21-.05.21c-.42,1.85-3.76,6.29-7.05,8.82-.75.58-1.12.73-1.12.73h0c-.48.18-.96.35-1.45.53-3.66,1.34-7.43,2.72-11.14,4.85-8.44,4.86-9.61,11.63-9.11,16.45.03.29.07.58.11.87,1.18,7.47,7.36,13.09,15.03,13.67l11.83.9c2.13.16,4.11.24,6.07.24h0c5.92,0,11.38-.7,18.85-2.42,2.78-.64,3.54-.95,3.9-1.1,8.49-3.48,15.39-9.36,20.5-17.45.32-.5.63-1,.94-1.5.61-.98,1.22-1.95,1.85-2.92,1.47-2.28,3.53-4.23,5.95-5.64l6.46-3.78c3.55-1.04,7.56-2.31,11.48-4.16,5.67-2.68,9.88-7.47,11.84-13.49,1.71-5.23,1.65-11.07-.17-16.43-.95-2.81-3.25-6.22-7.04-11,8.06-5.82,12.67-13.72,13.46-23.07,9.17-6.11,14.67-14.39,16.35-24.66,9.87-7.13,14.85-17.15,14.42-29.03ZM357.58,254.89c-1.24.86-1.97,1.78-2.15,3.21-1.28,9.72-6.55,16.74-14.76,21.76-1.1.67-1.7,1.47-1.73,2.85-.21,9.33-4.86,16.04-12.58,20.84-1.53.95-3.12,1.77-4.74,2.53.16.15.32.31.46.48,2.38,2.95,9.49,11.21,10.7,14.79,2.55,7.55.47,17.15-7.93,21.12-3.61,1.7-7.43,2.9-11.27,4.01l-7.22,4.22c-3.36,1.97-6.24,4.67-8.35,7.94-.96,1.48-1.89,2.99-2.83,4.49-4.2,6.65-9.79,11.62-17.15,14.64-.36.15-1.37.42-2.79.75-8.19,1.89-14.38,2.66-22.76,2.02l-11.83-.9c-4.23-.32-7.81-3.44-8.47-7.62-.03-.16-.05-.33-.06-.49-.47-4.51,1.93-7.39,5.55-9.47,3.62-2.09,7.59-3.43,11.49-4.87.97-.36,2-1.01,3.01-1.78,3.58-2.75,8.67-8.52,9.67-12.92,3.15-10.79,4.99-21.92,5.49-33.15.17-3.75.3-6.93.49-8.19,3.52-23.29,21.67-38.27,43.36-48,6.35-2.85,12.58-5.99,18.89-8.95,11.32-5.31,22.76-10.38,33.97-15.94,2.94-1.46,5.45.03,5.57,3.3.36,10.03-3.89,17.72-12.02,23.35Z" fill="currentColor"/><polygon points="423.4 311.62 404.56 267.57 390.87 267.57 390.87 326.94 402.86 326.94 402.86 288.51 418.77 326.94 427.87 326.94 443.69 288.56 443.69 326.94 455.68 326.94 455.68 267.57 442.07 267.57 423.4 311.62" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M498.42,290.11c-1.25-3.4-3.26-6.07-6.04-8-2.78-1.93-6.04-2.89-9.78-2.89-4.14,0-7.8,1.04-10.97,3.1-3.18,2.07-5.67,4.92-7.49,8.55-1.82,3.63-2.72,7.8-2.72,12.5s.91,8.8,2.72,12.46c1.81,3.66,4.31,6.52,7.49,8.59,3.18,2.07,6.83,3.1,10.97,3.1,3.74,0,7-.96,9.78-2.89,2.78-1.93,4.79-4.62,6.04-8.08v4c0,1.93.57,3.47,1.7,4.64,1.13,1.16,2.67,1.74,4.59,1.74h5.78v-47.12h-12.08v10.29ZM496.67,310.78c-1.16,2.04-2.68,3.6-4.55,4.68-1.87,1.08-3.91,1.62-6.12,1.62s-4.1-.54-6-1.62c-1.9-1.08-3.43-2.64-4.59-4.68-1.16-2.04-1.74-4.51-1.74-7.4s.58-5.44,1.74-7.49c1.16-2.04,2.69-3.59,4.59-4.64,1.9-1.05,3.9-1.57,6-1.57,2.21,0,4.25.53,6.12,1.57,1.87,1.05,3.39,2.59,4.55,4.64,1.16,2.04,1.74,4.54,1.74,7.49s-.58,5.36-1.74,7.4Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M552.62,290.11c-1.19-3.4-3.18-6.07-5.95-8-2.78-1.93-6.04-2.89-9.78-2.89-4.14,0-7.81,1.04-11.02,3.1-3.2,2.07-5.71,4.92-7.53,8.55-1.82,3.63-2.72,7.8-2.72,12.5s.91,8.8,2.72,12.46c1.81,3.66,4.32,6.52,7.53,8.59,3.2,2.07,6.88,3.1,11.02,3.1,3.74,0,7-.96,9.78-2.89,2.78-1.93,4.76-4.62,5.95-8.08v10.21c0,2.72-.5,5.06-1.49,7.02-.99,1.96-2.4,3.44-4.21,4.47-1.82,1.02-4,1.53-6.55,1.53-3.01,0-5.7-.84-8.08-2.51-2.38-1.67-4.14-3.93-5.27-6.76l-10.72,4c1.08,3.35,2.81,6.18,5.19,8.51,2.38,2.32,5.22,4.07,8.51,5.23,3.29,1.16,6.83,1.74,10.63,1.74,4.03,0,7.54-.61,10.55-1.83,3-1.22,5.5-2.89,7.48-5.02,1.98-2.13,3.49-4.59,4.51-7.4,1.02-2.81,1.53-5.86,1.53-9.14v-46.78h-12.08v10.29ZM550.87,310.82c-1.16,2.07-2.68,3.63-4.55,4.68-1.87,1.05-3.88,1.57-6.04,1.57s-4.18-.52-6.08-1.57c-1.9-1.05-3.43-2.61-4.59-4.68-1.16-2.07-1.74-4.55-1.74-7.44s.58-5.44,1.74-7.49c1.16-2.04,2.69-3.59,4.59-4.64,1.9-1.05,3.93-1.57,6.08-1.57s4.17.53,6.04,1.57c1.87,1.05,3.39,2.59,4.55,4.64,1.16,2.04,1.74,4.54,1.74,7.49s-.58,5.37-1.74,7.44Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M578.49,258.89c-2.38,0-4.37.74-5.95,2.21-1.59,1.48-2.38,3.29-2.38,5.44s.79,3.95,2.38,5.4c1.59,1.45,3.57,2.17,5.95,2.17s4.37-.72,5.95-2.17c1.59-1.45,2.38-3.25,2.38-5.4s-.79-3.97-2.38-5.44c-1.59-1.47-3.57-2.21-5.95-2.21Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><rect x="572.37" y="279.82" width="12.08" height="47.12" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M619.38,314.9c-1.73,1.67-4.04,2.51-6.93,2.51-2.21,0-4.14-.55-5.78-1.66-1.65-1.11-2.92-2.71-3.83-4.81-.91-2.1-1.36-4.65-1.36-7.66s.45-5.54,1.36-7.61c.91-2.07,2.18-3.64,3.83-4.72,1.64-1.08,3.57-1.62,5.78-1.62,2.49,0,4.58.68,6.25,2.04,1.67,1.36,2.93,3.35,3.79,5.95l11.57-3.66c-.91-2.72-2.07-5-3.49-6.85-1.42-1.84-3.03-3.32-4.85-4.42-1.81-1.11-3.84-1.91-6.08-2.42-2.24-.51-4.61-.77-7.1-.77-4.59,0-8.65.99-12.16,2.98-3.52,1.99-6.25,4.78-8.21,8.38-1.96,3.6-2.93,7.84-2.93,12.72s.99,9.14,2.98,12.8c1.98,3.66,4.73,6.48,8.25,8.46,3.52,1.99,7.54,2.98,12.08,2.98,4.25,0,7.85-.75,10.8-2.25,2.95-1.5,5.37-3.5,7.27-6,1.9-2.49,3.22-5.19,3.96-8.08l-11.65-2.72c-.62,2.61-1.8,4.75-3.53,6.42Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M678.58,305.76c-2.35-2.44-5.01-4.17-7.95-5.19,3.86-.91,6.96-2.71,9.31-5.4,2.35-2.69,3.53-5.94,3.53-9.74,0-3.46-.81-6.54-2.42-9.23-1.62-2.69-4.01-4.81-7.19-6.34-3.18-1.53-7.09-2.3-11.74-2.3h-22.37v59.37h11.99v-22.54c2.89,0,5.49.34,7.78,1.02,2.3.68,4.3,1.62,6,2.81,2.83,1.93,4.96,4.52,6.38,7.78,1.42,3.26,2.3,6.9,2.64,10.93h12.93c-.51-4.54-1.53-8.59-3.06-12.16-1.53-3.57-3.47-6.58-5.83-9.02ZM661.61,294.7h-9.87v-17.44h9.87c3.06,0,5.43.79,7.1,2.38,1.67,1.59,2.51,3.66,2.51,6.21s-.82,4.59-2.47,6.29c-1.65,1.7-4.03,2.55-7.15,2.55Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M724.7,304.48c0,2.44-.43,4.62-1.28,6.55-.85,1.93-2.07,3.45-3.66,4.55-1.59,1.11-3.46,1.66-5.61,1.66-3.12,0-5.64-1.03-7.57-3.1-1.93-2.07-2.89-5-2.89-8.8v-25.52h-11.91v27.56c0,4.25.74,7.88,2.21,10.89,1.47,3.01,3.59,5.3,6.34,6.89,2.75,1.59,6,2.38,9.74,2.38,2.89,0,5.54-.72,7.95-2.17,2.41-1.45,4.39-3.7,5.95-6.76.26-.52.5-1.07.72-1.63v3.59c0,1.93.58,3.47,1.74,4.64,1.16,1.16,2.71,1.74,4.64,1.74h5.7v-47.12h-12.08v24.67Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M780.97,281.6c-2.69-1.59-5.83-2.38-9.4-2.38-2.16,0-4.25.44-6.29,1.32-2.04.88-3.83,2.11-5.36,3.7-1.53,1.59-2.67,3.43-3.4,5.53v-9.95h-11.99v47.12h11.99v-24.67c0-2.49.44-4.71,1.32-6.63.88-1.93,2.11-3.45,3.7-4.55,1.59-1.11,3.43-1.66,5.53-1.66,3.12,0,5.64,1.06,7.57,3.19,1.93,2.13,2.89,5.06,2.89,8.8v25.52h11.91v-27.73c0-4.2-.74-7.78-2.21-10.76-1.48-2.98-3.56-5.26-6.25-6.85Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M833.31,281.6c-2.69-1.59-5.83-2.38-9.4-2.38-2.16,0-4.25.44-6.29,1.32-2.04.88-3.83,2.11-5.36,3.7-1.53,1.59-2.67,3.43-3.4,5.53v-9.95h-11.99v47.12h11.99v-24.67c0-2.49.44-4.71,1.32-6.63.88-1.93,2.11-3.45,3.7-4.55,1.59-1.11,3.43-1.66,5.53-1.66,3.12,0,5.64,1.06,7.57,3.19,1.93,2.13,2.89,5.06,2.89,8.8v25.52h11.91v-27.73c0-4.2-.74-7.78-2.21-10.76-1.48-2.98-3.56-5.26-6.25-6.85Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M882.18,314.48c-1.5,1.11-3.13,1.97-4.89,2.59-1.76.62-3.57.94-5.44.94-2.16,0-4.17-.35-6.04-1.06-1.87-.71-3.45-1.71-4.72-3.02-1.28-1.3-2.08-2.72-2.42-4.25.17,0,.52.01,1.06.04.54.03,1.15.04,1.83.04s1.28.03,1.79.08c3.23.11,6.52-.04,9.87-.47,3.34-.43,6.42-1.22,9.23-2.38,2.81-1.16,5.06-2.74,6.76-4.72,1.7-1.98,2.55-4.45,2.55-7.4,0-2.27-.52-4.37-1.57-6.29-1.05-1.93-2.52-3.59-4.42-4.98-1.9-1.39-4.1-2.47-6.59-3.23-2.5-.77-5.16-1.15-8-1.15-3.35,0-6.52.58-9.53,1.74-3.01,1.16-5.67,2.82-8,4.98-2.33,2.16-4.14,4.74-5.44,7.74-1.3,3.01-1.96,6.35-1.96,10.04s.64,6.82,1.91,9.74c1.28,2.92,3.06,5.43,5.36,7.53,2.3,2.1,4.99,3.71,8.08,4.85,3.09,1.13,6.45,1.7,10.08,1.7,2.95,0,5.78-.37,8.51-1.11,2.72-.74,5.27-1.88,7.66-3.45,2.38-1.56,4.48-3.53,6.3-5.91l-8.25-6.21c-.96,1.3-2.2,2.51-3.7,3.62ZM859.85,295.09c1.13-1.9,2.71-3.44,4.72-4.64,2.01-1.19,4.32-1.79,6.93-1.79,1.64,0,3.11.27,4.38.81,1.28.54,2.3,1.25,3.06,2.13.77.88,1.15,1.89,1.15,3.02,0,1.36-.5,2.48-1.49,3.36-.99.88-2.3,1.56-3.91,2.04-1.62.48-3.37.81-5.27.98-1.9.17-3.79.26-5.66.26-1.14,0-2.21-.03-3.23-.08-1.02-.06-1.87-.11-2.55-.17.11-2.04.74-4.01,1.87-5.91Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M909.83,290.62v-10.8h-11.99v47.12h11.99v-22.03c0-2.95.51-5.41,1.53-7.4,1.02-1.98,2.42-3.49,4.21-4.51,1.79-1.02,3.79-1.53,6-1.53.51,0,1.01.01,1.49.04.48.03.98.13,1.49.3v-12.59c-3.57,0-6.65,1.02-9.23,3.06-2.58,2.04-4.41,4.82-5.49,8.34Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/><path d="M962.97,306.61c-1.27-1.76-2.92-3.15-4.93-4.17-2.01-1.02-4.16-1.83-6.42-2.42-2.27-.6-4.41-1.16-6.42-1.7-2.01-.54-3.66-1.19-4.93-1.96s-1.91-1.86-1.91-3.27.57-2.45,1.7-3.27c1.13-.82,2.78-1.23,4.93-1.23,2.27,0,4.04.53,5.32,1.57,1.28,1.05,2.17,2.57,2.68,4.55l10.89-2.89c-.63-2.55-1.76-4.78-3.4-6.68-1.65-1.9-3.74-3.36-6.29-4.38-2.55-1.02-5.5-1.53-8.85-1.53-3.86,0-7.17.62-9.95,1.87-2.78,1.25-4.92,2.95-6.42,5.1-1.5,2.16-2.25,4.51-2.25,7.06,0,2.89.64,5.2,1.91,6.93,1.28,1.73,2.94,3.09,4.98,4.08,2.04.99,4.2,1.79,6.46,2.38s4.41,1.14,6.42,1.62c2.01.48,3.66,1.11,4.93,1.87,1.28.77,1.91,1.86,1.91,3.27s-.61,2.5-1.83,3.4c-1.22.91-3.02,1.36-5.4,1.36-2.04,0-3.83-.55-5.36-1.66s-2.55-2.59-3.06-4.47l-11.23,2.55c.74,2.44,2.01,4.65,3.83,6.63,1.81,1.99,4.08,3.53,6.8,4.64s5.78,1.66,9.19,1.66c3.8,0,7.09-.62,9.87-1.87,2.78-1.25,4.93-2.93,6.46-5.06,1.53-2.13,2.3-4.47,2.3-7.02,0-2.89-.64-5.22-1.91-6.97Z" fill="currentColor" stroke="currentColor" stroke-width=".9"/></svg></span><span class="by">BY MARIANA ALCOFORADO</span></div>
+    <div>Porto, Portugal · <a href="https://www.instagram.com/magicrunners_team/" target="_blank" rel="noopener">Instagram</a><br><a href="mailto:magicrunnersporto@gmail.com">magicrunnersporto@gmail.com</a> · <a href="tel:+351911019015">+351 911 019 015</a><br><nav class="legal" aria-label="Legal"><button type="button" class="linkbtn" data-open="dlg-priv" data-pt="Privacidade" data-en="Privacy">Privacidade</button> · <button type="button" class="linkbtn" data-open="dlg-cookies" data-pt="Cookies" data-en="Cookies">Cookies</button> · <button type="button" class="linkbtn" data-open="dlg-parq" data-pt="Questionário de saúde" data-en="Health questionnaire">Questionário de saúde</button></nav><p class="powered">Powered by <a href="https://jifstudio.pt" target="_blank" rel="noopener">JIF</a></p></div>
+  </div>
+<a class="btn btn-volt wa off" data-wa="geral" href="#contacto" data-pt="Falar no WhatsApp" data-en="Chat on WhatsApp">Falar no WhatsApp</a>
+</footer>
+
+
+<dialog id="dlg-parq" class="dlg" aria-labelledby="parq-t">
+  <form method="dialog" class="dlg-x"><button aria-label="Fechar">×</button></form>
+  <h2 id="parq-t" data-pt="Questionário de saúde" data-en="Health questionnaire">Questionário de saúde</h2>
+  <p class="dlg-lead" data-pt="Sete perguntas antes de começar. As respostas ficam só neste telemóvel: não são enviadas." data-en="Seven questions before you start. Your answers stay on your phone: nothing is sent.">Sete perguntas antes de começar. As respostas ficam só neste telemóvel: não são enviadas.</p>
+  <form id="parq"><fieldset class="q"><legend data-pt="1. Algum médico já disse que tem um problema cardíaco ou tensão arterial alta?" data-en="1. Has a doctor ever said you have a heart condition or high blood pressure?">1. Algum médico já disse que tem um problema cardíaco ou tensão arterial alta?</legend><label><input type="radio" name="q0" value="0" required> <span data-pt="Não" data-en="No">Não</span></label><label><input type="radio" name="q0" value="1"> <span data-pt="Sim" data-en="Yes">Sim</span></label></fieldset><fieldset class="q"><legend data-pt="2. Sente dor no peito em repouso, no dia a dia ou quando faz exercício?" data-en="2. Do you feel chest pain at rest, in daily life or when exercising?">2. Sente dor no peito em repouso, no dia a dia ou quando faz exercício?</legend><label><input type="radio" name="q1" value="0" required> <span data-pt="Não" data-en="No">Não</span></label><label><input type="radio" name="q1" value="1"> <span data-pt="Sim" data-en="Yes">Sim</span></label></fieldset><fieldset class="q"><legend data-pt="3. Perdeu o equilíbrio por tonturas ou perdeu a consciência nos últimos 12 meses?" data-en="3. Have you lost balance from dizziness or lost consciousness in the last 12 months?">3. Perdeu o equilíbrio por tonturas ou perdeu a consciência nos últimos 12 meses?</legend><label><input type="radio" name="q2" value="0" required> <span data-pt="Não" data-en="No">Não</span></label><label><input type="radio" name="q2" value="1"> <span data-pt="Sim" data-en="Yes">Sim</span></label></fieldset><fieldset class="q"><legend data-pt="4. Tem alguma outra doença crónica diagnosticada?" data-en="4. Do you have any other diagnosed chronic condition?">4. Tem alguma outra doença crónica diagnosticada?</legend><label><input type="radio" name="q3" value="0" required> <span data-pt="Não" data-en="No">Não</span></label><label><input type="radio" name="q3" value="1"> <span data-pt="Sim" data-en="Yes">Sim</span></label></fieldset><fieldset class="q"><legend data-pt="5. Toma medicação prescrita para uma doença crónica?" data-en="5. Do you take prescribed medication for a chronic condition?">5. Toma medicação prescrita para uma doença crónica?</legend><label><input type="radio" name="q4" value="0" required> <span data-pt="Não" data-en="No">Não</span></label><label><input type="radio" name="q4" value="1"> <span data-pt="Sim" data-en="Yes">Sim</span></label></fieldset><fieldset class="q"><legend data-pt="6. Tem um problema nos ossos, articulações ou músculos que possa piorar com exercício?" data-en="6. Do you have a bone, joint or muscle problem that exercise could make worse?">6. Tem um problema nos ossos, articulações ou músculos que possa piorar com exercício?</legend><label><input type="radio" name="q5" value="0" required> <span data-pt="Não" data-en="No">Não</span></label><label><input type="radio" name="q5" value="1"> <span data-pt="Sim" data-en="Yes">Sim</span></label></fieldset><fieldset class="q"><legend data-pt="7. Algum médico disse que só deve fazer exercício com supervisão médica?" data-en="7. Has a doctor told you to exercise only under medical supervision?">7. Algum médico disse que só deve fazer exercício com supervisão médica?</legend><label><input type="radio" name="q6" value="0" required> <span data-pt="Não" data-en="No">Não</span></label><label><input type="radio" name="q6" value="1"> <span data-pt="Sim" data-en="Yes">Sim</span></label></fieldset><button class="btn btn-volt" type="submit" data-pt="Ver resultado" data-en="See result">Ver resultado</button></form>
+  <div id="parq-r" class="parq-r" role="status" hidden></div>
+  <p class="dlg-small" data-pt="Baseado no PAR-Q. Não substitui uma consulta médica." data-en="Based on the PAR-Q. It does not replace a medical consultation.">Baseado no PAR-Q. Não substitui uma consulta médica.</p>
+</dialog>
+<dialog id="dlg-gal" class="gal" aria-label="Galeria de fotografias">
+  <div class="gal-top"><span id="gal-n">1 / 12</span><form method="dialog"><button class="gal-x" aria-label="Fechar">×</button></form></div>
+  <div class="gal-stage"><button type="button" class="gal-nav gal-prev" aria-label="Foto anterior"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><img id="gal-img" src="" alt=""><video id="gal-vid" controls playsinline preload="none" hidden></video><button type="button" class="gal-nav gal-next" aria-label="Foto seguinte"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
+  <p class="gal-cap" id="gal-cap" aria-live="polite"></p>
+  <div class="gal-strip" id="gal-strip" aria-label="Pré-visualizações"></div>
+</dialog>
+<dialog id="dlg-priv" class="dlg" aria-labelledby="priv-t">
+  <form method="dialog" class="dlg-x"><button aria-label="Fechar">×</button></form>
+  <h2 id="priv-t">Política de privacidade</h2>
+  <p class="dlg-small">Versão de teste · texto base a validar com um jurista antes de publicar.</p>
+  <h3>Quem trata os dados</h3><p>Missãobtusa – Unipessoal, Lda., NIF 518 562 360, Rua Afonso Lopes Vieira, 220 – Hab. 66, 4100-020 Porto. Contacto: magicrunnersporto@gmail.com.</p>
+  <h3>Que dados recolhemos</h3><p>Nome, telemóvel, serviço e objetivo escolhidos no formulário e, opcionalmente, notas sobre lesões ou saúde.</p>
+  <h3>Para quê</h3><p>Responder ao pedido, marcar a avaliação e preparar o plano de treino. Os dados de saúde são tratados só com consentimento explícito (artigo 9.º do RGPD) e só para adaptar o treino.</p>
+  <h3>Durante quanto tempo</h3><p>Enquanto durarem os treinos connosco e até 2 anos depois do último treino. Pedidos de avaliação que não avançam são apagados ao fim de 2 anos.</p>
+  <h3>Com quem partilhamos</h3><p>Com ninguém para fins comerciais. Só com prestadores necessários ao serviço (alojamento do site, email), com contrato de proteção de dados.</p>
+  <h3>Direitos</h3><p>É possível pedir acesso, correção, apagamento ou portabilidade dos dados e retirar o consentimento a qualquer momento, por magicrunnersporto@gmail.com. É também possível apresentar queixa à CNPD (cnpd.pt).</p>
+</dialog>
+<dialog id="dlg-cookies" class="dlg" aria-labelledby="ck-t">
+  <form method="dialog" class="dlg-x"><button aria-label="Fechar">×</button></form>
+  <h2 id="ck-t">Cookies</h2>
+  <p>Este site não usa cookies de publicidade nem de estatística, e as fontes estão alojadas no próprio site. Guarda apenas a língua escolhida (PT/EN) no navegador, para a próxima visita.</p>
+  <p>Se no futuro juntarmos estatísticas de visitas, este texto é atualizado e passa a pedir consentimento antes.</p>
+</dialog>
+
+<script>
+(function(){
+  var lang='pt';
+  try{lang=localStorage.getItem('mr-lang')||'pt'}catch(e){}
+  var btn=document.getElementById('lang');
+  function apply(l){
+    document.documentElement.lang=l==='en'?'en':'pt-PT';
+    document.querySelectorAll('[data-pt]').forEach(function(el){el.textContent=el.getAttribute('data-'+l)});
+    document.querySelectorAll('[data-pt-html]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+l+'-html')});
+    document.querySelectorAll('.lang').forEach(function(b){b.textContent=l==='en'?'PT':'EN'});
+    document.querySelectorAll('[data-pt-aria]').forEach(function(el){el.setAttribute('aria-label',el.getAttribute('data-'+l+'-aria'))});
+    lang=l;if(window.mrSetSun)window.mrSetSun();
+  }
+  document.querySelectorAll('.lang').forEach(function(b){b.addEventListener('click',function(){lang=lang==='pt'?'en':'pt';try{localStorage.setItem('mr-lang',lang)}catch(e){}apply(lang)})});
+  var f=document.getElementById('f'),err=document.getElementById('err'),ok=document.getElementById('ok');
+  function esc(t){return t.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  /* número de WhatsApp da Mariana, só dígitos com indicativo (ex.: 3519XXXXXXXX). Vazio = os botões levam ao formulário */
+  var WA_NUMBER='351911019015';
+  function waLink(text){return WA_NUMBER?'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(text):'#contacto'}
+  window.mrWaLink=waLink;
+  /* 4 · botões dos serviços escolhem o serviço no formulário */
+  document.querySelectorAll('.card-cta').forEach(function(a){a.addEventListener('click',function(){f.svc.value=a.dataset.svc;var m={grupo:0,casa:1};if(a.dataset.svc in m)f.modo.selectedIndex=m[a.dataset.svc];if(a.dataset.svc==='prova')f.obj.selectedIndex=1;setTimeout(function(){f.nome.focus({preventScroll:true})},500)})});
+  /* 6 · próximo domingo */
+  /* Sunday Running Club: último domingo de cada mês, calculado automaticamente. Para uma exceção, pôr a data em EXC no formato 'AAAA-MM-DD' (ex.: '2026-11-22'); deixar '' para o cálculo automático. */
+  var EXC='2026-11-22';
+  function lastSun(y,m){var x=new Date(y,m+1,0);x.setDate(x.getDate()-x.getDay());return x}
+  var now=new Date(),d=lastSun(now.getFullYear(),now.getMonth());var limite=new Date(d);limite.setHours(12,0,0,0);if(now>limite)d=lastSun(now.getFullYear(),now.getMonth()+1);
+  if(EXC){var e=EXC.split('-'),dx=new Date(+e[0],+e[1]-1,+e[2],12);if(dx>=now)d=dx;else if(d.getMonth()===dx.getMonth()&&d.getFullYear()===dx.getFullYear())d=lastSun(dx.getFullYear(),dx.getMonth()+1)}
+  function sunTxt(){var en=lang==='en';return d.toLocaleDateString(en?'en-GB':'pt-PT',{day:'numeric',month:'long'})}
+  var ns=document.getElementById('nextSun');function setSun(){ns.textContent=sunTxt()}setSun();window.mrSetSun=setSun;
+  try{var iso=d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2),ev=document.createElement('script');ev.type='application/ld+json';ev.text=JSON.stringify({'@context':'https://schema.org','@type':'SportsEvent','name':'Sunday Running Club · Magic Runners','description':'Corrida de 4 a 7 km à beira-mar, adaptada a todos os ritmos, com paragem para exercícios e brunch da Padaria Formosa no final. Último domingo de cada mês.','startDate':iso+'T10:15:00+00:00','eventStatus':'https://schema.org/EventScheduled','eventAttendanceMode':'https://schema.org/OfflineEventAttendanceMode','location':{'@type':'Place','name':'Padaria Formosa · Foz do Douro','address':{'@type':'PostalAddress','addressLocality':'Porto','addressCountry':'PT'}},'organizer':{'@type':'Organization','name':'Magic Runners','url':'https://www.magicrunnersteam.com/'},'offers':{'@type':'Offer','price':'10','priceCurrency':'EUR','availability':'https://schema.org/InStock','url':'https://www.magicrunnersteam.com/#sunday'}});document.head.appendChild(ev)}catch(err){}
+  document.querySelectorAll('[data-wa]').forEach(function(a){a.addEventListener('click',function(e){var en=lang==='en',t=a.dataset.wa==='sunday'?(en?'Hi! I would like to sign up for the Sunday Running Club on ':'Olá! Quero fazer a inscrição no Sunday Running Club de domingo, ')+sunTxt()+'.':a.dataset.wa==='historia'?(en?'Hi Mariana! I would like to share my Magic Runners story.':'Olá Mariana! Quero partilhar a minha história nos Magic Runners.'):(en?'Hi Mariana! I would like to know more about Magic Runners.':'Olá Mariana! Gostava de saber mais sobre os Magic Runners.');var l=waLink(t);if(l.charAt(0)!=='#'){a.href=l;a.target='_blank';a.rel='noopener'}else if(a.dataset.wa==='sunday'){f.svc.value='sunday'}})});
+  /* 11 · janelas: privacidade, cookies, questionário */
+  document.addEventListener('click',function(e){var b=e.target.closest('[data-open]');if(!b)return;var dl=document.getElementById(b.dataset.open);if(dl&&dl.showModal){dl.showModal()}});
+  document.querySelectorAll('.dlg').forEach(function(dl){dl.addEventListener('click',function(e){if(e.target===dl)dl.close()})});
+  var pq=document.getElementById('parq'),pr=document.getElementById('parq-r');
+  pq.addEventListener('submit',function(e){e.preventDefault();var en=lang==='en',yes=0,miss=0;for(var i=0;i<7;i++){var c=pq.querySelector('input[name=q'+i+']:checked');if(!c)miss++;else if(c.value==='1')yes++}
+    pr.hidden=false;if(miss){pr.className='parq-r warn';pr.textContent=en?'Answer all 7 questions.':'Faltam respostas: são 7 perguntas.';return}
+    if(yes){pr.className='parq-r warn';pr.textContent=en?'You answered yes to '+yes+' question(s). Before your first session, talk to your doctor and bring their go-ahead to the assessment. Mariana adapts the plan to you.':'Resposta sim a '+yes+' pergunta(s). Antes do primeiro treino, é importante falar com o médico e trazer a autorização para a avaliação. A Mariana adapta o plano a cada caso.'}
+    else{pr.className='parq-r go';pr.textContent=en?'All clear: you can start. Mariana confirms everything with you at the assessment.':'Tudo bem: pode começar. Na avaliação, a Mariana confirma tudo.'}pr.scrollIntoView({block:'nearest'})});
+  if(lang==='en')apply('en');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=f.nome.value.trim(),t=f.tel.value.trim(),c=document.getElementById('rgpd').checked,en=lang==='en';
+    [f.nome,f.tel].forEach(function(x){x.removeAttribute('aria-invalid')});document.getElementById('rgpd').removeAttribute('aria-invalid');
+    if(!n||!t){err.textContent=en?(!n&&!t?'Add your name and phone so we can reply.':!n?'Add your name so we can reply.':'Add your phone so we can reply.'):(!n&&!t?'Faltam o nome e o telemóvel para podermos responder.':!n?'Falta o nome para podermos responder.':'Falta o telemóvel para podermos responder.');var bad=!n?f.nome:f.tel;if(!n)f.nome.setAttribute('aria-invalid','true');if(!t)f.tel.setAttribute('aria-invalid','true');bad.focus();return}
+    if(!c){err.textContent=en?'Tick the consent box to send the request.':'É necessário aceitar o tratamento de dados para enviar o pedido.';var cb=document.getElementById('rgpd');cb.setAttribute('aria-invalid','true');cb.focus();return}
+    err.textContent='';f.hidden=true;ok.hidden=false;
+    var svc=f.svc.options[f.svc.selectedIndex].text,msg=(en?'Hi Mariana, I am ':'Olá Mariana, sou ')+n+(en?'. I would like: ':'. Gostava de: ')+svc+'. '+(en?'Phone: ':'Telemóvel: ')+t+'.',mail='mailto:magicrunnersporto@gmail.com?subject='+encodeURIComponent(en?'Assessment request · Magic Runners':'Pedido de avaliação · Magic Runners')+'&body='+encodeURIComponent(msg);
+    ok.innerHTML='<h3>'+(en?'Request received.':'Pedido recebido.')+'</h3><p>'+(en?'Thanks, ':'Obrigado, ')+esc(n)+(en?'. Mariana replies within 24 hours, by phone or WhatsApp.':'. A Mariana responde em 24 horas, por telefone ou WhatsApp.')+'</p><p class="ok-small">'+(en?'To finish, send it by WhatsApp or email: the message is already written.':'Para concluir, basta enviar por WhatsApp ou por email: a mensagem já vai escrita.')+'</p><div class="ok-actions"><a class="btn btn-ink" href="'+waLink(msg)+'" target="_blank" rel="noopener">'+(en?'Send on WhatsApp':'Enviar por WhatsApp')+'</a><a class="btn btn-ghost" href="'+mail+'">'+(en?'Send by email':'Enviar por email')+'</a><button type="button" class="btn btn-ghost" data-open="dlg-parq">'+(en?'Health questionnaire':'Questionário de saúde')+'</button></div>';
+    ok.focus();
+  });
+})();
+</script><script>try{if(matchMedia("(prefers-reduced-motion: reduce)").matches){var r=document.querySelector(".map .maproute");r.pauseAnimations();r.setCurrentTime(2.6);}}catch(e){}</script>
+
+<script>(function(){try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+var els=[].slice.call(document.querySelectorAll(".stats .cnt"));
+function fmt(v,d){var p=v.toFixed(d).split(".");p[0]=p[0].replace(/\B(?=(\d{3})+(?!\d))/g,"\u00a0");return p.join(",")}
+els.forEach(function(el){var from=parseFloat(el.dataset.from||0),to=parseFloat(el.dataset.to),d=+el.dataset.dec,dl=+(el.dataset.delay||0),dur=1500;
+el.textContent=fmt(from,d);
+setTimeout(function(){var t0=null;function step(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3);el.textContent=fmt(from+(to-from)*e,d);if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)},400+dl)});
+}catch(e){}})();</script>
+<script>(function(){var v=[].slice.call(document.querySelectorAll('video.lazyvid'));if(!('IntersectionObserver' in window)){v.forEach(function(x){x.muted=true;mrSet(x,x.dataset.src,false)});return}
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){var x=e.target;if(e.isIntersecting){x.muted=true;if(!x.dataset.cur)mrSet(x,x.dataset.src,!rm);else if(!rm&&!window.mrPaused)x.play().catch(function(){})}else{x.pause()}})},{rootMargin:'200px'});v.forEach(function(x){io.observe(x)});
+var r=[].slice.call(document.querySelectorAll('.rt'));var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('drawn');io2.unobserve(e.target)}})},{threshold:.4});r.forEach(function(x){io2.observe(x)});})();</script>
+<script>(function(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var els=[].slice.call(document.querySelectorAll('.sunpic')),tick=false;
+function upd(){tick=false;var vh=innerHeight;els.forEach(function(el){var r=el.getBoundingClientRect();if(r.bottom<-50||r.top>vh+50)return;var p=(r.top+r.height/2-vh/2)/(vh/2+r.height/2);p=Math.max(-1,Math.min(1,p));el.querySelector('img').style.setProperty('--py',(p*r.height*0.05).toFixed(1)+'px')})}
+function req(){if(!tick){tick=true;requestAnimationFrame(upd)}}
+addEventListener('scroll',req,{passive:true});addEventListener('resize',req);upd();})();</script>
+<script>(function(){var S={marianas:[
+['assets/gal/m1.jpg','SuperHalf de Copenhaga · 2025','Copenhagen SuperHalf · 2025','As Marianas à chegada da SuperHalf de Copenhaga, a ver o tempo no telemóvel'],
+['assets/gal/m6.jpg','Maratona de Barcelona · 2025','Barcelona Marathon · 2025','As Marianas a chegar à meta da Maratona de Barcelona, junto ao Arco do Triunfo'],
+['assets/gal/m5.jpg','Antes da partida em Copenhaga','Before the start in Copenhagen','As Marianas lado a lado antes da partida em Copenhaga, com as camisolas Magic Runners'],
+['assets/gal/m7.jpg','Maratona de Boston · 2026','Boston Marathon · 2026','As Marianas com os dorsais da Maratona de Boston, antes da partida'],
+['assets/marianas-costas.jpg','Maratona de Boston · abril 2026','Boston Marathon · April 2026','As Marianas de costas, com as camisolas MARIANA, antes da Maratona de Boston'],
+['assets/gal/m11.jpg','Mundial Ironman 70.3 · Marbella 2026','Ironman 70.3 World Championship · Marbella 2026','Mariana a cortar a meta do Mundial Ironman 70.3 com a bandeira de Portugal'],
+['assets/gal/m12.jpg','Ironman 70.3 Cascais · 2024','Ironman 70.3 Cascais · 2024','As Marianas com as medalhas de finisher do Ironman 70.3 Cascais'],
+['assets/gal/m9.jpg','Chegada de um triatlo · 2025','Triathlon finish · 2025','Mariana de braços abertos na meta de um triatlo'],
+['assets/gal/m10.jpg','A correr junto ao Douro, no Porto','Running by the Douro, in Porto','As Marianas a correr uma prova junto ao Douro, com as camisolas Magic Runners'],
+['assets/gal/m4.jpg','Triatlo · treino de bicicleta','Triathlon · bike training','Uma das Marianas em bicicleta de contrarrelógio, à chuva, num campo verde'],
+['assets/gal/m3.jpg','Treino entre oliveiras','Training among the olive trees','As Marianas a correr num campo com oliveiras e flores'],
+['assets/gal/m2.jpg','No pódio, junto ao Douro','On the podium, by the Douro','As Marianas no pódio, com a família, numa prova junto ao Douro']
+],sunday:[
+['assets/sunday_marianas.jpg','Sunday Running Club · Padaria Formosa','Sunday Running Club · Padaria Formosa','Mariana Alcoforado e Mariana Rocha Ferreira com as camisolas Sunday Running Club, numa esplanada'],
+['assets/gal/s6.jpg','O grupo com as t-shirts Sunday Running Club','The group in Sunday Running Club tees','O grupo de braços no ar, com as camisolas e t-shirts Sunday Running Club, debaixo do toldo às riscas'],
+['assets/gal/s7.jpg','Exercícios na fonte, a meio da corrida','Exercises at the fountain, mid-run','O grupo a fazer tríceps apoiado numa fonte de pedra, num jardim junto ao mar'],
+['assets/gal/s3.jpg','O brunch da Padaria Formosa','Brunch by Padaria Formosa','Sumos naturais, iogurtes com granola e granola em saco, na caixa às riscas da Padaria Formosa'],
+['assets/gal/s4.mp4','A paragem para exercícios com o peso corporal','The bodyweight exercise stop','Vídeo do grupo a fazer abdominais no chão, a meio da corrida do Sunday Running Club','assets/gal/s4.jpg'],
+['assets/gal/s5.mp4','A corrida à beira-mar','Running by the sea','Vídeo do grupo a correr na marginal, junto ao mar, com as camisolas Sunday Running Club','assets/gal/s5.jpg']
+],grupo:[
+['assets/grupo/v1.mp4','Força à beira-mar','Strength by the sea','Vídeo de treino de grupo: força à beira-mar','assets/grupo/v1.jpg'],
+['assets/grupo/v2.mp4','Corrida entre as árvores','Running among the trees','Vídeo de treino de grupo: corrida entre as árvores','assets/grupo/v2.jpg'],
+['assets/grupo/v3.mp4','Treino junto ao Douro','Training by the Douro','Vídeo de treino de grupo: treino junto ao douro','assets/grupo/v3.jpg'],
+['assets/grupo/v4.mp4','Elásticos junto ao rio','Bands by the river','Vídeo de treino de grupo: elásticos junto ao rio','assets/grupo/v4.jpg'],
+['assets/grupo/v5.mp4','Força no parque','Strength in the park','Vídeo de treino de grupo: força no parque','assets/grupo/v5.jpg'],
+['assets/grupo/v6.mp4','Corrida na marginal','Running on the seafront','Vídeo de treino de grupo: corrida na marginal','assets/grupo/v6.jpg'],
+['assets/grupo/v7.mp4','Exercícios à beira-mar','Exercises by the sea','Vídeo de treino de grupo: exercícios à beira-mar','assets/grupo/v7.jpg'],
+['assets/grupo/v8.mp4','Abdominais a meio da corrida','Core work mid-run','Vídeo de treino de grupo: abdominais a meio da corrida','assets/grupo/v8.jpg'],
+['assets/grupo/g7.jpg','Força ao pôr do sol, com a Arrábida ao fundo','Strength at sunset, with the Arrábida bridge behind','Foto de treino de grupo: força ao pôr do sol, com a ponte da Arrábida ao fundo','assets/grupo/g7_t.jpg'],
+['assets/grupo/g2.jpg','O grupo debaixo das árvores','The group under the trees','Foto de treino de grupo: o grupo debaixo das árvores','assets/grupo/g2_t.jpg'],
+['assets/grupo/g3.jpg','Halteres ao pôr do sol, junto ao rio','Dumbbells at sunset by the river','Foto de treino de grupo: halteres ao pôr do sol, junto ao rio','assets/grupo/g3_t.jpg'],
+['assets/grupo/g4.jpg','O grupo ao sol','The group in the sun','Foto de treino de grupo: o grupo ao sol','assets/grupo/g4_t.jpg'],
+['assets/grupo/g5.jpg','Abdominais no lago','Core work by the pond','Foto de treino de grupo: abdominais no lago','assets/grupo/g5_t.jpg'],
+['assets/grupo/g6.jpg','Treino de força no parque','Strength session in the park','Foto de treino de grupo: treino de força no parque','assets/grupo/g6_t.jpg']
+]};var G=S.marianas;
+var dl=document.getElementById('dlg-gal');if(!dl)return;var im=document.getElementById('gal-img'),cap=document.getElementById('gal-cap'),num=document.getElementById('gal-n'),i=0,opener=null;
+var vd=document.getElementById('gal-vid');var strip=document.getElementById('gal-strip'),curSet=null;function build(){strip.innerHTML='';G.forEach(function(g,k){var b=document.createElement('button');b.type='button';b.className='gal-th';var en0=document.documentElement.lang==='en';b.setAttribute('aria-label',(k+1)+(en0?' of ':' de ')+G.length+': '+(en0?g[2]:g[1]));var t=new Image();t.loading='lazy';t.decoding='async';t.alt='';t.src=g[5]||g[4]||g[0];b.appendChild(t);if(/\.mp4$/.test(g[0])){var p=document.createElement('span');p.className='gal-th-v';p.setAttribute('aria-hidden','true');p.textContent='▶';b.appendChild(p)}b.addEventListener('click',function(){show(k)});strip.appendChild(b)})}function show(n){i=(n+G.length)%G.length;var g=G[i],en=document.documentElement.lang==='en';vd.pause();if(/\.mp4$/.test(g[0])){im.hidden=true;vd.hidden=false;vd.poster=g[4]||'';vd.setAttribute('aria-label',g[3]);if(vd.dataset.cur===g[0]){var pr=vd.play();if(pr&&pr.catch)pr.catch(function(){})}else mrSet(vd,g[0],true)}else{vd.hidden=true;vd.removeAttribute('src');vd.load();im.hidden=false;im.src=g[0];im.alt=g[3]}cap.textContent=en?g[2]:g[1];num.textContent=(i+1)+' / '+G.length;var th=strip.children;for(var t=0;t<th.length;t++){th[t].setAttribute('aria-current',t===i?'true':'false')}if(th[i]&&th[i].scrollIntoView)th[i].scrollIntoView({inline:'center',block:'nearest'});var nn=G[(i+1)%G.length][0];if(!/\.mp4$/.test(nn)){var nx=new Image();nx.src=nn}}
+document.querySelectorAll('[data-gal]').forEach(function(b){b.addEventListener('click',function(){opener=b;G=S[b.dataset.galSet||'marianas'];build();curSet=G;show(+b.dataset.gal);if(dl.showModal)dl.showModal()})});
+dl.querySelector('.gal-prev').addEventListener('click',function(){show(i-1)});
+dl.querySelector('.gal-next').addEventListener('click',function(){show(i+1)});
+dl.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){show(i-1)}else if(e.key==='ArrowRight'){show(i+1)}});
+dl.addEventListener('click',function(e){if(e.target===dl||e.target.classList.contains('gal-stage'))dl.close()});
+dl.addEventListener('close',function(){vd.pause();if(opener)opener.focus()});
+var x0=null;dl.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+dl.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>45)show(i+(dx<0?1:-1));x0=null},{passive:true});
+})();</script>
+<script>(function(){var r=document.querySelector('.gm-vids');if(!r)return;var bar=document.querySelector('.gm-bar span'),ar=document.querySelectorAll('.gm-arr');
+function upd(){var sw=r.scrollWidth,cw=r.clientWidth,max=sw-cw;bar.style.width=(cw/sw*100)+'%';bar.style.left=(max>0?r.scrollLeft/sw*100:0)+'%';
+if(ar.length){ar[0].disabled=r.scrollLeft<=2;ar[1].disabled=r.scrollLeft>=max-2}}
+r.addEventListener('scroll',function(){requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd();
+ar.forEach(function(b){b.addEventListener('click',function(){var t=r.querySelector('.gm-v');var step=(t?t.getBoundingClientRect().width+14:250)*2;r.scrollBy({left:step*+b.dataset.dir,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})})});})();</script>
+<script>(function(){var bs=[].slice.call(document.querySelectorAll('.vidtoggle'));if(!bs.length)return;var hv=document.querySelector('.herovid');
+function set(p){window.mrPaused=p;var en=document.documentElement.lang==='en';bs.forEach(function(b){b.setAttribute('aria-pressed',p?'true':'false');var l=p?(en?'Play videos':'Reproduzir vídeos'):(en?'Pause videos':'Pausar vídeos');b.setAttribute('aria-label',l);b.setAttribute('data-pt-aria',p?'Reproduzir vídeos':'Pausar vídeos');b.setAttribute('data-en-aria',p?'Play videos':'Pause videos')});
+var vs=[].slice.call(document.querySelectorAll('.herovid,.gm-v video'));vs.forEach(function(v){if(p)v.pause();else if(v===hv||v.dataset.cur){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){var q=v.play();if(q&&q.catch)q.catch(function(){})}}})}
+bs.forEach(function(b){b.addEventListener('click',function(){set(!window.mrPaused)})});})();</script>
+<script>/* iPhone: com Poupança de energia ou dentro de apps, o iOS bloqueia o arranque automático dos vídeos. Ao primeiro toque, arrancam os que estão visíveis. */
+(function(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+function kick(){if(window.mrPaused)return;[].slice.call(document.querySelectorAll('.herovid,video.lazyvid')).forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight&&r.right>0&&r.left<innerWidth&&v.paused){v.muted=true;if(!v.dataset.cur&&v.dataset.src){mrSet(v,v.dataset.src,true)}else{var q=v.play();if(q&&q.catch)q.catch(function(){})}}})}
+['touchend','click','keydown'].forEach(function(t){addEventListener(t,kick,{passive:true})});
+var gv=document.querySelector('.gm-vids');if(gv)gv.addEventListener('scroll',function(){clearTimeout(gv._k);gv._k=setTimeout(kick,150)},{passive:true});
+addEventListener('scroll',function(){clearTimeout(window._mrk);window._mrk=setTimeout(kick,200)},{passive:true});
+})();</script>
+<script src="assets/moldura.js" defer></script><script src="assets/moldura-ui.js" defer></script>
+<script>(function(){var hd=document.querySelector('header'),mb=document.querySelector('.menubtn');
+function setM(o){hd.classList.toggle('open',o);mb.setAttribute('aria-expanded',o?'true':'false');mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')}
+mb.addEventListener('click',function(){setM(!hd.classList.contains('open'))});
+document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){setM(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&hd.classList.contains('open')){setM(false);mb.focus()}});
+var wa=document.querySelector('.wa'),hero=document.querySelector('.hero');
+if(wa&&hero&&'IntersectionObserver' in window){new IntersectionObserver(function(es){wa.classList.toggle('off',es[0].isIntersecting)},{threshold:0}).observe(hero)}else if(wa){wa.classList.remove('off')}
+})();</script>
+</body>
+</html>
+
+</body></html>
