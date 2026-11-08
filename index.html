@@ -188,8 +188,9 @@ select option{background:#FFFFFF;color:#231F20}
 select:focus,input:focus,textarea:focus{outline:none;border-color:var(--volt);box-shadow:0 0 0 3px rgba(242,177,47,.25)}
 label>select,label>input,label>textarea{width:100%;box-sizing:border-box}
 textarea{min-height:96px;resize:vertical}
+.direct a.tap{display:inline-block;min-height:24px;min-width:44px;padding:2px 0;line-height:20px}
 .check{display:flex;gap:12px;align-items:flex-start;font-weight:400;font-size:14px;color:#CFCAC6}
-.check input{width:20px;height:20px;margin-top:2px;flex:none}
+.check input{width:24px;height:24px;margin-top:2px;flex:none}
 .err{color:#FF9C8A;font-size:14px;font-weight:500;min-height:1em}
 .ok{background:var(--volt);color:var(--ink);border-radius:16px;padding:22px;font-weight:500}
 @media (max-width:820px){.contact .wrap{grid-template-columns:1fr}}
@@ -347,7 +348,7 @@ footer .powered a{color:var(--paper);font-weight:600}
 .dlg .q{border:0;border-top:1px solid var(--line);margin:0;padding:12px 0;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
 .dlg .q legend{float:left;width:100%;font-weight:600;font-size:15px;padding:0;margin-bottom:6px}
 .dlg .q label{display:inline-flex;gap:8px;align-items:center;font-weight:500;font-size:15px;min-height:44px}
-.dlg .q input{width:20px;height:20px;accent-color:var(--ink);padding:0}
+.dlg .q input{width:24px;height:24px;accent-color:var(--ink);padding:0}
 #parq .btn{margin-top:14px}
 .parq-r{margin-top:14px;border-radius:14px;padding:16px;font-weight:600;line-height:1.5}
 .parq-r.go{background:var(--volt)}
@@ -387,7 +388,7 @@ footer .powered a{color:var(--paper);font-weight:600}
 .mrf-fmt{display:flex;gap:6px}
 .mrf-fmt button{min-height:44px;padding:0 16px;border-radius:999px;border:2px solid #4A4445;background:none;color:var(--paper);font:600 14px var(--sans);cursor:pointer}
 .mrf-fmt button[aria-pressed=true]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
-.mrf-z{flex:1;min-width:140px;gap:0}.mrf-z input{padding:0;border:0;background:none;accent-color:var(--volt);width:100%}
+.mrf-z{flex:1;min-width:140px;gap:0}.mrf-z input{padding:0;border:0;background:none;accent-color:var(--volt);width:100%;height:24px}
 .mrf-go{justify-self:stretch;font-size:17px;min-height:56px}
 .mrf-msg{margin:-8px 0 0;min-height:1.4em;font-weight:600;color:var(--volt)}
 .mrf-note{margin:-10px 0 0;font-size:14px;color:#BDB8B4}
@@ -524,9 +525,9 @@ body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
       <a href="#sunday">Sunday Running Club</a>
       <a href="#marianas" data-pt="As Marianas" data-en="The Marianas">As Marianas</a>
       <a href="#contacto" data-pt="Contactos" data-en="Contact">Contactos</a>
-      <button class="lang lang-m" type="button" aria-label="Mudar língua">EN</button>
+      <button class="lang lang-m" type="button" aria-label="EN, mudar para inglês">EN</button>
     </nav>
-    <button class="lang" id="lang" type="button" aria-label="Mudar língua">EN</button>
+    <button class="lang" id="lang" type="button" aria-label="EN, mudar para inglês">EN</button>
     <a class="btn btn-volt hcta" href="#contacto" data-pt="Entrar em contacto" data-en="Get in touch">Entrar em contacto</a>
     <button class="menubtn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span></button>
   </div>
@@ -606,8 +607,8 @@ fetch(u).then(function(r){if(!r.ok)throw 0;return r.blob()}).then(function(b){if
 <dl class="prs"><div><dt><span data-pt="Maratona" data-en="Marathon">Maratona</span><small data-pt="Porto 2026" data-en="Porto 2026">Porto 2026</small></dt><dd>3h10m</dd></div><div><dt><span data-pt="Meia maratona" data-en="Half marathon">Meia maratona</span><small data-pt="Viana do Castelo 2026" data-en="Viana do Castelo 2026">Viana do Castelo 2026</small></dt><dd>1h28m</dd></div><div><dt><span data-pt="Ironman 70.3" data-en="Ironman 70.3">Ironman 70.3</span><small data-pt="Cascais 2025" data-en="Cascais 2025">Cascais 2025</small></dt><dd>5h18m</dd></div></dl>
 <div class="badges"><span data-pt="Ex-jogadora da Seleção Nacional de Polo Aquático" data-en="Former Portugal national water polo player">Ex-jogadora da Seleção Nacional de Polo Aquático</span><span data-pt="Corre desde 2010" data-en="Running since 2010">Corre desde 2010</span><span data-pt="Triatleta desde 2024" data-en="Triathlete since 2024">Triatleta desde 2024</span></div></article>
         <div class="mcol">
-        <figure class="mpic mpic-a"><button type="button" class="mpic-btn" data-gal="0" aria-label="Abrir a galeria de fotografias das Marianas (12 fotos)" data-pt-aria="Abrir a galeria de fotografias das Marianas (12 fotos)" data-en-aria="Open the Marianas photo gallery (12 photos)"><img src="assets/marianas-copenhaga.jpg" width="1000" height="1137" loading="lazy" decoding="async" alt="Mariana Alcoforado e Mariana Rocha Ferreira à chegada da SuperHalf de Copenhaga, com as camisolas Magic Runners, a ver o tempo no telemóvel"></button><figcaption data-pt="SuperHalf de Copenhaga · 2025" data-en="Copenhagen SuperHalf · 2025">SuperHalf de Copenhaga · 2025</figcaption></figure>
-        <figure class="mpic mpic-b"><button type="button" class="mpic-btn" data-gal="1" aria-label="Abrir a galeria de fotografias das Marianas (12 fotos)" data-pt-aria="Abrir a galeria de fotografias das Marianas (12 fotos)" data-en-aria="Open the Marianas photo gallery (12 photos)"><img src="assets/gal/m6.jpg" width="1600" height="1067" loading="lazy" decoding="async" style="object-position:18% 50%" alt="Mariana Alcoforado e Mariana Rocha Ferreira a chegar à meta da Maratona de Barcelona, junto ao Arco do Triunfo"><span class="mpic-n" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="3"/><path d="M7 21h11a3 3 0 0 0 3-3V7"/></svg>12</span></button><figcaption data-pt="Maratona de Barcelona · 2025" data-en="Barcelona Marathon · 2025">Maratona de Barcelona · 2025</figcaption></figure>
+        <figure class="mpic mpic-a"><button type="button" class="mpic-btn" data-gal="0" aria-label="12 fotos: abrir a galeria das Marianas" data-pt-aria="12 fotos: abrir a galeria das Marianas" data-en-aria="12 photos: open the Marianas gallery"><img src="assets/marianas-copenhaga.jpg" width="1000" height="1137" loading="lazy" decoding="async" alt="Mariana Alcoforado e Mariana Rocha Ferreira à chegada da SuperHalf de Copenhaga, com as camisolas Magic Runners, a ver o tempo no telemóvel"></button><figcaption data-pt="SuperHalf de Copenhaga · 2025" data-en="Copenhagen SuperHalf · 2025">SuperHalf de Copenhaga · 2025</figcaption></figure>
+        <figure class="mpic mpic-b"><button type="button" class="mpic-btn" data-gal="1" aria-label="12 fotos: abrir a galeria das Marianas" data-pt-aria="12 fotos: abrir a galeria das Marianas" data-en-aria="12 photos: open the Marianas gallery"><img src="assets/gal/m6.jpg" width="1600" height="1067" loading="lazy" decoding="async" style="object-position:18% 50%" alt="Mariana Alcoforado e Mariana Rocha Ferreira a chegar à meta da Maratona de Barcelona, junto ao Arco do Triunfo"><span class="mpic-n" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="3"/><path d="M7 21h11a3 3 0 0 0 3-3V7"/></svg>12</span></button><figcaption data-pt="Maratona de Barcelona · 2025" data-en="Barcelona Marathon · 2025">Maratona de Barcelona · 2025</figcaption></figure>
         </div>
         <article class="mcard"><div class="mtop"><span class="role sub" data-pt="Subcoach" data-en="Assistant coach">Subcoach</span><h3>Mariana<br><i>Rocha Ferreira</i></h3><p data-pt="Acompanha os grupos na Foz, no Fluvial e no Parque da Cidade. Do triatlo à estrada, sabe o que é treinar com trabalho, família e provas no calendário." data-en="Leads the groups in Foz, Fluvial and Parque da Cidade. From triathlon to road racing, she knows what it is to train around work, family and a race calendar.">Acompanha os grupos na Foz, no Fluvial e no Parque da Cidade. Do triatlo à estrada, sabe o que é treinar com trabalho, família e provas no calendário.</p><div class="creds"><span data-pt="Licenciatura em Gestão de Empresas" data-en="BSc Business Management">Licenciatura em Gestão de Empresas</span><span data-pt="Formação em Running, Trail Running e Nutrition for Runners" data-en="Courses in Running, Trail Running and Nutrition for Runners">Formação em Running, Trail Running e Nutrition for Runners</span></div></div>
 <p class="prs-t" data-pt="Recordes pessoais" data-en="Personal records">Recordes pessoais</p>
@@ -652,7 +653,7 @@ fetch(u).then(function(r){if(!r.ok)throw 0;return r.blob()}).then(function(b){if
 
   <section class="band sunday" id="sunday">
     <div class="wrap sun">
-      <div class="sunpic"><button type="button" class="mpic-btn" data-gal="0" data-gal-set="sunday" aria-label="Abrir as fotografias do Sunday Running Club (4 fotos e 2 vídeos)" data-pt-aria="Abrir as fotografias do Sunday Running Club (4 fotos e 2 vídeos)" data-en-aria="Open the Sunday Running Club photos (4 photos and 2 videos)"><img src="assets/sunday_marianas.jpg" loading="lazy" decoding="async" alt="Mariana Alcoforado e Mariana Rocha Ferreira com as camisolas Sunday Running Club, numa esplanada"><span class="mpic-n" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="3"/><path d="M7 21h11a3 3 0 0 0 3-3V7"/></svg>6</span></button></div>
+      <div class="sunpic"><button type="button" class="mpic-btn" data-gal="0" data-gal-set="sunday" aria-label="6 ficheiros: abrir as fotos e vídeos do Sunday Running Club" data-pt-aria="6 ficheiros: abrir as fotos e vídeos do Sunday Running Club" data-en-aria="6 files: open the Sunday Running Club photos and videos"><img src="assets/sunday_marianas.jpg" loading="lazy" decoding="async" alt="Mariana Alcoforado e Mariana Rocha Ferreira com as camisolas Sunday Running Club, numa esplanada"><span class="mpic-n" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="3"/><path d="M7 21h11a3 3 0 0 0 3-3V7"/></svg>6</span></button></div>
       <div>
         <div class="eyebrow" data-pt="Último domingo do mês · Foz" data-en="Last Sunday of the month · Foz">Último domingo do mês · Foz</div>
         <h2 class="serif">Sunday<br><i>Running Club</i></h2>
@@ -700,7 +701,6 @@ fetch(u).then(function(r){if(!r.ok)throw 0;return r.blob()}).then(function(b){if
         <p data-pt="Uma lesão que ficou para trás, a primeira prova, um hábito novo. As histórias dos Magic inspiram quem está a começar." data-en="An injury left behind, a first race, a new habit. Magic stories inspire those who are just starting.">Uma lesão que ficou para trás, a primeira prova, um hábito novo. As histórias dos Magic inspiram quem está a começar.</p></div>
         <a class="btn btn-volt" href="#contacto" data-wa="historia"><span data-pt="Partilhar a minha história" data-en="Share my story">Partilhar a minha história</span></a>
       </div>
-      <p class="st-note" data-pt="Histórias, nomes e resultados a confirmar com cada atleta, com autorização escrita para publicar. Resultados individuais: cada plano é feito à medida." data-en="Stories, names and results to be confirmed with each athlete, with written consent to publish. Individual results: every plan is tailored.">Histórias, nomes e resultados a confirmar com cada atleta, com autorização escrita para publicar. Resultados individuais: cada plano é feito à medida.</p>
     </div>
   </section>
   <section class="band faq" id="faq">
@@ -720,7 +720,7 @@ fetch(u).then(function(r){if(!r.ok)throw 0;return r.blob()}).then(function(b){if
         <h2 data-pt="Entrar em contacto" data-en="Get in touch">Entrar em contacto</h2>
         <p data-pt="Respondemos em 24 horas. Os dados de saúde só servem para preparar o plano de treino." data-en="We reply within 24 hours. Health details are only used to prepare your plan.">Respondemos em 24 horas. Os dados de saúde só servem para preparar o plano de treino.</p>
         <div class="direct">
-          <span>WhatsApp <a href="https://wa.me/351911019015"><code>+351 911 019 015</code></a> · <a href="tel:+351911019015" data-pt="Ligar" data-en="Call">Ligar</a></span>
+          <span>WhatsApp <a href="https://wa.me/351911019015"><code>+351 911 019 015</code></a> · <a class="tap" href="tel:+351911019015" data-pt="Ligar" data-en="Call">Ligar</a></span>
           <span>Email <a href="mailto:magicrunnersporto@gmail.com"><code>magicrunnersporto@gmail.com</code></a></span>
           <span>Instagram <a href="https://www.instagram.com/magicrunners_team/" target="_blank" rel="noopener"><code>@magicrunners_team</code></a></span>
         </div>
@@ -852,7 +852,7 @@ fetch(u).then(function(r){if(!r.ok)throw 0;return r.blob()}).then(function(b){if
     document.documentElement.lang=l==='en'?'en':'pt-PT';
     document.querySelectorAll('[data-pt]').forEach(function(el){el.textContent=el.getAttribute('data-'+l)});
     document.querySelectorAll('[data-pt-html]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+l+'-html')});
-    document.querySelectorAll('.lang').forEach(function(b){b.textContent=l==='en'?'PT':'EN'});
+    document.querySelectorAll('.lang').forEach(function(b){b.textContent=l==='en'?'PT':'EN';b.setAttribute('aria-label',l==='en'?'PT, switch to Portuguese':'EN, mudar para inglês')});
     document.querySelectorAll('[data-pt-aria]').forEach(function(el){el.setAttribute('aria-label',el.getAttribute('data-'+l+'-aria'))});
     lang=l;if(window.mrSetSun)window.mrSetSun();
   }
