@@ -8,7 +8,6 @@ function boot(r){
   r.querySelectorAll('[data-fmt]').forEach(function(b){b.onclick=function(){o.story=b.dataset.fmt==='story';r.querySelectorAll('[data-fmt]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});M.fit(o);draw()}});
   q(r,'.mrf-file').onchange=function(e){var f=e.target.files[0];if(!f)return;var i=new Image();i.onload=function(){o.img=i;o.zoom=1;q(r,'.mrf-zoom').value=1;M.fit(o);draw()};i.src=URL.createObjectURL(f)};
   q(r,'.mrf-kmin').oninput=function(e){o.km=e.target.value;draw()};
-  var hi=q(r,'.mrf-hin');if(hi)hi.oninput=function(e){var d=e.target.value.replace(/\D/g,'').slice(0,4),v=d.length>2?d.slice(0,2)+':'+d.slice(2):d;e.target.value=v;o.hora=v;var ok=!v||/^([01]\d|2[0-3]):[0-5]\d$/.test(v)||v.length<5;e.target.setAttribute('aria-invalid',ok?'false':'true');draw()};
   var ti=q(r,'.mrf-tin');if(ti)ti.oninput=function(e){o.team=e.target.value;draw()};
   q(r,'.mrf-zoom').oninput=function(e){M.zoomTo(o,+e.target.value);draw()};
   c.onclick=function(){if(!o.img)q(r,'.mrf-file').click()};
