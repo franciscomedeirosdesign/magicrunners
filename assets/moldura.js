@@ -58,7 +58,8 @@ var T={
     var p=new Path2D('M 0 '+(y0+26)+' C 260 '+(y0+56)+', 470 '+(y0-14)+', 700 '+(y0+6)+' S 960 '+(y0-4)+', 1080 '+(y0-34)+' L 1080 '+H+' L 0 '+H+' Z');
     riso(x,function(g){g.fillStyle=G;g.fill(p)});
     number(x,kmtxt(o),44,y0+150,120,600,INK,INK);
-    teamTxt(x,o,1032,y0+156,28,INK,INK,true);
+    if(team(o)){var tg=x.createLinearGradient(0,0,0,(o.story?110:48)+130);tg.addColorStop(0,'rgba(0,0,0,.38)');tg.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=tg;x.fillRect(0,0,W,(o.story?110:48)+130)}
+    x.save();x.shadowColor='rgba(0,0,0,.35)';x.shadowBlur=18;teamTxt(x,o,1032,(o.story?110:48)+44,34,'#fff','#fff',true);x.restore();
     if(imgs.symI)x.drawImage(imgs.symI,968,y0+56,58,58*imgs.symI.height/imgs.symI.width);
     if(imgs.lockI)x.drawImage(imgs.lockI,46,base-66,170,170*172/750);
     x.font='italic 30px Alpinecia';x.fillStyle=INK;x.textAlign='right';x.fillText('O Porto é o nosso ginásio.',1032,base-36);x.textAlign='left'}
