@@ -6,7 +6,7 @@ function boot(r){
   try{if(window.claude&&claude.use)claude.use('downloads').then(function(d){DL=d}).catch(function(){})}catch(e){}
   r.querySelectorAll('[data-tpl]').forEach(function(b){b.onclick=function(){o.tpl=b.dataset.tpl;r.querySelectorAll('[data-tpl]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});q(r,'.mrf-km').hidden=o.tpl==='feito';draw()}});
   r.querySelectorAll('[data-fmt]').forEach(function(b){b.onclick=function(){o.story=b.dataset.fmt==='story';r.querySelectorAll('[data-fmt]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});M.fit(o);draw()}});
-  q(r,'.mrf-file').onchange=function(e){var f=e.target.files[0];if(!f)return;var i=new Image();i.onload=function(){o.img=i;o.zoom=1;q(r,'.mrf-zoom').value=1;M.fit(o);draw()};i.src=URL.createObjectURL(f)};
+  q(r,'.mrf-file').onchange=function(e){var f=e.target.files[0];if(!f)return;var i=new Image();i.onload=function(){o.img=i;r.classList.add('has-img');o.zoom=1;q(r,'.mrf-zoom').value=1;M.fit(o);draw()};i.src=URL.createObjectURL(f)};
   q(r,'.mrf-kmin').oninput=function(e){o.km=e.target.value;draw()};
   var ti=q(r,'.mrf-tin');if(ti)ti.oninput=function(e){o.team=e.target.value;draw()};
   q(r,'.mrf-zoom').oninput=function(e){M.zoomTo(o,+e.target.value);draw()};

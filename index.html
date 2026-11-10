@@ -353,7 +353,7 @@ footer .powered a{color:var(--paper);font-weight:600}
 .dlg .q input{padding:0;margin:0;min-height:0;border:0;box-shadow:none}
 .dlg .q{padding:10px 0;gap:4px 22px}
 .dlg .q legend{margin-bottom:2px}
-.share{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.share{background:var(--ink);color:var(--paper);position:relative;overflow:hidden;overflow:clip}
 .share .head p{color:#CFCAC6}
 .share h2 .serif{font-weight:400;font-size:1.15em}.share h2 i{color:var(--volt)}
 .mrf{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:48px;align-items:start}
@@ -388,6 +388,50 @@ footer .powered a{color:var(--paper);font-weight:600}
 .mrf-go{justify-self:stretch;font-size:17px;min-height:56px}
 .mrf-msg{margin:-8px 0 0;min-height:1.4em;font-weight:600;color:var(--volt)}
 .mrf-note{margin:-10px 0 0;font-size:14px;color:#BDB8B4}
+/* Partilha · v2: pré-visualização sempre à vista, controlos compactos */
+.mrf-stage{position:relative}
+.mrf-pick{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:8px;min-height:52px;padding:0 22px;border-radius:999px;background:var(--volt);color:var(--ink);font:700 16px var(--sans);cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.35);white-space:nowrap}
+.mrf-pick input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.mrf-pick:focus-within{outline:3px solid var(--paper);outline-offset:3px}
+.mrf-pick .t-swap{display:none}
+.mrf-frame{position:relative;display:block;width:100%;max-width:440px;margin-inline:auto}
+@media (max-width:860px){.mrf-frame{width:fit-content;max-width:100%}}
+.mrf.has-img .mrf-frame{display:grid;justify-items:center;gap:10px}
+.mrf.has-img .mrf-pick{justify-self:center;position:relative;top:auto;left:auto;transform:none;min-height:40px;padding:0 16px;font-size:14px;background:none;color:var(--paper);border:2px solid #4A4445;box-shadow:none}
+.mrf.has-img .mrf-pick .t-new{display:none}.mrf.has-img .mrf-pick .t-swap{display:inline}
+.mrf-stage{justify-self:center;width:100%;max-width:440px}
+.mrf-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:12px}
+.mrf-pair .mrf-kmrow input{max-width:none}
+.mrf-pair .mrf-kmrow input{font-size:34px;padding:10px 14px}
+.mrf-team .mrf-kmrow input{font-size:30px}
+.mrf-pair .mrf-kmrow i{font-size:30px}
+.mrf-tpls button{min-height:84px}
+.mrf-panel{gap:20px}
+.mrf-cta{display:grid}
+@media (min-width:861px){.mrf-stage{position:sticky;top:calc(var(--hh,72px) + 24px)}}
+@media (max-width:860px){
+  .mrf{gap:16px}
+  .mrf-stage{position:sticky;top:var(--hh,60px);z-index:3;background:var(--ink);padding:10px 0 12px;max-width:none;box-shadow:0 18px 18px -14px rgba(0,0,0,.6)}
+  .mrf canvas{width:auto;max-width:100%;max-height:min(40svh,400px);margin-inline:auto;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+  .mrf-tip{display:none}
+  .mrf-panel{gap:16px}
+  .mrf-set legend,.mrf-km>span:first-child,.mrf-z span{margin-bottom:6px}
+  .mrf-tpls{gap:8px}
+  .mrf .mrf-tpls button{min-height:0;padding:8px 10px;gap:4px;border-radius:14px}
+  .mrf .mrf-tpls button b{font-size:15px}.mrf .mrf-tpls button b i{font-size:16px}
+  .mrf-tpls button b.f i{display:inline;margin-left:4px}
+  .mrf-tpls button b.v{padding:3px 8px}
+  .mrf-tpls button span{font-size:12px;line-height:1.2}
+  .mrf-tpls button b.f{font-size:14px}.mrf-tpls button b.f i{font-size:15px}
+  .mrf-pair .mrf-kmrow input{font-size:26px;padding:8px 12px}
+  .mrf-team .mrf-kmrow input{font-size:24px}
+  .mrf-pair .mrf-kmrow i{font-size:24px}
+  .mrf-panel>*{scroll-margin-top:calc(var(--hh,60px) + min(40svh,400px) + 90px)}
+  .mrf-row{gap:14px}
+  .mrf-fmt button{padding:0 12px;font-size:13px}
+  .mrf-go{min-height:52px}
+}
+
 @media (max-width:860px){.mrf{grid-template-columns:1fr;gap:28px}.mrf canvas{max-width:380px}}
 @media (max-width:420px){.mrf-tpls button{padding:10px;min-height:96px}.mrf-tpls button b{font-size:18px}}
 
@@ -757,20 +801,19 @@ body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
         <p data-pt="Basta uma foto e os quilómetros. A moldura dos Magic Runners fica pronta para o Instagram em segundos." data-en="Pick a photo, type your kilometres and post. The Magic Runners frame, ready for Instagram in seconds.">Basta uma foto e os quilómetros. A moldura dos Magic Runners fica pronta para o Instagram em segundos.</p>
       </div>
       <div class="mrf">
-        <div class="mrf-stage"><canvas width="1080" height="1350" role="img" aria-label="Pré-visualização da moldura"></canvas><p class="mrf-tip" data-pt="Arrastar a foto para a enquadrar." data-en="Drag the photo to frame it.">Arrastar a foto para a enquadrar.</p></div>
+        <div class="mrf-stage"><div class="mrf-frame"><canvas width="1080" height="1350" role="img" aria-label="Pré-visualização da moldura"></canvas><label class="mrf-up mrf-pick"><input class="mrf-file" type="file" accept="image/*"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><span class="t-new" data-pt="Escolher foto" data-en="Choose photo">Escolher foto</span><span class="t-swap" data-pt="Trocar foto" data-en="Change photo">Trocar foto</span></label></div><p class="mrf-tip" data-pt="Arrastar a foto para a enquadrar." data-en="Drag the photo to frame it.">Arrastar a foto para a enquadrar.</p></div>
         <div class="mrf-panel">
-          <fieldset class="mrf-set"><legend data-pt="1 · Moldura" data-en="1 · Frame">1 · Moldura</legend>
+          <fieldset class="mrf-set"><legend data-pt="Moldura" data-en="Frame">Moldura</legend>
             <div class="mrf-tpls">
               <button type="button" data-tpl="km" aria-pressed="true"><b>12,4<i>km</i></b><span data-pt="Quilómetros" data-en="Kilometres">Quilómetros</span></button>
               <button type="button" data-tpl="feito" aria-pressed="false"><b class="f">Treino<i>feito.</i></b><span data-pt="Treino feito" data-en="Run done">Treino feito</span></button>
               <button type="button" data-tpl="verde" aria-pressed="false"><b class="v">8<i>km</i></b><span data-pt="Linha amarela" data-en="Yellow line">Linha amarela</span></button>
             </div></fieldset>
-          <label class="mrf-up btn btn-ghost"><input class="mrf-file" type="file" accept="image/*"><span data-pt="2 · Escolher foto" data-en="2 · Choose photo">2 · Escolher foto</span></label>
-          <label class="mrf-km"><span data-pt="3 · Distância" data-en="3 · Distance">3 · Distância</span><span class="mrf-kmrow"><input class="mrf-kmin" inputmode="decimal" value="10,5" maxlength="5" autocomplete="off" aria-label="Quilómetros"><i class="serif">km</i></span></label>
-          <label class="mrf-km mrf-team"><span data-pt="Team · opcional" data-en="Team · optional">Team · opcional</span><span class="mrf-kmrow"><input class="mrf-tin" type="text" placeholder="Foz" maxlength="22" autocomplete="off" aria-label="Nome da team" data-pt-aria="Nome da team" data-en-aria="Team name"></span></label>
+          <div class="mrf-pair"><label class="mrf-km"><span data-pt="Distância" data-en="Distance">Distância</span><span class="mrf-kmrow"><input class="mrf-kmin" inputmode="decimal" value="10,5" maxlength="5" autocomplete="off" aria-label="Quilómetros"><i class="serif">km</i></span></label>
+          <label class="mrf-km mrf-team"><span data-pt="Team · opcional" data-en="Team · optional">Team · opcional</span><span class="mrf-kmrow"><input class="mrf-tin" type="text" placeholder="Foz" maxlength="22" autocomplete="off" aria-label="Nome da team" data-pt-aria="Nome da team" data-en-aria="Team name"></span></label></div>
           <div class="mrf-row"><div class="mrf-fmt" role="group" aria-label="Formato"><button type="button" data-fmt="feed" aria-pressed="true">Feed 4:5</button><button type="button" data-fmt="story" aria-pressed="false">Story 9:16</button></div>
             <label class="mrf-z"><span>Zoom</span><input class="mrf-zoom" type="range" min="1" max="2.5" step="0.01" value="1"></label></div>
-          <button type="button" class="btn btn-volt mrf-go" data-pt="Descarregar imagem" data-en="Download image">Descarregar imagem</button>
+          <div class="mrf-cta"><button type="button" class="btn btn-volt mrf-go" data-pt="Descarregar imagem" data-en="Download image">Descarregar imagem</button></div>
           <p class="mrf-msg" role="status" aria-live="polite" data-ok="Pronta a publicar, com a marcação @magicrunners_team." data-nofoto="Primeiro, escolher uma foto." data-wait="Aguardar um momento e tentar outra vez."></p>
           <p class="mrf-note" data-pt="Publicar com a marcação @magicrunners_team. A foto não sai do telemóvel: a imagem é criada no próprio browser." data-en="Post and tag @magicrunners_team. Your photo never leaves your phone: the image is made in your browser.">Publicar com a marcação @magicrunners_team. A foto não sai do telemóvel: a imagem é criada no próprio browser.</p>
         </div>
@@ -958,14 +1001,15 @@ function kick(){if(window.mrPaused)return;[].slice.call(document.querySelectorAl
 var gv=document.querySelector('.gm-vids');if(gv)gv.addEventListener('scroll',function(){clearTimeout(gv._k);gv._k=setTimeout(kick,150)},{passive:true});
 addEventListener('scroll',function(){clearTimeout(window._mrk);window._mrk=setTimeout(kick,200)},{passive:true});
 })();</script>
-<script src="assets/moldura.js?v=20261110e" defer></script><script src="assets/moldura-ui.js?v=20261110e" defer></script>
+<script src="assets/moldura.js?v=20261110f" defer></script><script src="assets/moldura-ui.js?v=20261110f" defer></script>
 <script>(function(){var hd=document.querySelector('header'),mb=document.querySelector('.menubtn');
 function setM(o){hd.classList.toggle('open',o);mb.setAttribute('aria-expanded',o?'true':'false');mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')}
 mb.addEventListener('click',function(){setM(!hd.classList.contains('open'))});
 document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){setM(false)})});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&hd.classList.contains('open')){setM(false);mb.focus()}});
+(function(){var h=document.querySelector('header');if(!h)return;function f(){document.documentElement.style.setProperty('--hh',h.offsetHeight+'px')}f();addEventListener('resize',f)})();
 var wa=document.querySelector('.wa'),hero=document.querySelector('.hero');
-if(wa&&hero&&'IntersectionObserver' in window){new IntersectionObserver(function(es){wa.classList.toggle('off',es[0].isIntersecting)},{threshold:0}).observe(hero)}else if(wa){wa.classList.remove('off')}
+if(wa&&hero&&'IntersectionObserver' in window){var seen={};new IntersectionObserver(function(es){es.forEach(function(e){seen[e.target.id||'h']=e.isIntersecting});wa.classList.toggle('off',!!(seen.h||seen.partilha))},{threshold:0}).observe(hero);var sp=document.getElementById('partilha');if(sp)new IntersectionObserver(function(es){es.forEach(function(e){seen.partilha=e.isIntersecting});wa.classList.toggle('off',!!(seen.h||seen.partilha))},{threshold:0}).observe(sp)}else if(wa){wa.classList.remove('off')}
 })();</script>
 </body>
 </html>
