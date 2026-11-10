@@ -432,6 +432,13 @@ footer .powered a{color:var(--paper);font-weight:600}
   .mrf-go{min-height:52px}
 }
 
+/* Legendas das molduras alinhadas na base */
+.mrf .mrf-tpls{align-items:stretch}
+.mrf .mrf-tpls button{grid-template-rows:auto 1fr;align-content:stretch}
+.mrf .mrf-tpls button b{align-self:start}
+.mrf .mrf-tpls button span{align-self:end;margin-top:0}
+@media (max-width:379px){.mrf .mrf-tpls button{padding-inline:7px}}
+@media (max-width:860px) and (min-width:380px){.mrf .mrf-tpls button{padding-inline:8px}.mrf .mrf-tpls button span{white-space:nowrap;font-size:11.5px;letter-spacing:-.01em}}
 /* Distância e Team alinhados, mesma altura; Team em texto simples */
 .mrf-pair{align-items:end}
 .mrf .mrf-pair .mrf-kmrow{align-items:center}
