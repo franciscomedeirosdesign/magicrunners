@@ -303,7 +303,6 @@ footer .by{letter-spacing:.16em;font-size:13px;color:var(--paper)}
 
 .wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:opacity .25s,transform .25s,visibility .25s}
 .wa.off{opacity:0;transform:translateY(16px);visibility:hidden;pointer-events:none}
-.testbar{background:var(--volt);color:var(--ink);font-size:13px;font-weight:600;text-align:center;padding:8px 16px}
 
 .card-cta{margin-top:6px;align-self:flex-start;display:inline-flex;gap:6px;align-items:center;font-weight:700;font-size:16px;white-space:nowrap;color:var(--ink);text-decoration:none;border-bottom:3px solid var(--volt);padding:4px 0;min-height:44px}
 .card-cta:hover{border-bottom-color:var(--ink)}
@@ -394,9 +393,9 @@ footer .powered a{color:var(--paper);font-weight:600}
 body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
 .services,.sunday{background:var(--stone) url(assets/papel.jpg) center/1400px;background-blend-mode:multiply}
 .card,.sunlist li{background:var(--paper) url(assets/papel.jpg) center/1400px}
-.group,.testbar,.map{position:relative}
-.group::before,.testbar::before{content:"";position:absolute;inset:0;background:url(assets/terra.webp) 0 0/800px;mix-blend-mode:soft-light;opacity:.75;pointer-events:none;z-index:0}
-.group>*,.testbar>*{position:relative;z-index:1}
+.group,.map{position:relative}
+.group::before{content:"";position:absolute;inset:0;background:url(assets/terra.webp) 0 0/800px;mix-blend-mode:soft-light;opacity:.75;pointer-events:none;z-index:0}
+.group>*{position:relative;z-index:1}
 .route path,.campline path,.maproute path,.rt .rline{filter:url(#terra)}
 .route,.campline{transform:translate(3px,-2px)}
 .hero h1 .l{white-space:nowrap}.hero h1{font-size:clamp(46px,8vw,124px)}.hero .wrap{grid-template-columns:minmax(0,940px)}
