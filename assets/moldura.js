@@ -29,15 +29,14 @@ function riso(x,draw){var W2=x.canvas.width,H2=x.canvas.height,c=document.create
 function line(x,ly){x.shadowBlur=0;riso(x,function(g){g.strokeStyle=G;g.lineWidth=12;g.lineCap='round';
   g.stroke(new Path2D('M -40 '+(ly+26)+' C 100 '+(ly+66)+', 220 '+(ly-6)+', 380 '+(ly+22)+' S 600 '+(ly+64)+', 750 '+(ly+24)+' S 900 '+(ly-6)+', 950 '+(ly+6)))});
   if(imgs.symW)x.drawImage(imgs.symW,964,ly-50,58,58*imgs.symW.height/imgs.symW.width)}
-function team(o){return String(o.team||'').replace(/\s+/g,' ').trim().slice(0,22)}
+function team(o){return String(o.team||'').replace(/\s+/g,' ').trim().slice(0,30)}
 /* «Team» em Parkinsans + nome em Alpinecia itálico; x0 = início (left) ou fim (right) */
 function teamTxt(x,o,x0,y,fs){var t=team(o);if(!t)return 0;
-  function w(){x.font='600 '+fs+'px Parkinsans';ls(x,'2px');var a=x.measureText('TEAM').width;x.font='italic '+(fs*1.6)+'px Alpinecia';ls(x,'0px');return a+fs*.45+x.measureText(t).width}
+  function w(){x.font='italic '+(fs*1.6)+'px Alpinecia';ls(x,'0px');return x.measureText(t).width}
   while(w()>520&&fs>18)fs-=1;var W0=w(),px=fs*.7,py=fs*.42,bx=x0-W0-px*2,by=y-fs*1.2-py,bh=fs*1.2+fs*.38+py*2;
   x.save();x.shadowColor='rgba(0,0,0,.22)';x.shadowBlur=18;x.shadowOffsetY=4;x.fillStyle='#fff';x.beginPath();
   if(x.roundRect)x.roundRect(bx,by,W0+px*2,bh,bh/2);else x.rect(bx,by,W0+px*2,bh);x.fill();x.shadowColor='transparent';x.shadowBlur=0;x.shadowOffsetY=0;x.lineWidth=1.5;x.strokeStyle='rgba(22,22,22,.12)';x.stroke();
-  var sx=bx+px;x.textAlign='left';x.font='600 '+fs+'px Parkinsans';ls(x,'2px');x.fillStyle=INK;x.fillText('TEAM',sx,y);var a=x.measureText('TEAM').width;ls(x,'0px');
-  x.font='italic '+(fs*1.6)+'px Alpinecia';x.fillText(t,sx+a+fs*.45,y);x.restore();return W0}
+  x.textAlign='left';x.font='italic '+(fs*1.6)+'px Alpinecia';x.fillStyle=INK;x.fillText(t,bx+px,y);x.restore();return W0}
 function kmtxt(o){return String(o.km||'0').replace('.',',').replace(/[^\d,]/g,'').slice(0,5)||'0'}
 function number(x,km,x0,base,fs,maxW,numC,kmC){
   function wid(){x.font='800 '+fs+'px Parkinsans';ls(x,'0px');var a=x.measureText(km).width-fs*.028*(km.length-1);x.font='italic '+(fs*.45)+'px Alpinecia';return a+fs*.06+x.measureText('km').width}

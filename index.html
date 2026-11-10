@@ -824,7 +824,7 @@ body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
               <button type="button" data-tpl="verde" aria-pressed="false"><b class="v">8<i>km</i></b><span data-pt="Linha amarela" data-en="Yellow line">Linha amarela</span></button>
             </div></fieldset>
           <div class="mrf-pair"><label class="mrf-km"><span data-pt="Distância" data-en="Distance">Distância</span><span class="mrf-kmrow"><input class="mrf-kmin" inputmode="decimal" value="10,5" maxlength="5" autocomplete="off" aria-label="Quilómetros"><i class="serif">km</i></span></label>
-          <label class="mrf-km mrf-team"><span data-pt="Team · opcional" data-en="Team · optional">Team · opcional</span><span class="mrf-kmrow"><input class="mrf-tin" type="text" placeholder="Foz" maxlength="22" autocomplete="off" aria-label="Nome da team" data-pt-aria="Nome da team" data-en-aria="Team name"></span></label></div>
+          <label class="mrf-km mrf-team"><span data-pt="Texto · opcional" data-en="Text · optional">Texto · opcional</span><span class="mrf-kmrow"><input class="mrf-tin" type="text" placeholder="Ex.: Treino na Foz" maxlength="30" autocomplete="off" aria-label="Texto opcional" data-pt-aria="Texto opcional" data-en-aria="Optional text"></span></label></div>
           <div class="mrf-row"><div class="mrf-fmt" role="group" aria-label="Formato"><button type="button" data-fmt="feed" aria-pressed="true">Feed 4:5</button><button type="button" data-fmt="story" aria-pressed="false">Story 9:16</button></div>
             <label class="mrf-z"><span>Zoom</span><input class="mrf-zoom" type="range" min="1" max="2.5" step="0.01" value="1"></label></div>
           <div class="mrf-cta"><button type="button" class="btn btn-volt mrf-go" data-pt="Descarregar imagem" data-en="Download image">Descarregar imagem</button></div>
@@ -1015,7 +1015,7 @@ function kick(){if(window.mrPaused)return;[].slice.call(document.querySelectorAl
 var gv=document.querySelector('.gm-vids');if(gv)gv.addEventListener('scroll',function(){clearTimeout(gv._k);gv._k=setTimeout(kick,150)},{passive:true});
 addEventListener('scroll',function(){clearTimeout(window._mrk);window._mrk=setTimeout(kick,200)},{passive:true});
 })();</script>
-<script src="assets/moldura.js?v=20261110f" defer></script><script src="assets/moldura-ui.js?v=20261110f" defer></script>
+<script src="assets/moldura.js?v=20261110g" defer></script><script src="assets/moldura-ui.js?v=20261110g" defer></script>
 <script>(function(){var hd=document.querySelector('header'),mb=document.querySelector('.menubtn');
 function setM(o){hd.classList.toggle('open',o);mb.setAttribute('aria-expanded',o?'true':'false');mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')}
 mb.addEventListener('click',function(){setM(!hd.classList.contains('open'))});
