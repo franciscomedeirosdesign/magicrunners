@@ -376,6 +376,7 @@ footer .powered a{color:var(--paper);font-weight:600}
 .mrf-up{position:relative;justify-self:stretch;color:var(--paper)}
 .mrf-up input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
 .mrf-km[hidden]{display:none}
+.mrf-kmrow input[aria-invalid="true"]{border-color:#C4161C}
 .mrf-kmrow{display:flex;align-items:baseline;gap:10px}
 .mrf-kmrow input{font:800 42px/1 var(--sans);padding:10px 16px;width:100%;max-width:220px;font-variant-numeric:tabular-nums}
 .mrf-kmrow i{font-size:40px;color:var(--volt)}
@@ -766,6 +767,7 @@ body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
             </div></fieldset>
           <label class="mrf-up btn btn-ghost"><input class="mrf-file" type="file" accept="image/*"><span data-pt="2 · Escolher foto" data-en="2 · Choose photo">2 · Escolher foto</span></label>
           <label class="mrf-km"><span data-pt="3 · Distância" data-en="3 · Distance">3 · Distância</span><span class="mrf-kmrow"><input class="mrf-kmin" inputmode="decimal" value="10,5" maxlength="5" autocomplete="off" aria-label="Quilómetros"><i class="serif">km</i></span></label>
+          <label class="mrf-km mrf-hora"><span data-pt="Hora · opcional, formato 24 h" data-en="Time · optional, 24-hour format">Hora · opcional, formato 24 h</span><span class="mrf-kmrow"><input class="mrf-hin" inputmode="numeric" placeholder="07:30" maxlength="5" autocomplete="off" aria-label="Hora, formato 24 horas" data-pt-aria="Hora, formato 24 horas" data-en-aria="Time, 24-hour format"></span></label>
           <div class="mrf-row"><div class="mrf-fmt" role="group" aria-label="Formato"><button type="button" data-fmt="feed" aria-pressed="true">Feed 4:5</button><button type="button" data-fmt="story" aria-pressed="false">Story 9:16</button></div>
             <label class="mrf-z"><span>Zoom</span><input class="mrf-zoom" type="range" min="1" max="2.5" step="0.01" value="1"></label></div>
           <button type="button" class="btn btn-volt mrf-go" data-pt="Descarregar imagem" data-en="Download image">Descarregar imagem</button>
@@ -956,7 +958,7 @@ function kick(){if(window.mrPaused)return;[].slice.call(document.querySelectorAl
 var gv=document.querySelector('.gm-vids');if(gv)gv.addEventListener('scroll',function(){clearTimeout(gv._k);gv._k=setTimeout(kick,150)},{passive:true});
 addEventListener('scroll',function(){clearTimeout(window._mrk);window._mrk=setTimeout(kick,200)},{passive:true});
 })();</script>
-<script src="assets/moldura.js" defer></script><script src="assets/moldura-ui.js" defer></script>
+<script src="assets/moldura.js?v=20261110" defer></script><script src="assets/moldura-ui.js?v=20261110" defer></script>
 <script>(function(){var hd=document.querySelector('header'),mb=document.querySelector('.menubtn');
 function setM(o){hd.classList.toggle('open',o);mb.setAttribute('aria-expanded',o?'true':'false');mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')}
 mb.addEventListener('click',function(){setM(!hd.classList.contains('open'))});
