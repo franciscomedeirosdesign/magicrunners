@@ -432,6 +432,13 @@ footer .powered a{color:var(--paper);font-weight:600}
   .mrf-go{min-height:52px}
 }
 
+/* Distância e Team alinhados, mesma altura; Team em texto simples */
+.mrf-pair{align-items:end}
+.mrf .mrf-pair .mrf-kmrow{align-items:center}
+.mrf .mrf-pair .mrf-kmrow input{height:64px;box-sizing:border-box;padding:0 14px;line-height:1}
+.mrf .mrf-pair .mrf-team .mrf-kmrow input{font:600 22px/1 var(--sans);letter-spacing:0}
+@media (max-width:860px){.mrf .mrf-pair .mrf-kmrow input{height:52px}.mrf .mrf-pair .mrf-team .mrf-kmrow input{font-size:18px}}
+
 @media (max-width:860px){.mrf{grid-template-columns:1fr;gap:28px}.mrf canvas{max-width:380px}}
 @media (max-width:420px){.mrf-tpls button{padding:10px;min-height:96px}.mrf-tpls button b{font-size:18px}}
 
