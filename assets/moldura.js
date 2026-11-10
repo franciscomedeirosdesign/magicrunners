@@ -31,11 +31,13 @@ function line(x,ly){x.shadowBlur=0;riso(x,function(g){g.strokeStyle=G;g.lineWidt
   if(imgs.symW)x.drawImage(imgs.symW,964,ly-50,58,58*imgs.symW.height/imgs.symW.width)}
 function team(o){return String(o.team||'').replace(/\s+/g,' ').trim().slice(0,22)}
 /* «Team» em Parkinsans + nome em Alpinecia itálico; x0 = início (left) ou fim (right) */
-function teamTxt(x,o,x0,y,fs,c1,c2,right){var t=team(o);if(!t)return 0;
+function teamTxt(x,o,x0,y,fs){var t=team(o);if(!t)return 0;
   function w(){x.font='600 '+fs+'px Parkinsans';ls(x,'2px');var a=x.measureText('TEAM').width;x.font='italic '+(fs*1.6)+'px Alpinecia';ls(x,'0px');return a+fs*.45+x.measureText(t).width}
-  while(w()>560&&fs>18)fs-=1;var W0=w(),sx=right?x0-W0:x0;
-  x.textAlign='left';x.font='600 '+fs+'px Parkinsans';ls(x,'2px');x.fillStyle=c1;x.fillText('TEAM',sx,y);var a=x.measureText('TEAM').width;ls(x,'0px');
-  x.font='italic '+(fs*1.6)+'px Alpinecia';x.fillStyle=c2;x.fillText(t,sx+a+fs*.45,y);return W0}
+  while(w()>520&&fs>18)fs-=1;var W0=w(),px=fs*.7,py=fs*.42,bx=x0-W0-px*2,by=y-fs*1.2-py,bh=fs*1.2+fs*.38+py*2;
+  x.save();x.shadowColor='transparent';x.shadowBlur=0;x.fillStyle='#fff';x.beginPath();
+  if(x.roundRect)x.roundRect(bx,by,W0+px*2,bh,bh/2);else x.rect(bx,by,W0+px*2,bh);x.fill();
+  var sx=bx+px;x.textAlign='left';x.font='600 '+fs+'px Parkinsans';ls(x,'2px');x.fillStyle=INK;x.fillText('TEAM',sx,y);var a=x.measureText('TEAM').width;ls(x,'0px');
+  x.font='italic '+(fs*1.6)+'px Alpinecia';x.fillText(t,sx+a+fs*.45,y);x.restore();return W0}
 function kmtxt(o){return String(o.km||'0').replace('.',',').replace(/[^\d,]/g,'').slice(0,5)||'0'}
 function number(x,km,x0,base,fs,maxW,numC,kmC){
   function wid(){x.font='800 '+fs+'px Parkinsans';ls(x,'0px');var a=x.measureText(km).width-fs*.028*(km.length-1);x.font='italic '+(fs*.45)+'px Alpinecia';return a+fs*.06+x.measureText('km').width}
@@ -46,11 +48,11 @@ var LOGO=200;
 var T={
   km:function(x,o,H,base,ly){var top=o.story?110:48;shade(x,H,top,ly);
     if(imgs.lockW)x.drawImage(imgs.lockW,48,top,LOGO,LOGO*172/750);
-    x.shadowColor='rgba(0,0,0,.25)';x.shadowBlur=20;teamTxt(x,o,1032,ly-172,34,'#fff',G,true);number(x,kmtxt(o),46,ly-30,150,860,'#fff',G);line(x,ly)},
+    x.shadowColor='rgba(0,0,0,.25)';x.shadowBlur=20;teamTxt(x,o,1032,ly-172,30);number(x,kmtxt(o),46,ly-30,150,860,'#fff',G);line(x,ly)},
   feito:function(x,o,H,base,ly){var top=o.story?110:48;shade(x,H,top,ly);
     if(imgs.lockW)x.drawImage(imgs.lockW,48,top,LOGO,LOGO*172/750);
     x.font='600 24px Parkinsans';ls(x,'3px');x.fillStyle='#fff';x.textAlign='right';x.fillText(o.data||hoje(),1032,top+30);x.textAlign='left';ls(x,'0px');
-    x.shadowColor='rgba(0,0,0,.25)';x.shadowBlur=20;teamTxt(x,o,1032,ly-172,34,'#fff',G,true);
+    x.shadowColor='rgba(0,0,0,.25)';x.shadowBlur=20;teamTxt(x,o,1032,ly-172,30);
     x.font='800 120px Parkinsans';ls(x,'-3px');x.fillStyle='#fff';x.fillText('Treino',44,ly-34);var tw=x.measureText('Treino').width;ls(x,'0px');
     x.font='italic 136px Alpinecia';x.fillStyle=G;x.fillText('feito.',44+tw+22,ly-34);line(x,ly)},
   verde:function(x,o,H,base,ly){
@@ -58,8 +60,7 @@ var T={
     var p=new Path2D('M 0 '+(y0+26)+' C 260 '+(y0+56)+', 470 '+(y0-14)+', 700 '+(y0+6)+' S 960 '+(y0-4)+', 1080 '+(y0-34)+' L 1080 '+H+' L 0 '+H+' Z');
     riso(x,function(g){g.fillStyle=G;g.fill(p)});
     number(x,kmtxt(o),44,y0+150,120,600,INK,INK);
-    if(team(o)){var tg=x.createLinearGradient(0,0,0,(o.story?110:48)+130);tg.addColorStop(0,'rgba(0,0,0,.38)');tg.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=tg;x.fillRect(0,0,W,(o.story?110:48)+130)}
-    x.save();x.shadowColor='rgba(0,0,0,.35)';x.shadowBlur=18;teamTxt(x,o,1032,(o.story?110:48)+44,34,'#fff',G,true);x.restore();
+    teamTxt(x,o,1032,(o.story?110:48)+52,30);
     if(imgs.symI)x.drawImage(imgs.symI,968,y0+56,58,58*imgs.symI.height/imgs.symI.width);
     if(imgs.lockI)x.drawImage(imgs.lockI,46,base-66,170,170*172/750);
     x.font='italic 30px Alpinecia';x.fillStyle=INK;x.textAlign='right';x.fillText('O Porto é o nosso ginásio.',1032,base-36);x.textAlign='left'}
