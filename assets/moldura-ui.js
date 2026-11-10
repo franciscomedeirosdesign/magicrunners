@@ -1,4 +1,3 @@
-/* Magic Runners · interface da moldura. Liga-se a um bloco .mrf (ver HTML). */
 (function(){
 function q(r,s){return r.querySelector(s)}
 function boot(r){
