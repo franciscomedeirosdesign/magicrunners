@@ -798,6 +798,16 @@ body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
               <option data-pt="Online" data-en="Online">Online</option>
               <option data-pt="Ainda não sei" data-en="Not sure yet">Ainda não sei</option>
             </select></label>
+          <label for="origem"><span data-pt="Como ouviu falar de nós? (opcional)" data-en="How did you hear about us? (optional)">Como ouviu falar de nós? (opcional)</span>
+            <select id="origem" name="origem">
+              <option value="" data-pt="Escolher" data-en="Choose">Escolher</option>
+              <option value="instagram" data-pt="Instagram" data-en="Instagram">Instagram</option>
+              <option value="amigo" data-pt="Recomendação de um amigo" data-en="A friend's recommendation">Recomendação de um amigo</option>
+              <option value="google" data-pt="Google" data-en="Google">Google</option>
+              <option value="treino" data-pt="Vi um treino ao ar livre" data-en="I saw an outdoor session">Vi um treino ao ar livre</option>
+              <option value="sunday" data-pt="Sunday Running Club" data-en="Sunday Running Club">Sunday Running Club</option>
+              <option value="outro" data-pt="Outro" data-en="Other">Outro</option>
+            </select></label>
           <label for="notas"><span data-pt="Lesões ou notas (opcional)" data-en="Injuries or notes (optional)">Lesões ou notas (opcional)</span><textarea id="notas" name="notas"></textarea></label>
           <label class="check" for="rgpd"><input id="rgpd" type="checkbox" aria-describedby="err"><span data-pt="Aceito o tratamento dos meus dados, incluindo dados de saúde, para preparar o plano de treino." data-en="I agree to the processing of my data, including health data, to prepare my training plan.">Aceito o tratamento dos meus dados, incluindo dados de saúde, para preparar o plano de treino.</span></label>
           <p class="legal-note"><span data-pt="Consultar a" data-en="Read the">Consultar a</span> <button type="button" class="linkbtn" data-open="dlg-priv" data-pt="política de privacidade" data-en="privacy policy">política de privacidade</button>. <span data-pt="Antes do primeiro treino, há um" data-en="Before your first session, answer the">Antes do primeiro treino, há um</span> <button type="button" class="linkbtn" data-open="dlg-parq" data-pt="questionário de saúde (2 min)" data-en="health questionnaire (2 min)">questionário de saúde (2 min)</button>.</p>
@@ -930,7 +940,7 @@ body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
     if(!n||!t){err.textContent=en?(!n&&!t?'Add your name and phone so we can reply.':!n?'Add your name so we can reply.':'Add your phone so we can reply.'):(!n&&!t?'Faltam o nome e o telemóvel para podermos responder.':!n?'Falta o nome para podermos responder.':'Falta o telemóvel para podermos responder.');var bad=!n?f.nome:f.tel;if(!n)f.nome.setAttribute('aria-invalid','true');if(!t)f.tel.setAttribute('aria-invalid','true');bad.focus();return}
     if(!c){err.textContent=en?'Tick the consent box to send the request.':'É necessário aceitar o tratamento de dados para enviar o pedido.';var cb=document.getElementById('rgpd');cb.setAttribute('aria-invalid','true');cb.focus();return}
     err.textContent='';f.hidden=true;ok.hidden=false;
-    var svc=f.svc.options[f.svc.selectedIndex].text,msg=(en?'Hi Mariana, I am ':'Olá Mariana, sou ')+n+(en?'. I would like: ':'. Gostava de: ')+svc+'. '+(en?'Phone: ':'Telemóvel: ')+t+'.',mail='mailto:magicrunnersporto@gmail.com?subject='+encodeURIComponent(en?'Assessment request · Magic Runners':'Pedido de avaliação · Magic Runners')+'&body='+encodeURIComponent(msg);
+    var svc=f.svc.options[f.svc.selectedIndex].text,org=f.origem.value?f.origem.options[f.origem.selectedIndex].text:'',msg=(en?'Hi Mariana, I am ':'Olá Mariana, sou ')+n+(en?'. I would like: ':'. Gostava de: ')+svc+'. '+(en?'Phone: ':'Telemóvel: ')+t+'.'+(org?(en?' How I heard about Magic Runners: ':' Como conheci a Magic Runners: ')+org+'.':''),mail='mailto:magicrunnersporto@gmail.com?subject='+encodeURIComponent(en?'Assessment request · Magic Runners':'Pedido de avaliação · Magic Runners')+'&body='+encodeURIComponent(msg);
     ok.innerHTML='<h3>'+(en?'Request received.':'Pedido recebido.')+'</h3><p>'+(en?'Thanks, ':'Obrigado, ')+esc(n)+(en?'. Mariana replies within 24 hours, by phone or WhatsApp.':'. A Mariana responde em 24 horas, por telefone ou WhatsApp.')+'</p><p class="ok-small">'+(en?'To finish, send it by WhatsApp or email: the message is already written.':'Para concluir, basta enviar por WhatsApp ou por email: a mensagem já vai escrita.')+'</p><div class="ok-actions"><a class="btn btn-ink" href="'+waLink(msg)+'" target="_blank" rel="noopener">'+(en?'Send on WhatsApp':'Enviar por WhatsApp')+'</a><a class="btn btn-ghost" href="'+mail+'">'+(en?'Send by email':'Enviar por email')+'</a><button type="button" class="btn btn-ghost" data-open="dlg-parq">'+(en?'Health questionnaire':'Questionário de saúde')+'</button></div>';
     ok.focus();
   });
