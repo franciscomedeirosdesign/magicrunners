@@ -798,8 +798,8 @@ body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
               <option data-pt="Online" data-en="Online">Online</option>
               <option data-pt="Ainda não sei" data-en="Not sure yet">Ainda não sei</option>
             </select></label>
-          <label for="origem"><span data-pt="Como ouviu falar de nós? (opcional)" data-en="How did you hear about us? (optional)">Como ouviu falar de nós? (opcional)</span>
-            <select id="origem" name="origem">
+          <label for="origem"><span data-pt="Como ouviu falar de nós?" data-en="How did you hear about us?">Como ouviu falar de nós?</span>
+            <select id="origem" name="origem" required aria-describedby="err">
               <option value="" data-pt="Escolher" data-en="Choose">Escolher</option>
               <option value="instagram" data-pt="Instagram" data-en="Instagram">Instagram</option>
               <option value="amigo" data-pt="Recomendação de um amigo" data-en="A friend's recommendation">Recomendação de um amigo</option>
@@ -936,8 +936,9 @@ body{background:var(--paper) url(assets/papel.jpg) center top/1400px}
   f.addEventListener('submit',function(e){
     e.preventDefault();
     var n=f.nome.value.trim(),t=f.tel.value.trim(),c=document.getElementById('rgpd').checked,en=lang==='en';
-    [f.nome,f.tel].forEach(function(x){x.removeAttribute('aria-invalid')});document.getElementById('rgpd').removeAttribute('aria-invalid');
+    [f.nome,f.tel,f.origem].forEach(function(x){x.removeAttribute('aria-invalid')});document.getElementById('rgpd').removeAttribute('aria-invalid');
     if(!n||!t){err.textContent=en?(!n&&!t?'Add your name and phone so we can reply.':!n?'Add your name so we can reply.':'Add your phone so we can reply.'):(!n&&!t?'Faltam o nome e o telemóvel para podermos responder.':!n?'Falta o nome para podermos responder.':'Falta o telemóvel para podermos responder.');var bad=!n?f.nome:f.tel;if(!n)f.nome.setAttribute('aria-invalid','true');if(!t)f.tel.setAttribute('aria-invalid','true');bad.focus();return}
+    if(!f.origem.value){err.textContent=en?'Tell us how you heard about us.':'Falta indicar como ouviu falar de nós.';f.origem.setAttribute('aria-invalid','true');f.origem.focus();return}
     if(!c){err.textContent=en?'Tick the consent box to send the request.':'É necessário aceitar o tratamento de dados para enviar o pedido.';var cb=document.getElementById('rgpd');cb.setAttribute('aria-invalid','true');cb.focus();return}
     err.textContent='';f.hidden=true;ok.hidden=false;
     var svc=f.svc.options[f.svc.selectedIndex].text,org=f.origem.value?f.origem.options[f.origem.selectedIndex].text:'',msg=(en?'Hi Mariana, I am ':'Olá Mariana, sou ')+n+(en?'. I would like: ':'. Gostava de: ')+svc+'. '+(en?'Phone: ':'Telemóvel: ')+t+'.'+(org?(en?' How I heard about Magic Runners: ':' Como conheci a Magic Runners: ')+org+'.':''),mail='mailto:magicrunnersporto@gmail.com?subject='+encodeURIComponent(en?'Assessment request · Magic Runners':'Pedido de avaliação · Magic Runners')+'&body='+encodeURIComponent(msg);
